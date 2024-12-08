@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Outline Map</title>
+    
+    <!-- Import D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .state {
+            fill: lightgrey;
+            stroke: white;
+            stroke-width: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>UFO Sightings and Rocket Launch Locations across America </h3>
+    <svg id="us-map" height="770" width="990" style="margin:20px"></svg>
+
+    <script>
+        const svg = d3.select("#us-map");
+        const width = svg.attr("width");
+        const height = svg.attr("height");
+        const margin = { top: 20, right: 20, bottom: 20, left: 20 };
+        const mapWidth = width - margin.left - margin.right;
+        const mapHeight = height - margin.top - margin.bottom;
+
+        const map = svg.append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        const loadData = async function () {
+            // Load the US GeoJSON file
+            const usStates = await d3.json("data/states.json");
+            console.log("Data processed:", usStates);
+
+            const states = usStates.features;
+
+            // Define the projection and path generator
+            const projection = d3.geoAlbersUsa()
+                .fitExtent([[margin.left, margin.top], [mapWidth, mapHeight]], { type: "FeatureCollection", features: states });
+
+            const path = d3.geoPath().projection(projection);
+
+            // Render the state boundaries
+            map.selectAll("path.state")
+                .data(states)
+                .join("path")
+                .attr("class", "state")
+                .attr("d", path);
+
+
+            const ufoData = await d3.csv("data/filtered_ufo_data.csv");
+            console.log("UFO Data:", ufoData);
+
+            // Add circles for UFO sightings
+            map.selectAll("circle.ufo-circle")
+                .data(ufoData)
+                .join("circle")
+                .attr("class", "ufo-circle")
+                .attr("cx", d => {
+                    const coords = projection([+d.city_longitude, +d.city_latitude]);
+                    return coords ? coords[0] : null; // Check for valid projection
+                })
+                .attr("cy", d => {
+                    const coords = projection([+d.city_longitude, +d.city_latitude]);
+                    return coords ? coords[1] : null; // Check for valid projection
+                })
+                .attr("r", 2)
+                .attr("fill", "green")
+                .attr("opacity", 0.3);
+
+       //     map.selectAll("image.ufo-icon")
+      //          .data(ufoData)
+      //          .join("image")
+       //         .attr("class", "ufo-icon")
+       //         .attr("x", d => {
+       //             const coords = projection([+d.city_longitude, +d.city_latitude]);
+       //             return coords ? coords[0] - 10 : null; // Adjust x to center the image
+       //         })
+       //         .attr("y", d => {
+       //             const coords = projection([+d.city_longitude, +d.city_latitude]);
+      //              return coords ? coords[1] - 10 : null; // Adjust y to center the image
+      //          })
+     //           .attr("width", 5) // Width of the image
+     //           .attr("height", 5) // Height of the image
+     //           .attr("xlink:href", "images/ufo.png"); // Path to the UFO image
+
+
+
+
+            const space_data = await d3.csv("data/space_mission_filter_usa.csv");
+            console.log("Space Data:", space_data);
+
+            map.selectAll("image.rocket-icon")
+                .data(space_data)
+                .join("image")
+                .attr("class", "rocket-icon")
+                .attr("x", d => {
+                    const coords = projection([+d.Longitude, +d.Latitude]);
+                    return coords ? coords[0] - 10 : null; // Adjust x to center the image
+                })
+                .attr("y", d => {
+                    const coords = projection([+d.Longitude, +d.Latitude]);
+                    return coords ? coords[1] - 10 : null; // Adjust y to center the image
+                })
+                .attr("width", 24) // Width of the image
+                .attr("height", 24) // Height of the image
+                .attr("xlink:href", "images/rocket.png"); // Path to the UFO image
+
+
+        };
+
+
+        loadData();
+    </script>
+</body>
+</html>
+
+
+
+
+

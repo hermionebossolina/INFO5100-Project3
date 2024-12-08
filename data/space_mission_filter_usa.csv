@@ -1,0 +1,982 @@
+Longitude,Latitude,Company Name,Location,Detail,Status Rocket, Rocket,Status Mission,Year
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon Heavy | STP-2,StatusActive,90.0 ,Success,2019
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon Heavy | ArabSat 6A,StatusActive,90.0 ,Success,2019
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 5 | SpaceX Demo-1,StatusActive,50.0 ,Success,2019
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 5 | Es'hail 2,StatusActive,50.0 ,Success,2018
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 5 | Bangabandhu-1,StatusActive,50.0 ,Success,2018
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon Heavy | Test Flight,StatusActive,90.0 ,Success,2018
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 4 | Koreasat 5A,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 3 | SES-11 / EchoStar 105,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 4 | OTV-5,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 4 | CRS-12,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 3 | Intelsat 35e,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 3 | BulgariaSat-1,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 3 | CRS-11,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 3 | Inmarsat-5 F4,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 3 | NROL-76,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 3 | SES-10,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 3 | Echostar 23,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 3 | CRS-10,StatusRetired,62.0 ,Success,2017
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-135,StatusRetired,450.0 ,Success,2011
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-134,StatusRetired,450.0 ,Success,2011
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-133,StatusRetired,450.0 ,Success,2011
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-132,StatusRetired,450.0 ,Success,2010
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-131,StatusRetired,450.0 ,Success,2010
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-130,StatusRetired,450.0 ,Success,2010
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-129,StatusRetired,450.0 ,Success,2009
+-80.6508,28.5721,NASA,Kennedy Space Center,Ares 1-X | Ares 1-X Test Flight,StatusRetired,450.0 ,Success,2009
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-128,StatusRetired,450.0 ,Success,2009
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-127,StatusRetired,450.0 ,Success,2009
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-125,StatusRetired,450.0 ,Success,2009
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-119,StatusRetired,450.0 ,Success,2009
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-126,StatusRetired,450.0 ,Success,2008
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-124,StatusRetired,450.0 ,Success,2008
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-123,StatusRetired,450.0 ,Success,2008
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-122,StatusRetired,450.0 ,Success,2008
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-120,StatusRetired,450.0 ,Success,2007
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-118,StatusRetired,450.0 ,Success,2007
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-117,StatusRetired,450.0 ,Success,2007
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-116,StatusRetired,450.0 ,Success,2006
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-115,StatusRetired,450.0 ,Success,2006
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-121,StatusRetired,450.0 ,Success,2006
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-114,StatusRetired,450.0 ,Success,2005
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-107,StatusRetired,450.0 ,Failure,2003
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-113,StatusRetired,450.0 ,Success,2002
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-112,StatusRetired,450.0 ,Success,2002
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-111,StatusRetired,450.0 ,Success,2002
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-110,StatusRetired,450.0 ,Success,2002
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-109,StatusRetired,450.0 ,Success,2002
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-108,StatusRetired,450.0 ,Success,2001
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-105,StatusRetired,450.0 ,Success,2001
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-104,StatusRetired,450.0 ,Success,2001
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-100,StatusRetired,450.0 ,Success,2001
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-102,StatusRetired,450.0 ,Success,2001
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-98,StatusRetired,450.0 ,Success,2001
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-97,StatusRetired,450.0 ,Success,2000
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-92,StatusRetired,450.0 ,Success,2000
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-106,StatusRetired,450.0 ,Success,2000
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-101,StatusRetired,450.0 ,Success,2000
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-99,StatusRetired,450.0 ,Success,2000
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-103,StatusRetired,450.0 ,Success,1999
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-93,StatusRetired,450.0 ,Success,1999
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-96,StatusRetired,450.0 ,Success,1999
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-88,StatusRetired,450.0 ,Success,1998
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-95,StatusRetired,450.0 ,Success,1998
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-91,StatusRetired,450.0 ,Success,1998
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-90,StatusRetired,450.0 ,Success,1998
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-89,StatusRetired,450.0 ,Success,1998
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-87,StatusRetired,450.0 ,Success,1997
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-86,StatusRetired,450.0 ,Success,1997
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-85,StatusRetired,450.0 ,Success,1997
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-94,StatusRetired,450.0 ,Success,1997
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-84,StatusRetired,450.0 ,Success,1997
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-83,StatusRetired,450.0 ,Success,1997
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-82,StatusRetired,450.0 ,Success,1997
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-81,StatusRetired,450.0 ,Success,1997
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-80,StatusRetired,450.0 ,Success,1996
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-79,StatusRetired,450.0 ,Success,1996
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-78,StatusRetired,450.0 ,Success,1996
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-77,StatusRetired,450.0 ,Success,1996
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-76,StatusRetired,450.0 ,Success,1996
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-75,StatusRetired,450.0 ,Success,1996
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-72,StatusRetired,450.0 ,Success,1996
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-74,StatusRetired,450.0 ,Success,1995
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-73,StatusRetired,450.0 ,Success,1995
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-69,StatusRetired,450.0 ,Success,1995
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-70,StatusRetired,450.0 ,Success,1995
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-71,StatusRetired,450.0 ,Success,1995
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-67,StatusRetired,450.0 ,Success,1995
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-63,StatusRetired,450.0 ,Success,1995
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-66,StatusRetired,450.0 ,Success,1994
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-68,StatusRetired,450.0 ,Success,1994
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-64,StatusRetired,450.0 ,Success,1994
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-65,StatusRetired,450.0 ,Success,1994
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-59,StatusRetired,450.0 ,Success,1994
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-62,StatusRetired,450.0 ,Success,1994
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-60,StatusRetired,450.0 ,Success,1994
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-61,StatusRetired,450.0 ,Success,1993
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-58,StatusRetired,450.0 ,Success,1993
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-51,StatusRetired,450.0 ,Success,1993
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-57,StatusRetired,450.0 ,Success,1993
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-55,StatusRetired,450.0 ,Success,1993
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-56,StatusRetired,450.0 ,Success,1993
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-54,StatusRetired,450.0 ,Success,1993
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-53,StatusRetired,450.0 ,Success,1992
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-52,StatusRetired,450.0 ,Success,1992
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-47,StatusRetired,450.0 ,Success,1992
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-46,StatusRetired,450.0 ,Success,1992
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-50,StatusRetired,450.0 ,Success,1992
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Endeavour | STS-49,StatusRetired,450.0 ,Success,1992
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-45,StatusRetired,450.0 ,Success,1992
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-42,StatusRetired,450.0 ,Success,1992
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-44,StatusRetired,450.0 ,Success,1991
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-48,StatusRetired,450.0 ,Success,1991
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-43,StatusRetired,450.0 ,Success,1991
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-40,StatusRetired,450.0 ,Success,1991
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-39,StatusRetired,450.0 ,Success,1991
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-37,StatusRetired,450.0 ,Success,1991
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-35,StatusRetired,450.0 ,Success,1990
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-38,StatusRetired,450.0 ,Success,1990
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-41,StatusRetired,450.0 ,Success,1990
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-31,StatusRetired,450.0 ,Success,1990
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-36,StatusRetired,450.0 ,Success,1990
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-32,StatusRetired,450.0 ,Success,1990
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-33R,StatusRetired,450.0 ,Success,1989
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-34R,StatusRetired,450.0 ,Success,1989
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-28R,StatusRetired,450.0 ,Success,1989
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-30R,StatusRetired,450.0 ,Success,1989
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-29R,StatusRetired,450.0 ,Success,1989
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-27R,StatusRetired,450.0 ,Success,1988
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-26R,StatusRetired,450.0 ,Success,1988
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Challenger | STS-51-L,StatusRetired,450.0 ,Failure,1986
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-61-C,StatusRetired,450.0 ,Success,1986
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-61-B,StatusRetired,450.0 ,Success,1985
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Challenger | STS-61-A,StatusRetired,450.0 ,Success,1985
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Atlantis | STS-51-J,StatusRetired,450.0 ,Success,1985
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-51-I,StatusRetired,450.0 ,Success,1985
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Challenger | STS-51-F,StatusRetired,450.0 ,Success,1985
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-51-G,StatusRetired,450.0 ,Success,1985
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Challenger | STS-51-B,StatusRetired,450.0 ,Success,1985
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-51-D,StatusRetired,450.0 ,Success,1985
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-51-C,StatusRetired,450.0 ,Success,1985
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-51-A,StatusRetired,450.0 ,Success,1984
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Challenger | STS-41-G,StatusRetired,450.0 ,Success,1984
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Discovery | STS-41-D,StatusRetired,450.0 ,Success,1984
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Challenger | STS-41-C,StatusRetired,450.0 ,Success,1984
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Challenger | STS-41-B,StatusRetired,450.0 ,Success,1984
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-9,StatusRetired,450.0 ,Success,1983
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Challenger | STS-8,StatusRetired,450.0 ,Success,1983
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Challenger | STS-7,StatusRetired,450.0 ,Success,1983
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Challenger | STS-6,StatusRetired,450.0 ,Success,1983
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-5,StatusRetired,450.0 ,Success,1982
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-4,StatusRetired,450.0 ,Success,1982
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-3,StatusRetired,450.0 ,Success,1982
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-2,StatusRetired,450.0 ,Success,1981
+-80.6508,28.5721,NASA,Kennedy Space Center,Space Shuttle Columbia | STS-1,StatusRetired,450.0 ,Success,1981
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn IB | ASTP (Apollo???Soyuz Test Project),StatusRetired,,Success,1975
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn IB | Skylab 4,StatusRetired,,Success,1973
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn IB | Skylab 3,StatusRetired,,Success,1973
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn IB | Skylab 2,StatusRetired,,Success,1973
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn V | Skylab 1,StatusRetired,"1,160.0 ",Success,1973
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn V | Apollo 17,StatusRetired,"1,160.0 ",Success,1972
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn V | Apollo 16,StatusRetired,"1,160.0 ",Success,1972
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn V | Apollo 15,StatusRetired,"1,160.0 ",Success,1971
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn V | Apollo 14,StatusRetired,"1,160.0 ",Success,1971
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn V | Apollo 13,StatusRetired,"1,160.0 ",Success,1970
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn V | Apollo 12,StatusRetired,"1,160.0 ",Success,1969
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn V | Apollo 11,StatusRetired,"1,160.0 ",Success,1969
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn V | Apollo 10,StatusRetired,"1,160.0 ",Success,1969
+-80.6508,28.5721,NASA,Kennedy Space Center,Saturn V | Apollo 9,StatusRetired,"1,160.0 ",Success,1969
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V N22 | Starliner OFT,StatusActive,,Success,2019
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | JCSAT-18 / Kacific-1,StatusActive,50.0 ,Success,2019
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | CRS-19,StatusActive,50.0 ,Success,2019
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | Starlink V1 L1,StatusActive,50.0 ,Success,2019
+-80.5772,28.5623,Northrop,Cape Canaveral AFS,Pegasus XL | ICON,StatusActive,40.0 ,Success,2019
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | GPS III SV02",StatusRetired,164.0 ,Success,2019
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 551 | AEHF 5,StatusActive,153.0 ,Success,2019
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | AMOS-17,StatusActive,50.0 ,Success,2019
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | CRS-18,StatusActive,50.0 ,Success,2019
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | Starlink V0.9,StatusActive,50.0 ,Success,2019
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | CRS-17,StatusActive,50.0 ,Success,2019
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (5,4) | WGS-10",StatusRetired,,Success,2019
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | Nusantara Satu & Beresheet,StatusActive,50.0 ,Success,2019
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | GPS III SV01,StatusActive,50.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | CRS-16,StatusActive,50.0 ,Success,2018
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 551 | AEHF-4,StatusActive,153.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | Telstar 18V / APStar 5C,StatusActive,50.0 ,Success,2018
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta IV Heavy | Parker Solar Probe,StatusActive,350.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | Merah Putih (Telkom-4),StatusActive,50.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 5 | Telstar 19V,StatusActive,50.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 4 | CRS-15,StatusRetired,62.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 4 | SES-12,StatusRetired,62.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 4 | Transiting Exoplanet Survey Satellite (TESS),StatusRetired,62.0 ,Success,2018
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 551 | AFSPC-11,StatusActive,153.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 4 | CRS-14,StatusRetired,62.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 4 | Hispasat 30W-6,StatusRetired,62.0 ,Success,2018
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 541 | GOES-S (GOES-17),StatusActive,145.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | GovSat-1 / SES-16,StatusRetired,62.0 ,Success,2018
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 411 | SBIRS GEO-4,StatusActive,115.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 4 | Zuma,StatusRetired,62.0 ,Success,2018
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | CRS-13,StatusRetired,62.0 ,Success,2017
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 421 | NROL-52,StatusActive,123.0 ,Success,2017
+-80.5772,28.5623,Northrop,Cape Canaveral AFS,Minotaur IV | ORS-5,StatusActive,46.0 ,Success,2017
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | TDRS-M (TDRS-13),StatusActive,109.0 ,Success,2017
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | CRS OA-7,StatusActive,109.0 ,Success,2017
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (5,4) | WGS-9",StatusRetired,,Success,2017
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | SBIRS GEO-3,StatusActive,109.0 ,Success,2017
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 431 | EchoStar 19,StatusActive,130.0 ,Success,2016
+-80.5772,28.5623,Northrop,Cape Canaveral AFS,Pegasus XL | CYGNSS,StatusActive,40.0 ,Success,2016
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (5,4) | WGS-8",StatusRetired,,Success,2016
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 541 | GOES-R (GOES-16),StatusActive,145.0 ,Success,2016
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 411 | OSIRIS-REx,StatusActive,115.0 ,Success,2016
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | AMOS-6,StatusRetired,62.0 ,Prelaunch Failure,2016
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | AFSPC-6",StatusRetired,164.0 ,Success,2016
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | JCSAT-16,StatusRetired,62.0 ,Success,2016
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 421 | NROL-61,StatusActive,123.0 ,Success,2016
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | CRS-9,StatusRetired,62.0 ,Success,2016
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 551 | MUOS-5,StatusActive,153.0 ,Success,2016
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | ABS-2A & Eutelsat 117 West B,StatusRetired,62.0 ,Success,2016
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta IV Heavy | NROL-37,StatusActive,350.0 ,Success,2016
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | Thaicom 8,StatusRetired,62.0 ,Success,2016
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | JCSAT-14,StatusRetired,62.0 ,Success,2016
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | CRS-8,StatusRetired,62.0 ,Success,2016
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | CRS OA-6,StatusActive,109.0 ,Success,2016
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | SES-9,StatusRetired,62.0 ,Success,2016
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | GPS IIF-12,StatusActive,109.0 ,Success,2016
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 Block 3 | OG2 Mission 2,StatusRetired,62.0 ,Success,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | CRS OA-4,StatusActive,109.0 ,Success,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | GPS IIF-11,StatusActive,109.0 ,Success,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 421 | Morelos-3,StatusActive,123.0 ,Success,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 551 | MUOS-4,StatusActive,153.0 ,Success,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (5,4) | WGS-7",StatusRetired,,Success,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | GPS IIF-10,StatusActive,109.0 ,Success,2015
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | CRS-7,StatusRetired,56.5 ,Failure,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 501 | OTV-4,StatusActive,120.0 ,Success,2015
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | Turkmen??lem52E/MonacoSat,StatusRetired,56.5 ,Success,2015
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | CRS-6,StatusRetired,56.5 ,Success,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | GPS IIF-9",StatusRetired,164.0 ,Success,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 421 | MMS,StatusActive,123.0 ,Success,2015
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | ABS-3A & EUTELSAT 115 West B,StatusRetired,56.5 ,Success,2015
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | DSCOVR,StatusRetired,56.5 ,Success,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 551 | MUOS-3,StatusActive,153.0 ,Success,2015
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | CRS-5,StatusRetired,56.5 ,Success,2015
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta IV Heavy | EFT-1,StatusActive,350.0 ,Success,2014
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | GPS IIF-8,StatusActive,109.0 ,Success,2014
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | CRS-4,StatusRetired,56.5 ,Success,2014
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | CLIO,StatusActive,109.0 ,Success,2014
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | AsiaSat 6,StatusRetired,56.5 ,Success,2014
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | AsiaSat 8,StatusRetired,56.5 ,Success,2014
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | GPS IIF-7,StatusActive,109.0 ,Success,2014
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | AFSPC-4",StatusRetired,164.0 ,Success,2014
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | OG2 Mission 1,StatusRetired,56.5 ,Success,2014
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | NROL-33,StatusActive,109.0 ,Success,2014
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | GPS IIF-6",StatusRetired,164.0 ,Success,2014
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | CRS-3,StatusRetired,56.5 ,Success,2014
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 541 | NROL-67,StatusActive,145.0 ,Success,2014
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | GPS IIF-5",StatusRetired,164.0 ,Success,2014
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | TDRS-L,StatusActive,109.0 ,Success,2014
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | Thaicom 6,StatusRetired,56.5 ,Success,2014
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.1 | SES-8,StatusRetired,56.5 ,Success,2013
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | MAVEN,StatusActive,109.0 ,Success,2013
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 531 | AEHF-3,StatusActive,140.0 ,Success,2013
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (5,4) | WGS-6",StatusRetired,,Success,2013
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 551 | MUOS-2,StatusActive,153.0 ,Success,2013
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (5,4) | WGS-5",StatusRetired,,Success,2013
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | GPS IIF-4,StatusActive,109.0 ,Success,2013
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | SBIRS GEO-2,StatusActive,109.0 ,Success,2013
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.0 | CRS-2,StatusRetired,59.5 ,Success,2013
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | TDRS-K,StatusActive,109.0 ,Success,2013
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 501 | OTV-3,StatusActive,120.0 ,Success,2012
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.0 | CRS-1,StatusRetired,59.5 ,Partial Failure,2012
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | GPS IIF-3",StatusRetired,164.0 ,Success,2012
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | Van Allen Probes (RBSP),StatusActive,109.0 ,Success,2012
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta IV Heavy | NROL-15,StatusActive,350.0 ,Success,2012
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | NROL-38,StatusActive,109.0 ,Success,2012
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.0 | COTS-2+,StatusRetired,59.5 ,Success,2012
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 531 | AEHF-2,StatusActive,140.0 ,Success,2012
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 551 | MUOS-1,StatusActive,153.0 ,Success,2012
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (5,4) | WGS-4",StatusRetired,,Success,2012
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 541 | Mars Science Laboratory,StatusActive,145.0 ,Success,2011
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7920H-10C | GRAIL,StatusRetired,,Success,2011
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 551 | Juno,StatusActive,153.0 ,Success,2011
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | GPS IIF-2",StatusRetired,164.0 ,Success,2011
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | SBIRS GEO-1,StatusActive,109.0 ,Success,2011
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | NROL-27",StatusRetired,164.0 ,Success,2011
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 501 | OTV-2,StatusActive,120.0 ,Success,2011
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.0 | COTS-1,StatusRetired,59.5 ,Success,2010
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta IV Heavy | NROL-32,StatusActive,350.0 ,Success,2010
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 531 | AEHF-1,StatusActive,140.0 ,Success,2010
+-80.5772,28.5623,SpaceX,Cape Canaveral AFS,Falcon 9 v1.0 | Flight 1,StatusRetired,59.5 ,Success,2010
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | GPS IIF-1",StatusRetired,164.0 ,Success,2010
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 501 | OTV-1,StatusActive,120.0 ,Success,2010
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | GOES 15",StatusRetired,164.0 ,Success,2010
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | SDO,StatusActive,109.0 ,Success,2010
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (5,4) | WGS-3",StatusRetired,,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 431 | Intersat 14,StatusActive,130.0 ,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7920-10C | STSS Demo,StatusRetired,,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | PAN,StatusActive,109.0 ,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7925 | GPS IIRM-8,StatusRetired,,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | GOES-O",StatusRetired,164.0 ,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 421 | LRO/LCROSS,StatusActive,123.0 ,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 421 | WGS-2,StatusActive,123.0 ,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7925 | GPS IIRM-7,StatusRetired,,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7925-10L | Kepler,StatusRetired,,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta IV Heavy | NROL-26,StatusActive,350.0 ,Success,2009
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7920H-10C | GLAST,StatusRetired,,Success,2008
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 421 | ICO G1,StatusActive,123.0 ,Success,2008
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7925 | GPS IIRM-6,StatusRetired,,Success,2008
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7925 | GPS IIRM-5,StatusRetired,,Success,2007
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | NROL-24,StatusActive,109.0 ,Success,2007
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta IV Heavy | DSP-23,StatusActive,350.0 ,Success,2007
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7925 | GPS IIRM-4,StatusRetired,,Success,2007
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 421 | WSG-1,StatusActive,123.0 ,Success,2007
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7925H | Dawn,StatusRetired,,Success,2007
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7925 | Phoenix,StatusRetired,,Success,2007
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Atlas V 401 | NROL-30 & NOSS-3,StatusActive,109.0 ,Partial Failure,2007
+-80.5772,28.5623,ULA,Cape Canaveral AFS,"Atlas V 401 | STP-1, FalconSat-3",StatusActive,109.0 ,Success,2007
+-80.5772,28.5623,ULA,Cape Canaveral AFS,Delta II 7925-10C | THEMIS,StatusRetired,,Success,2007
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIRM-3,StatusRetired,,Success,2006
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925-10L | STEREO,StatusRetired,,Success,2006
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIRM-2,StatusRetired,,Success,2006
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | MiTEx,StatusRetired,,Success,2006
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | GOES-N (GOES-13)",StatusRetired,164.0 ,Success,2006
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas V 411 | Astra 1KR,StatusActive,115.0 ,Success,2006
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas V 551 | New Horizons,StatusActive,153.0 ,Success,2006
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIRM-1,StatusRetired,,Success,2005
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas V 401 | Mars Reconnaissance Orbiter,StatusActive,109.0 ,Success,2005
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(405)B | NROL-16 (Onyx),StatusRetired,,Success,2005
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas V 431 | Inmarsat-4 F1,StatusActive,130.0 ,Success,2005
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIIB | NROL-23 (Intruder 7A & 7B),StatusRetired,,Success,2005
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Deep Impact,StatusRetired,,Success,2005
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta IV Heavy | DemoSat and 3CS-1 & 2,StatusActive,350.0 ,Partial Failure,2004
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas V 521 | AMC-16,StatusActive,135.0 ,Success,2004
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7320-10C | Swift,StatusRetired,,Success,2004
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-13,StatusRetired,,Success,2004
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIAS | NROL-1,StatusRetired,,Success,2004
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925H | MESSENGER,StatusRetired,,Success,2004
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-12,StatusRetired,,Success,2004
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | AMC-11,StatusRetired,,Success,2004
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Superbird 6,StatusRetired,,Success,2004
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-11,StatusRetired,,Success,2004
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIIA | MBSat,StatusRetired,,Success,2004
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(402)B | DSP,StatusRetired,,Success,2004
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | AMC-10,StatusRetired,,Success,2004
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-10,StatusRetired,,Success,2003
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIIB | UHF F/O F11,StatusRetired,,Success,2003
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)B | NROL-19 (Mentor),StatusRetired,,Success,2003
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta IV Medium | DSCS-3 B6,StatusRetired,133.0 ,Success,2003
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7920H | Spitzer Space Telescope,StatusRetired,,Success,2003
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas V 521 | Rainbow 1,StatusActive,135.0 ,Success,2003
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925H | Opportunity,StatusRetired,,Success,2003
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Spirit,StatusRetired,,Success,2003
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas V 401 | HellasSat-2,StatusActive,109.0 ,Success,2003
+-80.5772,28.5623,Northrop,Cape Canaveral AFS,Pegasus XL | GALEX,StatusActive,40.0 ,Success,2003
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIIB | AsiaSat 4,StatusRetired,,Success,2003
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)B | Milstar DFS-6,StatusRetired,,Success,2003
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-9,StatusRetired,,Success,2003
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta IV Medium | DSCS-3 A3,StatusRetired,133.0 ,Success,2003
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-8,StatusRetired,,Success,2003
+-80.5772,28.5623,Northrop,Cape Canaveral AFS,Pegasus XL | SORCE,StatusActive,40.0 ,Success,2003
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | TDRS-J,StatusRetired,,Success,2002
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,"Delta IV Medium+ (4,2) | Eutelsat W5",StatusRetired,164.0 ,Success,2002
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Hispasat 1D,StatusRetired,,Success,2002
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas V 401 | Hot Bird 6,StatusActive,109.0 ,Success,2002
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7425 | CONTOUR,StatusRetired,,Success,2002
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | TDRS-I,StatusRetired,,Success,2002
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIIB | EchoStar VII,StatusRetired,,Success,2002
+-80.5772,28.5623,Northrop,Cape Canaveral AFS,Pegasus XL | RHESSI,StatusActive,40.0 ,Success,2002
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)B | Milstar DFS-5,StatusRetired,,Success,2002
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIAS | NROL-12,StatusRetired,,Success,2001
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7326 | Genesis Probe,StatusRetired,,Success,2001
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(402)B | DSP,StatusRetired,,Success,2001
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | GOES-M,StatusRetired,,Success,2001
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7425-10C | WMAP,StatusRetired,,Success,2001
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | ICO F2,StatusRetired,,Success,2001
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | NROL-17 (GeoLITE),StatusRetired,,Success,2001
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Mars Odyssey,StatusRetired,,Success,2001
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)B | Milstar DFS-4,StatusRetired,,Success,2001
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-7,StatusRetired,,Success,2001
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIAS | NROL-10,StatusRetired,,Success,2000
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-6,StatusRetired,,Success,2000
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | DSCS III-B11,StatusRetired,,Success,2000
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta III 8930 | DM F3,StatusRetired,,Success,2000
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-5,StatusRetired,,Success,2000
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Echostar 6,StatusRetired,,Success,2000
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | TDRS-H,StatusRetired,,Success,2000
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIIA | Eutelsat W4,StatusRetired,,Success,2000
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-4,StatusRetired,,Success,2000
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(402)B | DSP,StatusRetired,,Success,2000
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | GOES-L,StatusRetired,,Success,2000
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7920-10C | Globalstar 7,StatusRetired,,Success,2000
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Hispasat 1C,StatusRetired,,Success,2000
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | DSCS IIIB-8,StatusRetired,,Success,2000
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | UHF F10,StatusRetired,,Success,1999
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Echostar 5,StatusRetired,,Success,1999
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7420-10C | Globalstar 6,StatusRetired,,Success,1999
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-145 (GPS IIR-3),StatusRetired,,Success,1999
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7420-10C | Globalstar 5,StatusRetired,,Success,1999
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7420-10C | Globalstar 4,StatusRetired,,Success,1999
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7320-10C | FUSE,StatusRetired,,Success,1999
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7420-10C | Globalstar 3,StatusRetired,,Success,1999
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta III 8930 | Orion 3,StatusRetired,,Failure,1999
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)B | Milstar DFS-3m,StatusRetired,,Failure,1999
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Eutelsat W3,StatusRetired,,Success,1999
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(402)B | DSP,StatusRetired,,Failure,1999
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | JCSAT-6,StatusRetired,,Success,1999
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7426 | Stardust,StatusRetired,,Success,1999
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Athena I | ROCSAT 1,StatusRetired,,Success,1999
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7425 | Mars Polar Lander,StatusRetired,,Success,1999
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7425 | Mars Climate Orbiter,StatusRetired,,Success,1998
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | BONUM-1,StatusRetired,,Success,1998
+-80.5772,28.5623,Northrop,Cape Canaveral AFS,Pegasus | SCD-2,StatusRetired,40.0 ,Success,1998
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | UHF F9,StatusRetired,,Success,1998
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIA | Hot Bird 5,StatusRetired,,Success,1998
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta III 8930 | Galaxy 10,StatusRetired,,Failure,1998
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)A | NROL-7 (Mercury),StatusRetired,,Failure,1998
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Intelsat 805,StatusRetired,,Success,1998
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Thor III,StatusRetired,,Success,1998
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)B | NROL-6 (Mentor),StatusRetired,,Success,1998
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7920-10C | Globalstar-2,StatusRetired,,Success,1998
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas II | UHF F8,StatusRetired,,Success,1998
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Intelsat 806,StatusRetired,,Success,1998
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7420-10C | Globalstar-1,StatusRetired,,Success,1998
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | NROL-5/SDS,StatusRetired,,Success,1998
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Skynet 4D,StatusRetired,,Success,1998
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Athena II | Lunar Prospector,StatusRetired,,Success,1998
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Galaxy 8i,StatusRetired,,Success,1997
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)A | NROL-4 (Trumpet),StatusRetired,,Success,1997
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-134 (GPS IIA-19),StatusRetired,,Success,1997
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | DSCS IIIB-13,StatusRetired,,Success,1997
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)B | Cassini???Huygens,StatusRetired,,Success,1997
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Echostar 3,StatusRetired,,Success,1997
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | GE-3,StatusRetired,,Success,1997
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7920-8 | Advanced Composition Explorer,StatusRetired,,Success,1997
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Superbird C,StatusRetired,,Success,1997
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-132 (GPS IIR-2),StatusRetired,,Success,1997
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Telenor Thor II,StatusRetired,,Success,1997
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas I | GOES-K,StatusRetired,,Success,1997
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIA | Tempo 2,StatusRetired,,Success,1997
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(402)B | DSP,StatusRetired,,Success,1997
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | JCSAT-4,StatusRetired,,Success,1997
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | GPS IIR-1,StatusRetired,,Failure,1997
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIA | Inmarsat 3-F3,StatusRetired,,Success,1996
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Mars Pathfinder,StatusRetired,,Success,1996
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIA | Hot Bird 2,StatusRetired,,Success,1996
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Mars Global Surveyor,StatusRetired,,Success,1996
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-128 (GPS IIA-18),StatusRetired,,Success,1996
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIA | GE-1,StatusRetired,,Success,1996
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas II | UHF F7,StatusRetired,,Success,1996
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-126 (GPS IIA-17),StatusRetired,,Success,1996
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(405)A | SDS,StatusRetired,,Success,1996
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Galaxy 9,StatusRetired,,Success,1996
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas I | BeppoSAX,StatusRetired,,Success,1996
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)A | Mercury,StatusRetired,,Success,1996
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIA | Inmarsat 3-F1,StatusRetired,,Success,1996
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-117 (GPS IIA-16),StatusRetired,,Success,1996
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925-8 | NEAR,StatusRetired,,Success,1996
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Palapa C1,StatusRetired,,Success,1996
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Koreasat-2,StatusRetired,,Success,1996
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7920-10 | XTE,StatusRetired,,Success,1995
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | Galaxy 3R,StatusRetired,,Success,1995
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIAS | SOHO,StatusRetired,,Success,1995
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)A | Milstar DFS-2,StatusRetired,,Success,1995
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas II | USA-114 (UHF F6),StatusRetired,,Success,1995
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Koreasat 1,StatusRetired,,Partial Failure,1995
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | JCSAT-3,StatusRetired,,Success,1995
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | USA-113 (DSCS IIIB-7),StatusRetired,,Success,1995
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)A | Trumpet,StatusRetired,,Success,1995
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas II | USA-111 (UHF F5),StatusRetired,,Success,1995
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas I | GOES-J,StatusRetired,,Success,1995
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Titan IV(401)A | Mentor,StatusRetired,,Success,1995
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIA | AMSC-1,StatusRetired,,Success,1995
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Intelsat 705,StatusRetired,,Success,1995
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas II | USA-108 (UHF F4),StatusRetired,,Success,1995
+-80.5772,28.5623,ILS,Cape Canaveral AFS,Atlas IIAS | Intelsat 704,StatusRetired,,Success,1995
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IV(402)A | DSP,StatusRetired,,Success,1994
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | Orion 1,StatusRetired,,Success,1994
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925-10 | Wind,StatusRetired,,Success,1994
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIAS | Intelsat 703,StatusRetired,,Success,1994
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IV(401)A | Mercury,StatusRetired,,Success,1994
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas IIA | DBS-2,StatusRetired,,Success,1994
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas I | UHF F3,StatusRetired,,Success,1994
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IV(401)A | Trumpet,StatusRetired,,Success,1994
+-80.5772,28.5623,Lockheed,Cape Canaveral AFS,Atlas I | GOES-I,StatusRetired,,Success,1994
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925-8 | Galaxy 1R,StatusRetired,,Success,1994
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-100 (GPS IIA-15)/SEDS-2,StatusRetired,,Success,1994
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IV(401)A | Milstar DFS-1,StatusRetired,,Success,1994
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas IIAS | Telstar 401,StatusRetired,,Success,1993
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | NATO 4B,StatusRetired,,Success,1993
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas II | USA-97 (DSCS IIIB-10,StatusRetired,,Success,1993
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-96 (GPS IIA-14),StatusRetired,,Success,1993
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas I | UHF F2,StatusRetired,,Success,1993
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-94 (GPS IIA-13),StatusRetired,,Success,1993
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas II | USA-93 (DSCS IIIB-9),StatusRetired,,Success,1993
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-92 (GPS IIA-12)/PMG,StatusRetired,,Success,1993
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-91 (GPS IIA-11),StatusRetired,,Success,1993
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-90 (GPS IIA-10)/SEDS-1,StatusRetired,,Success,1993
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas I | UHF F1,StatusRetired,,Failure,1993
+-80.5772,28.5623,Northrop,Cape Canaveral AFS,Pegasus | SCD-1,StatusRetired,40.0 ,Success,1993
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-88 (GPS IIA-9),StatusRetired,,Success,1993
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-87 (GPS IIA-8),StatusRetired,,Success,1992
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-85 (GPS IIA-7),StatusRetired,,Success,1992
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | DFS Kopernikus 3,StatusRetired,,Success,1992
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Commercial Titan III | Mars Observer,StatusRetired,136.6 ,Success,1992
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-84 (GPS IIA-6),StatusRetired,,Success,1992
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas I | Galaxy 1R,StatusRetired,,Failure,1992
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | GEOTAIL,StatusRetired,,Success,1992
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Satcom C4,StatusRetired,,Success,1992
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-83 (GPS IIA-5),StatusRetired,,Success,1992
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas II | USA-82 (DSCS IIIB-12),StatusRetired,,Success,1992
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas IIA | Intelsat K,StatusRetired,,Success,1992
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6920-10 | EUVE,StatusRetired,,Success,1992
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Palapa B4,StatusRetired,,Success,1992
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-80 (GPS IIA-4),StatusRetired,,Success,1992
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-79 (GPS IIA-3),StatusRetired,,Success,1992
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas I | Galaxy 5,StatusRetired,,Success,1992
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas II | USA-78 (DSCS IIIB-14),StatusRetired,,Success,1992
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas II | Eutelsat 2F3,StatusRetired,,Success,1991
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-71 (GPS IIA-2),StatusRetired,,Success,1991
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | Aurora 2,StatusRetired,,Success,1991
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas I | Yuri 3H,StatusRetired,,Failure,1991
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | ASC-2 (Spacenet F4),StatusRetired,,Success,1991
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | Inmarsat-2 F2,StatusRetired,,Success,1991
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | NATO 4A,StatusRetired,,Success,1991
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 7925 | USA-66 (GPS IIA-1),StatusRetired,,Success,1990
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IV(402)A | DSP,StatusRetired,,Success,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | Inmarsat-2 F1,StatusRetired,,Success,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | Thor 1,StatusRetired,,Success,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | USA-63 (GPS II-8),StatusRetired,,Success,1990
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas I | CRRES,StatusRetired,,Success,1990
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Commercial Titan III | Intelsat 604,StatusRetired,136.6 ,Success,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta 4925-8 | INSAT 1D,StatusRetired,,Success,1990
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IV(405)A | SLDCOM & NOSS 3x,StatusRetired,,Success,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6920-10 | ROSAT,StatusRetired,,Success,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925-8 | Palapa B2R,StatusRetired,,Success,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | USA-54 (GPS II-7),StatusRetired,,Success,1990
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Commercial Titan III | Intelsat 603,StatusRetired,136.6 ,Failure,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6920-8 | LACE / RME,StatusRetired,,Success,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | USA-64 (GPS II-9),StatusRetired,,Success,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | USA-50 (GPS II-6),StatusRetired,,Success,1990
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Commercial Titan III | Skynet 4A & JCSAT-2,StatusRetired,136.6 ,Success,1990
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | NAVSTAR II-5,StatusRetired,,Success,1989
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-G Centaur-D1AR | FLTSATCOM-8,StatusRetired,,Success,1989
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan 34D | DSCS-II-16 & DSCS-III-A2,StatusRetired,,Success,1989
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | BSB-R1,StatusRetired,,Success,1989
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | NAVSTAR II-3,StatusRetired,,Success,1989
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IV(402)A | DSP,StatusRetired,,Success,1989
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | NAVSTAR II-2,StatusRetired,,Success,1989
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan 34D | USA-37 (Vortex),StatusRetired,,Success,1989
+-80.5772,28.5623,Douglas,Cape Canaveral AFS,Delta 3920-8 | Delta Star (USA 36),StatusRetired,,Success,1989
+-80.5772,28.5623,Boeing,Cape Canaveral AFS,Delta II 6925 | NAVSTAR II-1 (USA 35),StatusRetired,,Success,1989
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan 34D | USA-31 (Vortex),StatusRetired,,Partial Failure,1988
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan 34D | DSP-13,StatusRetired,,Success,1987
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-G Centaur-D1AR | FLTSATCOM-6,StatusRetired,,Failure,1987
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-G Centaur-D1AR | FLTSATCOM-7,StatusRetired,,Success,1986
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-G Centaur-D1AR | Intelsat V -512,StatusRetired,,Success,1985
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-G Centaur-D1AR | Intelsat V -511,StatusRetired,,Success,1985
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-G Centaur-D1AR | Intelsat V -510,StatusRetired,,Success,1985
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan 34D | DSP-12,StatusRetired,,Success,1984
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-G Centaur-D1AR | Intelsat V -509,StatusRetired,,Failure,1984
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan 34D | DSP-11,StatusRetired,,Success,1984
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan 34D | OPS-0441 (Vortex),StatusRetired,,Success,1984
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat V -506,StatusRetired,,Success,1983
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan 34D | DSCS-II-15 + DSCS-III-A1,StatusRetired,,Success,1982
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat V -505,StatusRetired,,Success,1982
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSP-10,StatusRetired,,Success,1982
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat V -504,StatusRetired,,Success,1982
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat V -503,StatusRetired,,Success,1981
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | OPS-4029 (Vortex),StatusRetired,,Success,1981
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | FLTSATCOM-5,StatusRetired,,Partial Failure,1981
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat V -501,StatusRetired,,Success,1981
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSP-9,StatusRetired,,Success,1981
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Comstar D4,StatusRetired,,Success,1981
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat V -502,StatusRetired,,Success,1980
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | FLTSATCOM-4,StatusRetired,,Success,1980
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | FLTSATCOM-3,StatusRetired,,Success,1980
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSCS-II 13&14,StatusRetired,,Success,1979
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | OPS-1948 (Vortex),StatusRetired,,Success,1979
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | HEAO-3,StatusRetired,,Success,1979
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSP-8,StatusRetired,,Success,1979
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | FLTSATCOM-2,StatusRetired,,Success,1979
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSCS-II 11&12,StatusRetired,,Success,1978
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | HEAO-2,StatusRetired,,Success,1978
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Pioneer Venus Multiprobe,StatusRetired,,Success,1978
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Comstar D3,StatusRetired,,Success,1978
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | OPS-9454 (vortex),StatusRetired,,Success,1978
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Pioneer Venus Orbiter,StatusRetired,,Success,1978
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3A Agena-D | OPS-8790 (Aquacade-4),StatusRetired,,Success,1978
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat 4A F6,StatusRetired,,Success,1978
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSCS-II 9&10,StatusRetired,,Failure,1978
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | FLTSATCOM-1,StatusRetired,,Success,1978
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat 4A F3,StatusRetired,,Success,1978
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3A Agena-D | OPS-4258 (Aquacade-3),StatusRetired,,Success,1977
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat 4A F5,StatusRetired,,Failure,1977
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IIIE | Voyager 1,StatusRetired,,Success,1977
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IIIE | Voyager 2,StatusRetired,,Success,1977
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | HEAO-1,StatusRetired,,Success,1977
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat 4A F4,StatusRetired,,Success,1977
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3A Agena-D | AFP-827 (Canyon-7),StatusRetired,,Success,1977
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSCS-II 7&8,StatusRetired,,Success,1977
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSP-7,StatusRetired,,Success,1977
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Comstar D2,StatusRetired,,Success,1976
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSP-6,StatusRetired,,Success,1976
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Comstar D1,StatusRetired,,Success,1976
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,"Titan III(23)C | LES-8, LES-9, Solrad-11a, Solrad-11b",StatusRetired,,Success,1976
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat 4A F2,StatusRetired,,Success,1976
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IIIE | Helios-2,StatusRetired,,Success,1976
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSP-5,StatusRetired,,Success,1975
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1AR | Intelsat 4A F1,StatusRetired,,Success,1975
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IIIE | Viking 2,StatusRetired,,Success,1975
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IIIE | Viking 1,StatusRetired,,Success,1975
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3A Agena-D | AFP-827 (Canyon-6),StatusRetired,,Success,1975
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1A | Intelsat 4 F1,StatusRetired,,Success,1975
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSCS-II 5&6,StatusRetired,,Failure,1975
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1A | Intelsat 4 F6,StatusRetired,,Failure,1975
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IIIE | Helios-1,StatusRetired,,Success,1974
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1A | Intelsat 4 F8,StatusRetired,,Success,1974
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | ATS-6,StatusRetired,,Success,1974
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IIIE | Sphinx & Viking-DS,StatusRetired,,Failure,1974
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSCS-II 3&4,StatusRetired,,Success,1973
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1A | Mariner 10,StatusRetired,,Success,1973
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1A | Intelsat 4 F7,StatusRetired,,Success,1973
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSP-4,StatusRetired,,Success,1973
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3D Centaur-D1A | Pioneer 11,StatusRetired,,Success,1973
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3A Agena-D | AFP-720 (Rhyolite-2),StatusRetired,,Success,1973
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3A Agena-D | AFP-827 (Canyon-5),StatusRetired,,Success,1972
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | OAO-3,StatusRetired,,Success,1972
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | Intelsat 4 F5,StatusRetired,,Success,1972
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | Pioneer 10,StatusRetired,,Success,1972
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSP-3,StatusRetired,,Success,1972
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | Intelsat 4 F4,StatusRetired,,Success,1972
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | Intelsat 4 F3,StatusRetired,,Success,1971
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3A Agena-D | AFP-827 (Canyon-4),StatusRetired,,Failure,1971
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSCS-II 1&2,StatusRetired,,Success,1971
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | Mariner 9,StatusRetired,,Success,1971
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | Mariner 8,StatusRetired,,Failure,1971
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | DSP-2,StatusRetired,,Success,1971
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | Intelsat 4 F2,StatusRetired,,Success,1971
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | OAO-B,StatusRetired,,Failure,1970
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan III(23)C | OPS-5960 (IMEWS-1/DSP-1),StatusRetired,,Partial Failure,1970
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3A Agena-D | AFP-827 (Canyon-3),StatusRetired,,Success,1970
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3A Agena-D | AFP-720 (Rhyolite-1),StatusRetired,,Success,1970
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IIIC | Vela 11 & 12,StatusRetired,,Success,1970
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | ATS-5,StatusRetired,,Success,1969
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,"Titan IIIC | OPS-6909, OPS-6911, OV5-5, OV5-6, OV5-9",StatusRetired,,Success,1969
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3A Agena-D | Canyon 2 (AFP-827),StatusRetired,,Success,1969
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | Mariner 7,StatusRetired,,Success,1969
+-80.5772,28.5623,General Dynamics,Cape Canaveral AFS,Atlas-SLV3C Centaur-D | Mariner 6,StatusRetired,,Success,1969
+-80.5772,28.5623,Martin Marietta,Cape Canaveral AFS,Titan IIIC | OPS-0757 (Tacsat),StatusRetired,,Success,1969
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 230+ | CRS NG-12,StatusActive,85.0 ,Success,2019
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 230 | CRS NG-11,StatusRetired,85.0 ,Success,2019
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 230 | CRS NG-10,StatusRetired,85.0 ,Success,2018
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 230 | CRS OA-9E,StatusRetired,85.0 ,Success,2018
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 230 | CRS OA-8E,StatusRetired,85.0 ,Success,2017
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 230 | CRS OA-5,StatusRetired,85.0 ,Success,2016
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 130 | CRS Orb-3,StatusRetired,80.0 ,Failure,2014
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 120 | CRS Orb-2,StatusRetired,80.0 ,Success,2014
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 120 | CRS Orb-1,StatusRetired,80.0 ,Success,2014
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Minotaur I | ORS-3,StatusActive,40.0 ,Success,2013
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 110 | CRS Orb-D1,StatusRetired,80.0 ,Success,2013
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Minotaur V | LADEE,StatusActive,55.0 ,Success,2013
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Antares 110 | Antares A-ONE,StatusRetired,80.0 ,Success,2013
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Minotaur I | ORS-1,StatusActive,40.0 ,Success,2011
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Minotaur I | TacSat-3 / PharmaSat / AeroCube 3 / HawkSat I / CP6,StatusActive,40.0 ,Success,2009
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Minotaur I | NFIRE,StatusActive,40.0 ,Success,2007
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Minotaur I | TacSat-2 & GeneSat-1,StatusActive,40.0 ,Success,2006
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Pegasus XL/HAPS | Orbcomm C1 - C8,StatusActive,40.0 ,Success,1998
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Pegasus XL/HAPS | Orbcomm B1 - B8,StatusActive,40.0 ,Success,1998
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Pegasus XL | SNOE & BATSAT,StatusActive,40.0 ,Success,1998
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Pegasus XL/HAPS | Orbcomm A1-A8,StatusActive,40.0 ,Success,1997
+-75.4661,37.9402,Northrop,Wallops Flight Facility,Pegasus XL | STEP-4,StatusActive,40.0 ,Success,1997
+-75.4661,37.9402,EER,Wallops Flight Facility,Conestoga-1620 | METEOR,StatusRetired,20.0 ,Failure,1995
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-12,StatusActive,,Success,2019
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-11,StatusActive,,Success,2019
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-10,StatusActive,,Success,2019
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-9 (Inflight Escape Test),StatusActive,,Success,2018
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-8,StatusActive,,Success,2018
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-7,StatusActive,,Success,2017
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-6 (Inflight Escape Test),StatusActive,,Success,2016
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-5,StatusActive,,Success,2016
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-4,StatusActive,,Success,2016
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-3,StatusActive,,Success,2016
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-2,StatusActive,,Success,2015
+-104.015,31.442,Blue Origin,West Texas,New Shepard | NS-1,StatusActive,,Success,2015
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 5 | RADARSAT Constellation,StatusActive,50.0 ,Success,2019
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta IV Heavy | NROL-71,StatusActive,350.0 ,Success,2019
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 5 | Iridium-8,StatusActive,50.0 ,Success,2019
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 5 | Spaceflight SSO-A,StatusActive,50.0 ,Success,2018
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 5 | SAOCOM 1A,StatusActive,50.0 ,Success,2018
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7420-10C | ICESat-2,StatusRetired,,Success,2018
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 5 | Iridium-7,StatusActive,50.0 ,Success,2018
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 4 | Iridium-6 & GRACE-FO,StatusRetired,62.0 ,Success,2018
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 401 | InSight,StatusActive,109.0 ,Success,2018
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 4 | Iridium-5,StatusRetired,62.0 ,Success,2018
+-120.6107,34.7378,SpaceX,Vandenberg AFB,"Falcon 9 Block 3 | PAZ & Tintin A, Tintin B",StatusRetired,62.0 ,Success,2018
+-120.6107,34.7378,ULA,Vandenberg AFB,"Delta IV Medium+ (5,2) | NROL-47",StatusRetired,,Success,2018
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 3 | Iridium-4,StatusRetired,62.0 ,Success,2017
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7920-10C | JPSS-1,StatusRetired,,Success,2017
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur C (Taurus) | SkySat & Flock-3m,StatusActive,45.0 ,Success,2017
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 4 | Iridium-3,StatusRetired,62.0 ,Success,2017
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 541 | NROL-42,StatusActive,145.0 ,Success,2017
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 3 | Formosat-5,StatusRetired,62.0 ,Success,2017
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 3 | Iridium-2,StatusRetired,62.0 ,Success,2017
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 401 | NROL-79,StatusActive,109.0 ,Success,2017
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 Block 3 | Iridium-1,StatusRetired,62.0 ,Success,2017
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 401 | WorldView-4,StatusActive,109.0 ,Success,2016
+-120.6107,34.7378,ULA,Vandenberg AFB,"Delta IV Medium+ (5,2) | NROL-45",StatusRetired,,Success,2016
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 v1.1 | Jason-3,StatusRetired,56.5 ,Success,2016
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 401 | NROL-55,StatusActive,109.0 ,Success,2015
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7320-10C | SMAP / ELaNa X,StatusRetired,,Success,2015
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 541 | NROL-35,StatusActive,145.0 ,Success,2014
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 401 | WorldView 3,StatusActive,109.0 ,Success,2014
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7320-10C | OCO-2,StatusRetired,,Success,2014
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 401 | DMSP-5D3 F19,StatusActive,109.0 ,Success,2014
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 501 | NROL-39,StatusActive,120.0 ,Success,2013
+-120.6107,34.7378,SpaceX,Vandenberg AFB,Falcon 9 v1.1 | CASSIOPE,StatusRetired,56.5 ,Success,2013
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta IV Heavy | NROL-65,StatusActive,350.0 ,Success,2013
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | IRIS,StatusActive,40.0 ,Success,2013
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 401 | Landsat 8,StatusActive,109.0 ,Success,2013
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 401 | NROL-36,StatusActive,109.0 ,Success,2012
+-120.6107,34.7378,ULA,Vandenberg AFB,"Delta IV Medium+ (5,2) | NROL-25",StatusRetired,,Success,2012
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7920-10C | Suomi NPP / ELaNa III,StatusRetired,,Success,2011
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7320-10C | SAC-D,StatusRetired,,Success,2011
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 411 | NROL-34,StatusActive,115.0 ,Success,2011
+-120.6107,34.7378,Northrop,Vandenberg AFB,"Minotaur C (Taurus) | Glory, KySat-1, Hermes, and Explorer-1 [PRIME]",StatusActive,45.0 ,Failure,2011
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur I | NROL-66,StatusActive,40.0 ,Success,2011
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta IV Heavy | NROL-49,StatusActive,350.0 ,Success,2011
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7420-10C | COSMO-4,StatusRetired,,Success,2010
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur IV | SBSS,StatusActive,46.0 ,Success,2010
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 501 | NROL-41,StatusActive,120.0 ,Success,2010
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7320-10C | WISE,StatusRetired,,Success,2009
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 401 | DMSP-5D3-F18,StatusActive,109.0 ,Success,2009
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7920-10C | WorldView-2,StatusRetired,,Success,2009
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7920-10C | STSS-ATRR,StatusRetired,,Success,2009
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur C (Taurus) | Orbiting Carbon Observatory,StatusActive,45.0 ,Failure,2009
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7320-10C | NOAA-N Prime,StatusRetired,,Success,2009
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7420-10C | COSMO-3,StatusRetired,,Success,2008
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7420-10C | GeoEye-1,StatusRetired,,Success,2008
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7320-10C | Jason-2,StatusRetired,,Success,2008
+-120.6107,34.7378,ULA,Vandenberg AFB,Atlas V 411 | NROL-28,StatusActive,115.0 ,Success,2008
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7420-10C | COSMO-2,StatusRetired,,Success,2007
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7920-10C | DigitalGlobe WorldView-1,StatusRetired,,Success,2007
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7420-10C | COSMO-SkyMed,StatusRetired,,Success,2007
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | AIM,StatusActive,40.0 ,Success,2007
+-120.6107,34.7378,ULA,Vandenberg AFB,Delta II 7920-10C | NROL-21,StatusRetired,,Success,2006
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta IV Medium | DMSP F17,StatusRetired,133.0 ,Success,2006
+-120.6107,34.7378,Boeing,Vandenberg AFB,"Delta IV Medium+ (4,2) | NROL-22",StatusRetired,164.0 ,Success,2006
+-120.6107,34.7378,Boeing,Vandenberg AFB,"Delta II 7420-10C | CloudSat, CALIPSO",StatusRetired,,Success,2006
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur I | COSMIC (FORMOSAT-3),StatusActive,40.0 ,Success,2006
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | ST-5,StatusActive,40.0 ,Success,2006
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan IV(404)B | NROL-20 (KH-11 Kennen),StatusRetired,,Success,2005
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur I | Streak (STP-R1),StatusActive,40.0 ,Success,2005
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7320-10C | NOAA-N,StatusRetired,,Success,2005
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | DART,StatusActive,40.0 ,Success,2005
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur I | XSS-11,StatusActive,40.0 ,Success,2005
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10L | Aura,StatusRetired,,Success,2004
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur C (Taurus) | ROCSAT-2,StatusActive,45.0 ,Success,2004
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | Gravity Probe B,StatusRetired,,Success,2004
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Atlas IIAS | NROL-18 (Intruder 6A & 6B),StatusRetired,,Success,2003
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan II(23)G | USA-172,StatusRetired,35.0 ,Success,2003
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | SCISAT-1,StatusActive,40.0 ,Success,2003
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | OrbView-3,StatusActive,40.0 ,Success,2003
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7320-10C | ICESat / CHIPSat,StatusRetired,,Success,2003
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan II(23)G | Coriolis,StatusRetired,35.0 ,Success,2003
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan II(23)G | NOAA-17,StatusRetired,35.0 ,Success,2002
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | Aqua,StatusRetired,,Success,2002
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | Iridium IS-1,StatusRetired,,Success,2002
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | Jason-1 / TIMED,StatusRetired,,Success,2001
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7320-10C | QuickBird,StatusRetired,,Success,2001
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan IV(404)B | NROL-14 (KH-11 Kennen),StatusRetired,,Success,2001
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur C (Taurus) | Orbview-4/QuikTOMS,StatusActive,45.0 ,Failure,2001
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Atlas IIAS | NROL-13 (Intruder FA & 5B),StatusRetired,,Success,2001
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7320-10C | EO-1 / SAC-C,StatusRetired,,Success,2000
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan II(23)G | NOAA-16,StatusRetired,35.0 ,Success,2000
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan IV(403)B | NROL-11 (Onyx),StatusRetired,,Success,2000
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur I | MightySat 2.1,StatusActive,40.0 ,Success,2000
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | TSX-5,StatusActive,40.0 ,Success,2000
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7326 | IMAGE,StatusRetired,,Success,2000
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur C (Taurus) | Multispectral Thermal Imager (MTI),StatusActive,45.0 ,Success,2000
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur I | JAWSat,StatusActive,40.0 ,Success,2000
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur C (Taurus) | KOMPSAT & ACRIMSAT,StatusActive,45.0 ,Success,1999
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Atlas IIAS | Terra,StatusRetired,,Success,1999
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan II(23)G | USA-147,StatusRetired,35.0 ,Success,1999
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL/HAPS | Orbcomm D1-D8,StatusActive,40.0 ,Success,1999
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Athena II | Ikonos 1,StatusRetired,,Success,1999
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan II(23)G | QuikSCAT,StatusRetired,35.0 ,Success,1999
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan IV(404)B | NROL-9 (Misty),StatusRetired,,Success,1999
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL/HAPS | TERRIERS & MUBLCOM,StatusActive,40.0 ,Success,1999
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Athena II | Ikonos,StatusRetired,,Failure,1999
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10 | Landsat 7,StatusRetired,,Success,1999
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | WIRE,StatusActive,40.0 ,Success,1999
+-120.6107,34.7378,Boeing,Vandenberg AFB,"Delta II 7920-10 | ARGOS (P91-1 ARGOS), ?örsted and SUNSAT",StatusRetired,,Success,1999
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | SWAS,StatusActive,40.0 ,Success,1998
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-11,StatusRetired,,Success,1998
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur C (Taurus) | STEX (NROL-8),StatusActive,45.0 ,Success,1998
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-10,StatusRetired,,Success,1998
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | Deep Space 1,StatusRetired,,Success,1998
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-9,StatusRetired,,Success,1998
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan II(23)G | NOAA-15,StatusRetired,35.0 ,Success,1998
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | TRACE,StatusActive,40.0 ,Success,1998
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-8,StatusRetired,,Success,1998
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-7,StatusRetired,,Success,1998
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur C (Taurus) | GFO & Orbcomm 11 and 12,StatusActive,45.0 ,Success,1998
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-6,StatusRetired,,Success,1997
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-5,StatusRetired,,Success,1997
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan IV(403)A | NROL-3 (Lacrosse),StatusRetired,,Success,1997
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-4,StatusRetired,,Success,1997
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | FORTE,StatusActive,40.0 ,Success,1997
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Athena I | Lewis,StatusRetired,,Success,1997
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-3,StatusRetired,,Success,1997
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-2,StatusRetired,,Success,1997
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10C | MS-1,StatusRetired,,Success,1997
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan II(23)G | USA-131,StatusRetired,35.0 ,Success,1997
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan IV(404)A | NROL-2 (KH-11 Kennen),StatusRetired,,Success,1996
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | HETE & SAC-B,StatusActive,40.0 ,Failure,1996
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | FAST,StatusActive,40.0 ,Success,1996
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | TOMS,StatusActive,40.0 ,Success,1996
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus | MSTI-3,StatusRetired,40.0 ,Success,1996
+-120.6107,34.7378,Lockheed,Vandenberg AFB,"Titan IV(403)A | SLDCOM, NOSS 3x, TiPS 2x",StatusRetired,,Success,1996
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10 | MSX,StatusRetired,,Success,1996
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | REX II,StatusActive,40.0 ,Success,1996
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7925-10 | Polar,StatusRetired,,Success,1996
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Titan IV(404)A | KH-11 Kennen,StatusRetired,,Success,1995
+-120.6107,34.7378,Boeing,Vandenberg AFB,Delta II 7920-10 | RADARSAT-1 and SURFSAT,StatusRetired,,Success,1995
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Athena I | GemStar 1,StatusRetired,,Failure,1995
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | STEP-3,StatusActive,40.0 ,Failure,1995
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus | Orbcomm F1 and F2 & OrbView-1,StatusRetired,40.0 ,Success,1995
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | DMSP F-13,StatusRetired,,Success,1995
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | NOAA-J,StatusRetired,,Success,1994
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | DMSP F-12,StatusRetired,,Success,1994
+-120.6107,34.7378,Northrop,Vandenberg AFB,Pegasus XL | STEP-1,StatusActive,40.0 ,Failure,1994
+-120.6107,34.7378,Northrop,Vandenberg AFB,Minotaur C (Taurus) | STEP Mission 0 & DARPASAT,StatusActive,45.0 ,Success,1994
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan II(23)G | Clementine,StatusRetired,35.0 ,Success,1994
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan II(23)G | Landsat 6,StatusRetired,35.0 ,Failure,1993
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | NOAA-I,StatusRetired,,Success,1993
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IV(403)A | SLDCOM & 3x NOSS,StatusRetired,,Failure,1993
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IV(404)A | KH-11 Kennen,StatusRetired,,Success,1992
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan II(23)G | USA-81,StatusRetired,35.0 ,Success,1992
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | DMSP F-11,StatusRetired,,Success,1991
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IV(403)A | SLDCOM & NOSS 3x,StatusRetired,,Success,1991
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | NOAA-D,StatusRetired,,Success,1991
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IV(403)A | Lacrosse,StatusRetired,,Success,1991
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | DMSP F-10,StatusRetired,,Success,1990
+-120.6107,34.7378,Lockheed,Vandenberg AFB,Atlas-E/F Altair | USA-56/57/58,StatusRetired,,Success,1990
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan II(23)G | USA-45,StatusRetired,35.0 ,Success,1989
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan 34D | USA-33 (KH-11),StatusRetired,,Success,1988
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | NOAA-H,StatusRetired,,Success,1988
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan II(23)G | USA-32,StatusRetired,35.0 ,Success,1988
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | DMSP 5D-2/F9,StatusRetired,,Success,1988
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan 34D | USA-27 (KH-11),StatusRetired,,Success,1987
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | DMSP 5D-2/F8,StatusRetired,,Success,1987
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-H MSD | NOSS-9,StatusRetired,,Success,1987
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Quasar 7,StatusRetired,,Success,1987
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | NOAA-G,StatusRetired,,Success,1986
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan 34D | KH-9,StatusRetired,,Failure,1986
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-H MSD | NOSS-8,StatusRetired,,Success,1986
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-2 | GPS-11,StatusRetired,,Success,1985
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan 34D | KH-11,StatusRetired,,Failure,1985
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F OIS | Geosat,StatusRetired,,Success,1985
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Quasar 6,StatusRetired,,Success,1985
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | NOAA-F,StatusRetired,,Success,1984
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan 34D | USA-6 (KH-11),StatusRetired,,Success,1984
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-2 | GPS-10,StatusRetired,,Success,1984
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Quasar 5,StatusRetired,,Success,1984
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan 34D | USA-2 (KH-9),StatusRetired,,Success,1984
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-2 | GPS-9,StatusRetired,,Success,1984
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 8424,StatusRetired,,Success,1984
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-H MSD | NOSS-7,StatusRetired,,Success,1984
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | DMSP 5D-2/F7,StatusRetired,,Success,1983
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Jumpseat 7,StatusRetired,,Success,1983
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-2 | GPS-8,StatusRetired,,Success,1983
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan 34D | OPS-0721 (KH-9),StatusRetired,,Success,1983
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-H MSD | NOSS-6,StatusRetired,,Success,1983
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 2925,StatusRetired,,Success,1983
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | NOAA-E,StatusRetired,,Success,1983
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-H MSD | NOSS-5,StatusRetired,,Success,1983
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | DMSP 5D-2/F6,StatusRetired,,Success,1982
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-11,StatusRetired,,Success,1982
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9 & SSF-D-4,StatusRetired,,Success,1982
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 2849,StatusRetired,,Success,1982
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-1 | GPS-7,StatusRetired,,Failure,1981
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-11,StatusRetired,,Success,1981
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | NOAA-C,StatusRetired,,Success,1981
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Jumpseat 6,StatusRetired,,Success,1981
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 1166,StatusRetired,,Success,1981
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Quasar 4,StatusRetired,,Success,1980
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F MSD | NOSS-4,StatusRetired,,Failure,1980
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9),StatusRetired,,Success,1980
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | NOAA-B,StatusRetired,,Failure,1980
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-1 | GPS-6,StatusRetired,,Success,1980
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F MSD | NOSS-3,StatusRetired,,Success,1980
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-1 | GPS-5,StatusRetired,,Success,1980
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-11,StatusRetired,,Success,1980
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | NOAA-A,StatusRetired,,Success,1979
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 7164,StatusRetired,,Success,1979
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9 & SSF-D-3,StatusRetired,,Success,1979
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F OIS | Solwind,StatusRetired,,Success,1979
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-1 | GPS-4,StatusRetired,,Success,1978
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-37S-ISS | Tiros-N,StatusRetired,,Success,1978
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-1 | GPS-3,StatusRetired,,Success,1978
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Quasar 3,StatusRetired,,Success,1978
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Agena D | Seasat,StatusRetired,,Success,1978
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-11,StatusRetired,,Success,1978
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-1 | GPS-2,StatusRetired,,Success,1978
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9 & SSF-D-2,StatusRetired,,Success,1978
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Jumpseat 5,StatusRetired,,Success,1978
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-1 | GPS-1,StatusRetired,,Success,1978
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F MSD | NOSS-2,StatusRetired,,Success,1977
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 7471,StatusRetired,,Success,1977
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9,StatusRetired,,Success,1977
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F SGS-1 | NTS-2,StatusRetired,,Success,1977
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 4915,StatusRetired,,Success,1977
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-11,StatusRetired,,Success,1976
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 8533,StatusRetired,,Success,1976
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Quasar 2,StatusRetired,,Success,1976
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,"Titan IIID | KH-9, S3 & SSF-D-1",StatusRetired,,Success,1976
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Quasar 1,StatusRetired,,Success,1976
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F MSD | NOSS-1,StatusRetired,,Success,1976
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 7600,StatusRetired,,Success,1976
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9 & S3,StatusRetired,,Success,1975
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 5499,StatusRetired,,Success,1975
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9 & SSF-C-5,StatusRetired,,Success,1975
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 4883,StatusRetired,,Success,1975
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Star-17A | P72-2,StatusRetired,,Failure,1975
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan III(34)B Agena-D | Jumpseat 4,StatusRetired,,Success,1975
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,"Titan IIID | KH-9, S3 & SSF-B-26",StatusRetired,,Success,1974
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 3004,StatusRetired,,Success,1974
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F PTS | P73-3,StatusRetired,,Success,1974
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 1776,StatusRetired,,Success,1974
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,"Titan IIID | KH-9, SSF-B-25, IRCB",StatusRetired,,Success,1974
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 6889,StatusRetired,,Success,1974
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,"Titan IIID | KH-9, SSF-B-24 & SSF-C-4",StatusRetired,,Success,1973
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 6275,StatusRetired,,Success,1973
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan-III(33)B Agena-D | Jumpseat 3,StatusRetired,,Success,1973
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9,StatusRetired,,Success,1973
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 4018,StatusRetired,,Failure,1973
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 2093,StatusRetired,,Success,1973
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9,StatusRetired,,Success,1973
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 3978,StatusRetired,,Success,1972
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9 & SSF-C-3,StatusRetired,,Success,1972
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F Burner | P72-1,StatusRetired,,Success,1972
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 8888,StatusRetired,,Success,1972
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9 & SSF-B-23,StatusRetired,,Success,1972
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 6574,StatusRetired,,Failure,1972
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 1678,StatusRetired,,Success,1972
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan-III(33)B Agena-D | Jumpseat 2,StatusRetired,,Failure,1972
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9 & SSF-B-22,StatusRetired,,Success,1972
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 7616,StatusRetired,,Success,1971
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(24)B | OPS 8607,StatusRetired,,Success,1971
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F OV1 | OV1-20 OV1-21,StatusRetired,,Success,1971
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan IIID | KH-9,StatusRetired,,Success,1971
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(23)B | OPS 7899,StatusRetired,,Success,1971
+-120.6107,34.7378,Martin Marietta,Vandenberg AFB,Titan-III(33)B Agena-D | Jumpseat 1,StatusRetired,,Success,1971
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(23)B | OPS 7776,StatusRetired,,Success,1971
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(23)B | OPS 7568,StatusRetired,,Success,1970
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(23)B | OPS 7874,StatusRetired,,Success,1970
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(23)B | OPS 6820,StatusRetired,,Success,1970
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(23)B | OPS 2863,StatusRetired,,Success,1970
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(23)B | OPS 6531,StatusRetired,,Success,1970
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(23)B | OPS 8455,StatusRetired,,Success,1969
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan III(23)B | OPS 7807,StatusRetired,,Success,1969
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan IIIB | OPS 1077,StatusRetired,59.0 ,Success,1969
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan IIIB | OPS 5310,StatusRetired,59.0 ,Success,1969
+-120.6107,34.7378,General Dynamics,Vandenberg AFB,Atlas-E/F OV1 | OV1-17/OV1-18/OV1-19,StatusRetired,,Success,1969
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan IIIB | OPS 4248,StatusRetired,59.0 ,Success,1969
+-120.6107,34.7378,US Air Force,Vandenberg AFB,Titan IIIB | OPS 7585,StatusRetired,59.0 ,Success,1969
+167.7316,9.3823,Northrop,Ronald Reagan Ballistic Missile Defense Test Site,Pegasus XL | NuSTAR,StatusActive,40.0 ,Success,2012
+167.7316,9.3823,SpaceX,Ronald Reagan Ballistic Missile Defense Test Site,Falcon 1 | RazakSat,StatusRetired,7.0 ,Success,2009
+167.7316,9.3823,Northrop,Ronald Reagan Ballistic Missile Defense Test Site,Pegasus XL | IBEX,StatusActive,40.0 ,Success,2008
+167.7316,9.3823,SpaceX,Ronald Reagan Ballistic Missile Defense Test Site,Falcon 1 | RatSat,StatusRetired,7.0 ,Success,2008
+167.7316,9.3823,SpaceX,Ronald Reagan Ballistic Missile Defense Test Site,Falcon 1 | Flight 3,StatusRetired,7.0 ,Failure,2008
+167.7316,9.3823,Northrop,Ronald Reagan Ballistic Missile Defense Test Site,Pegasus XL | C/NOFS,StatusActive,40.0 ,Success,2008
+167.7316,9.3823,SpaceX,Ronald Reagan Ballistic Missile Defense Test Site,Falcon 1 | DemoSat,StatusRetired,7.0 ,Failure,2007
+167.7316,9.3823,SpaceX,Ronald Reagan Ballistic Missile Defense Test Site,Falcon 1 | FalconSat-2,StatusRetired,7.0 ,Failure,2006
+167.7316,9.3823,Northrop,Ronald Reagan Ballistic Missile Defense Test Site,Pegasus | HETE 2,StatusRetired,40.0 ,Success,2000
+-152.3522,57.4377,Northrop,Pacific Spaceport Complex,Minotaur IV | TacSat-4,StatusActive,46.0 ,Success,2011
+-152.3522,57.4377,Northrop,Pacific Spaceport Complex,Minotaur IV | STP-S26,StatusActive,46.0 ,Success,2010
+-152.3522,57.4377,Lockheed,Pacific Spaceport Complex,Athena I | Starshine 3 & Others,StatusRetired,,Success,2001
+-117.8838,34.9056,Northrop,Edwards AFB,Pegasus | APEX,StatusRetired,40.0 ,Success,1994
+-117.8838,34.9056,Northrop,Edwards AFB,Pegasus/HAPS | STEP-2,StatusRetired,40.0 ,Partial Failure,1994
+-117.8838,34.9056,Northrop,Edwards AFB,Pegasus | ALEXIS,StatusRetired,40.0 ,Success,1993
+-117.8838,34.9056,Northrop,Edwards AFB,Pegasus/HAPS | 7 Microsats,StatusRetired,40.0 ,Partial Failure,1991
+-117.8838,34.9056,Northrop,Edwards AFB,Pegasus | Pegsat & NavySat,StatusRetired,40.0 ,Success,1990
