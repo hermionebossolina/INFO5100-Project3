@@ -1,4 +1,4 @@
-Longitude,Latitude,Company Name,Location,Detail,Status Rocket, Rocket,Status Mission,Year
+Longitude,Latitude,Company Name,Location,Detail,Status Rocket,Rocket,Status Mission,Year
 -80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon Heavy | STP-2,StatusActive,90.0 ,Success,2019
 -80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon Heavy | ArabSat 6A,StatusActive,90.0 ,Success,2019
 -80.6508,28.5721,SpaceX,Kennedy Space Center,Falcon 9 Block 5 | SpaceX Demo-1,StatusActive,50.0 ,Success,2019

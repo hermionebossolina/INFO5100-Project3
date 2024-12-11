@@ -1,0 +1,105 @@
+<html>
+    <body>
+        <head>
+            <script src="https://d3js.org/d3.v7.min.js"></script>
+        </head>
+        <p>
+            <svg id="rocket_success_failure" width="500" height="500"></svg>
+            
+            <script>
+                // I call the svg svg_sf to represent success failure acronymed in SF ;) 
+                let svg_sf = d3.select("svg#rocket_success_failure");
+                let width_sf = svg_sf.attr("width");
+                let height_sf = svg_sf.attr("height");
+                // Margin Bars defined here. We can adjust top, right, bottom, and left
+                let margin_bar_sf = { top: 20, right: 10, bottom: 50, left: 70 };
+                // Chart Width defined using the svg, width and height, and margin bars; right, left, up, and bottom.
+                let chartWidth_sf = width_sf - margin_bar_sf.left - margin_bar_sf.right;
+                let chartHeight_sf = height_sf - margin_bar_sf.top - margin_bar_sf.bottom;
+
+                // create annotations using "g" and append
+                let annotations_sf = svg_sf.append("g").attr("id", "annotations_sf");
+                // create chartArea
+                let chartArea_sf = svg_sf.append("g")
+                    .attr("id", "points_sf")
+                    .attr("transform", `translate(${margin_bar_sf.left},${margin_bar_sf.top})`);
+
+
+            // loading the data
+            d3.csv("space_mission_filter_usa.csv", d3.autoType).then(data => {
+
+                // I wanted to make a histogram that displays the frequency of each Mission 
+                // to categorize the groupings because the categories (called mission_stat) is a categorical variable I decided
+                // to make a dictionary to categorize the different counts.
+                // This was different from the previous histogram that I made in Project 2 because that one I binned based on numerical
+                // values, which makes more intuitive sense. Here I had to bin on categories of how many times a variable came.
+                // This graphic is static. While I could add mouseover to include each and every ship name for success it would be too many.
+                // https://www.geeksforgeeks.org/d3-js-rollup-method/
+                // used https://observablehq.com/@d3/d3-group's code: d3.rollup(athletes, v => v.length, d => d.sport) 
+                // this matched the groupby methods and dictionary methods that r and python, respectively, uses.
+                let bins = d3.rollups(
+                    data,
+                    v => v.length, // frequency of each category (called mission_stat)
+                    d => d["Status Mission"] // Group by Status Mission
+                ).map(([key, value]) => ({ mission_stat: key, count: value })); // wanted to create a dictionary like, which represents each of the four statuses
+
+                // Categorical data use band scale
+                let xScale = d3.scaleBand()
+                    .domain(bins.map(d => d.mission_stat))
+                    .range([0, chartWidth_sf])
+                    .padding(0.1); // add some spacing
+
+                let bottomAxis_sf = d3.axisBottom(xScale);
+                annotations_sf.append("g")
+                    .attr("class", "x axis")
+                    .attr("transform", `translate(${margin_bar_sf.left},${chartHeight_sf + margin_bar_sf.top + 10})`)
+                    .call(bottomAxis_sf);
+
+                // Frequency on y-axis
+                let yScale = d3.scaleLinear()
+                    .domain([0, d3.max(bins, d => d.count)]) // 0 to Largest count
+                    .range([chartHeight_sf, 0]);
+
+                let leftAxis_sf = d3.axisLeft(yScale);
+                annotations_sf.append("g")
+                    .attr("class", "y axis")
+                    .attr("transform", `translate(${margin_bar_sf.left - 10},${margin_bar_sf.top})`)
+                    .call(leftAxis_sf);
+
+                // creating the chart!
+                chartArea_sf.selectAll('rect.bar')
+                    .data(bins)
+                    .join('rect')
+                    .attr('class', 'bar')
+                    .attr("fill", "steelblue")
+                    .attr("x", d => xScale(d.mission_stat)) // Use mission_stat
+                    .attr("y", d => yScale(d.count)) // Use count for each mission_stat
+                    .attr("width", xScale.bandwidth()) 
+                    .attr("height", d => chartHeight_sf - yScale(d.count)); 
+
+                // Labels!
+                annotations_sf.append("text")
+                    .attr("class", "x axis-label")
+                    .attr("text-anchor", "middle")
+                    .attr("x", margin_bar_sf.left + chartWidth_sf / 2) // centering
+                    .attr("y", chartHeight_sf + margin_bar_sf.top + 50)
+                    .text("Mission Status");
+
+                annotations_sf.append("text")
+                        .attr("class", "y axis-label")
+                        .attr("text-anchor", "middle")
+                        .attr("x", -chartHeight_sf / 2) // Labels in center
+                        .attr("y", margin_bar_sf.left - 50) // I used the code from Project 2 and adjusted the Margin_bar and -34 to -50 to fit better
+                        .attr("transform", "rotate(-90)")
+                        .text("Frequency");
+            
+                annotations_sf.append("text")
+                        .attr("class", "main-title")
+                        .attr("text-anchor", "middle")
+                        .attr("x", margin_bar_sf.left + chartWidth_sf / 2)
+                        .attr("y", 15)
+                        .text("Rocket Mission Status");
+        });
+        </script>
+    </body>
+</html>
