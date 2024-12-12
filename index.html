@@ -5,31 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>US Outline Map</title>
     
-    <!-- Import D3.js -->
+    <!-- importing the all and powerful d3 -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
     
     <style>
+        /* styling for newspaper look */
         body {
-            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f9f9f9;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
         }
 
-        .state {
-            fill: lightgrey;
-            stroke: white;
-            stroke-width: 1;
+        h3, h5 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 3em;
+            margin-top: 20px;
+            border-bottom: solid;
+            border-color: #000;
+        }
+
+        h5 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #issue {
+            text-align: center;
+            font-size: 1em;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .slider-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0 auto;
+            max-width: 1400px;
+            padding: 20px;
+        }
+
+        .map {
+            flex: 3; 
+            text-align: left;
+            background-color: #e5e5e5;
+        }
+
+        .map svg {
+            width: 100%; 
+            max-width: 990px; 
+            padding-right: 20px;
+        }
+
+        .text-panel {
+            flex: 1; 
+            background-color: #e5e5e5;
+            padding: 50px;
+            border: 1px solid #ccc;
+            text-align: center;
+            max-width: 400px; 
+        }
+
+
+        #tooltip {
+            font-size: 0.9em;
+            font-family: 'Georgia', serif;
+            max-width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        #date{
+            border-bottom: solid;
+            border-color: #000;
+            vertical-align: center;
         }
     </style>
 </head>
 
 <body>
-    <h3>UFO Sightings and Rocket Launch Locations across America </h3>
-    <svg id="us-map" height="770" width="990" style="margin:20px"></svg>
+    <div class="header">
+        <h3>THE ROSWELL TIMES</h3>
+        <h5 id="date">December 14, 2024</h5>
+        <p id="issue">Issue No. 5100</p>
+    </div>
+
+    <div class="slider-container">
+        <input type="range" id="year-slider" min="1969" max="2019" value="1975" step="1">
+        <label id="year-label" for="year-slider"> Year: 1975</label>
+    </div>
+
+    <div class="content-row">
+        <!-- making map and text panel be in a horizontal flex -->
+        <div class="map">
+            <svg id="us-map" height="770" width="990"></svg>
+        </div>
+    
+        <!-- making text section for alien communication -->
+        <div class="text-panel">
+            <p><strong>Are aliens communicating with us?</strong></p>
+            <p>Blah Blah Blah</p>
+        </div>
+    </div>
+    <!-- tooltip so that we can have the hover over labels appear correctly -->
+    <div id="tooltip" style="display: none;"></div>
 
     <script>
         const svg = d3.select("#us-map");
@@ -42,93 +146,174 @@
         const map = svg.append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        const loadData = async function () {
-            // Load the US GeoJSON file
+        async function loadData() {
+            //loading in map data with async await function
             const usStates = await d3.json("data/states.json");
-            console.log("Data processed:", usStates);
+            console.log("Loaded correctly:", usStates); //checking loads well
 
             const states = usStates.features;
 
-            // Define the projection and path generator
+            //making projection to map the state lines
             const projection = d3.geoAlbersUsa()
                 .fitExtent([[margin.left, margin.top], [mapWidth, mapHeight]], { type: "FeatureCollection", features: states });
 
             const path = d3.geoPath().projection(projection);
 
-            // Render the state boundaries
+                    
+
+            //adding boundaries for the state paths
             map.selectAll("path.state")
                 .data(states)
                 .join("path")
                 .attr("class", "state")
-                .attr("d", path);
+                .attr("d", path) //creating zoom in feature for each state
+                .on("click", function (event, d) {
+                    const [[x0, y0], [x1, y1]] = path.bounds(d);
+                    const dx = x1 - x0; 
+                    const dy = y1 - y0; 
+                    const x = (x0 + x1) / 2; 
+                    const y = (y0 + y1) / 2; 
+                    const scale = Math.max(1, Math.min(8, 0.9 / Math.max(dx / mapWidth, dy / mapHeight))); 
+                    const translate = [mapWidth / 2 - scale * x, mapHeight / 2 - scale * y];
+
+                svg.transition()
+                    .duration(750)
+                    .call(
+                        zoom.transform,
+                        d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale)
+                    );
+        });
+
+            //adding drag capability
+            const zoom = d3.zoom()
+                .scaleExtent([1, 8]) //scale limits here
+                .translateExtent([[0, 0], [width, height]]) //drag area
+                .on("zoom", (event) => {
+                    map.attr("transform", event.transform); 
+                });
+
+            svg.call(zoom); 
 
 
+            //loading in actual UFO data and Space Mission data 
             const ufoData = await d3.csv("data/filtered_ufo_data.csv");
+            const rocketData = await d3.csv("data/space_mission_filter_usa.csv");
+
             console.log("UFO Data:", ufoData);
+            console.log("Rocket Data:", rocketData);
 
-            // Add circles for UFO sightings
-            map.selectAll("circle.ufo-circle")
-                .data(ufoData)
-                .join("circle")
-                .attr("class", "ufo-circle")
-                .attr("cx", d => {
-                    const coords = projection([+d.city_longitude, +d.city_latitude]);
-                    return coords ? coords[0] : null; // Check for valid projection
-                })
-                .attr("cy", d => {
-                    const coords = projection([+d.city_longitude, +d.city_latitude]);
-                    return coords ? coords[1] : null; // Check for valid projection
-                })
-                .attr("r", 2)
-                .attr("fill", "green")
-                .attr("opacity", 0.3);
+            //creating a slider to filter through the data per year
+            const slider = d3.select("#year-slider");
+            const label = d3.select("#year-label");
 
-       //     map.selectAll("image.ufo-icon")
-      //          .data(ufoData)
-      //          .join("image")
-       //         .attr("class", "ufo-icon")
-       //         .attr("x", d => {
-       //             const coords = projection([+d.city_longitude, +d.city_latitude]);
-       //             return coords ? coords[0] - 10 : null; // Adjust x to center the image
-       //         })
-       //         .attr("y", d => {
-       //             const coords = projection([+d.city_longitude, +d.city_latitude]);
-      //              return coords ? coords[1] - 10 : null; // Adjust y to center the image
-      //          })
-     //           .attr("width", 5) // Width of the image
-     //           .attr("height", 5) // Height of the image
-     //           .attr("xlink:href", "images/ufo.png"); // Path to the UFO image
+            const updateMap = (year) => {
+                //separating data to have year variable
+                const filteredUFOData = ufoData.filter(d => +d.date_time === year); //getting year from date_time
+                const filteredRocketData = rocketData.filter(d => +d.Year === year);
 
+                //appending our classic circles and making them green cause aliens
+                map.selectAll("circle.ufo-circle")
+                    .data(filteredUFOData)
+                    .join("circle")
+                    .attr("class", "ufo-circle")
+                    .attr("cx", d => {
+                        const coords = projection([+d.city_longitude, +d.city_latitude]);
+                        console.log("UFO Point Projection:", coords); // need to jitter due to overlap
+                        const jitterX = Math.random() * 60 - 5; //jitterbuggggg
+                        return coords ?  coords[0] - 12 + jitterX : null;
+                    })
 
+                    .attr("cy", d => {
+                        const coords = projection([+d.city_longitude, +d.city_latitude]);
+                        const jitterY = Math.random() * 60 - 5;
+                        return coords ? coords[1] - 12 + jitterY : null;
+                    })
+                    .attr("r", 2)
+                    .attr("fill", "green")
+                    .attr("opacity", 0.8)
+                    .on("mouseover", function (event, d) {
+                        // Show tooltip on hover
+                        d3.select("#tooltip")
+                            .style("display", "block")
+                            .html(`
+                                <strong>City:</strong> ${d.city}<br>
+                                <strong>State:</strong> ${d.state}<br>
+                                <strong>Encounter:</strong> ${d.summary}
+                            `);
+                        d3.select(this)
+                            .attr("r", 4) //expanding radius on mousover
+                            .attr("opacity", 1)
+                    })
+                    .on("mousemove", function (event) {
+                        d3.select("#tooltip")
+                            .style("left", (event.pageX + 10) + "px")
+                            .style("top", (event.pageY + 10) + "px");
+                    })
+                    .on("mouseout", function () {
+                        d3.select("#tooltip").style("display", "none");
+                        d3.select(this)
+                            .attr("r", 2)
+                            .attr("opacity", 0.8)
+                    });
 
+                //appending rocket data points (but making them look like actual rockets)
+                map.selectAll("image.rocket-icon")
+                    .data(filteredRocketData)
+                    .join("image")
+                    .attr("class", "rocket-icon")
+                    .attr("x", d => {
+                        const coords = projection([+d.Longitude, +d.Latitude]);
+                        const jitterX = Math.random() * 80 - 5; //jitterbuggggg
+                        return coords ? coords[0] - 12 + jitterX : null;
+                    })
+                    .attr("y", d => {
+                        const coords = projection([+d.Longitude, +d.Latitude]);
+                        const jitterY = Math.random() * 80 - 5; //jittering to reduce overlap
+                        return coords ? coords[1] - 12 + jitterY : null;
+                    })
+                    .attr("width", 12) // Width of the image
+                    .attr("height", 12) // Height of the image
+                    .attr("xlink:href", "images/rocket.png") //icon image taken from flaticon.com
+                    .on("mouseover", function (event, d) {
+                        d3.select("#tooltip")
+                            .style("display", "block")
+                            .html(`
+                                <strong>Company:</strong> ${d["Company Name"] || "No Data"}<br> 
+                                <strong>Rocket:</strong> ${d["Detail"] || "No Data"}<br>
+                                <strong>Location:</strong> ${d["Location"] || "No Data"}
+                            `);
+                        d3.select(this)
+                            .attr("width", 20) 
+                            .attr("height", 20) 
+                    })
+                    .on("mousemove", function (event) {
+                        d3.select("#tooltip")
+                            .style("left", `${event.pageX + 10}px`)
+                            .style("top", `${event.pageY + 10}px`);
+                    })
+                    .on("mouseout", function () {
+                        d3.select("#tooltip").style("display", "none");
+                        d3.select(this)
+                            .attr("width", 12) 
+                            .attr("height", 12) 
+                    });
+            };
 
-            const space_data = await d3.csv("data/space_mission_filter_usa.csv");
-            console.log("Space Data:", space_data);
+            //slider input listening
+            slider.on("input", function () {
+                const selectedYear = +this.value;
+                label.text(`Year: ${selectedYear}`);
+                updateMap(selectedYear);
+            });
 
-            map.selectAll("image.rocket-icon")
-                .data(space_data)
-                .join("image")
-                .attr("class", "rocket-icon")
-                .attr("x", d => {
-                    const coords = projection([+d.Longitude, +d.Latitude]);
-                    return coords ? coords[0] - 10 : null; // Adjust x to center the image
-                })
-                .attr("y", d => {
-                    const coords = projection([+d.Longitude, +d.Latitude]);
-                    return coords ? coords[1] - 10 : null; // Adjust y to center the image
-                })
-                .attr("width", 24) // Width of the image
-                .attr("height", 24) // Height of the image
-                .attr("xlink:href", "images/rocket.png"); // Path to the UFO image
-
-
-        };
-
+            updateMap(+slider.attr("value"));
+        }
 
         loadData();
     </script>
 </body>
 </html>
+
 
 
 
