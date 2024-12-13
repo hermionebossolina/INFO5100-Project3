@@ -30,31 +30,54 @@
             font-size: 3em;
             margin-top: 20px;
             border-bottom: solid;
+            border-top: solid;
             border-color: #000;
+            margin-bottom: 0;
+            padding-bottom: 0px;
         }
 
-        h5 {
-            font-size: 1.2em;
-            margin-bottom: 5px;
+        h4 {
+            font-size: 1.7em;
         }
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
+
+        p {
+            line-height: 1.8;
         }
+
+        /* MAP SECTION STYLING */
 
         #issue {
-            text-align: center;
-            font-size: 1em;
             font-style: italic;
-            margin-bottom: 20px;
+        }
+
+        #date {
+            font-style: italic;
+        }
+
+        #breaking-news {
+            font-style: italic;
+        }
+
+        .description {
+            border-bottom: solid;
+            border-color: #000;
+        }
+        .description-row {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin: 10px auto; 
+            text-align: center;
+            max-width: 900px; 
+        }
+
+        .description-row p {
+            margin: 0;
         }
 
         .slider-container {
             text-align: center;
-            margin-bottom: 20px;
+            margin-top: 40px;
         }
 
         .content-row {
@@ -63,13 +86,21 @@
             align-items: flex-start;
             margin: 0 auto;
             max-width: 1400px;
-            padding: 20px;
+            padding: 20px; /* placing svg in a flex row with text panel */
         }
 
+        #subtitle {
+            display: flex;
+            flex-direction: column; /* making the figure 1 subtitle appear under graph svg */
+        }
         .map {
             flex: 3; 
             text-align: left;
             background-color: #e5e5e5;
+            margin-right: 50px;
+            margin-left: -110px;
+            justify-content: left;
+
         }
 
         .map svg {
@@ -80,11 +111,14 @@
 
         .text-panel {
             flex: 1; 
-            background-color: #e5e5e5;
-            padding: 50px;
+            margin-right: -100px;
             border: 1px solid #ccc;
-            text-align: center;
-            max-width: 400px; 
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 600px; 
+            min-width: 500px;
+
         }
 
 
@@ -100,40 +134,219 @@
             border-radius: 4px;
         }
 
-        #date{
-            border-bottom: solid;
-            border-color: #000;
-            vertical-align: center;
+        
+        /* WORD CLOUD SECTION STYLING */
+
+        #interaction-section {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #interaction-description {
+            margin-left: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 1px solid #ccc;
+
+        }
+
+        .cloud-container {
+            background-color: #ccc;
+            margin-left: 100px;
+        }
+
+        /* MOVIE SECTION STYLING */
+
+        #movie-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #movie-description {
+            margin-left: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 30px;
+            margin-right: 100px;
+            border: 1px solid #ccc;
+
+        }
+
+        #movie-container {
+            background-color: #ccc;
+            justify-content: center;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        /* EXPENSE SECTION STYLING */
+
+        #expense-section {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-right: 100px;
+
+        }
+
+        #expense-description {
+            border: 1px solid #ccc;
+            margin-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        #hist-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        #hist-one-container {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+
+        }
+
+        #hist-one {
+            background-color: #ccc;
+
+        }
+
+        #hist-two-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px
+        }
+
+        #hist-two {
+            background-color: #ccc;
+        }
+
+        /* CONCLUSION SECTION STYLING */
+
+        #conclusion-container {
+            margin-right: 100px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+        }
+
+        #conclusion {
+            border: 1px solid #ccc;
+            padding-left: 20px;
+            padding-right: 20px;
         }
     </style>
 </head>
 
 <body>
+
     <div class="header">
+        <div class="horizontal-line"></div>
         <h3>THE ROSWELL TIMES</h3>
-        <h5 id="date">December 14, 2024</h5>
-        <p id="issue">Issue No. 5100</p>
+        <div class="horizontal-line"></div>
+    </div>
+    
+    <div class="description">
+        <div class="description-row">
+            <p id="date">December 14, 2024</p>
+            <p id="breaking-news">Breaking News of Today</p>
+            <p id="issue">Issue No. 5100</p>
+        </div>
     </div>
 
-    <div class="slider-container">
-        <input type="range" id="year-slider" min="1969" max="2019" value="1975" step="1">
-        <label id="year-label" for="year-slider"> Year: 1975</label>
-    </div>
+
 
     <div class="content-row">
         <!-- making map and text panel be in a horizontal flex -->
-        <div class="map">
-            <svg id="us-map" height="770" width="990"></svg>
+        <div id = "subtitle">
+            <div class="map">
+                <div class="slider-container">
+                    <input type="range" id="year-slider" min="1969" max="2019" value="1975" step="1">
+                    <label id="year-label" for="year-slider"> Year: 1975</label>
+                </div>
+                <svg id="us-map" height="770" width="990"></svg>
+            </div>
+
+            <p> <em> Figure 1: USA Map of UFO Sightings (Green dots) and Space Launches (Rockets) from 1969-2019 </em> </p>
+
         </div>
-    
+        
         <!-- making text section for alien communication -->
         <div class="text-panel">
-            <p><strong>Are aliens communicating with us?</strong></p>
-            <p>Blah Blah Blah</p>
+            <h4><strong>Are Aliens Communicating with Us?</strong></h4>
+            <p> <em> by writer and certified UFO chaser, Jillian Beck </em></p>
+            <p> Since the beginning of civilization, humans have looked to the stars for meaning. From seeing stories painted in the sky, to methods of navigation, or to new horizons to be explored - the night sky has always held a promise of something more. But could it be that we are not the only ones who have looked up and dreamed of exploration? On July 20 of 1969, Neil Armstrong famously declared, <em> "One large step for man; One giant leap for mankind" </em> as he walked the first path ever made on the lunar surface. Though the Apollo 11 mission was not the first of humanity to ever reach space, that title is owned by Russia's Sputnik 1 in 1957, the moon landing did mark a revolutionary time in space exploration and human history. In fact, it may have even been the event that finally put Earth on the map for our extraterrestrial neighbors!  </p>
+
+            <p> When examining UFO sightings across time, we can see these alien encounters move from practically no sightings to some, to dozens, and then hundreds from 1969 and beyond. Is it possible that our first big space adventure finally boosted humanity as a force to associate with in the extraterrestrial league? On the left, we have a map of all UFO sightings and space mission launches in the United States from 1969 to 2019. Use the slider to explore how as our space missions advance, so do the sightings of our ET friendly neighbors. </p>
         </div>
     </div>
     <!-- tooltip so that we can have the hover over labels appear correctly -->
     <div id="tooltip" style="display: none;"></div>
+
+    <div id = "interaction-section">
+
+        <div id = "interaction-description">
+            <h4><strong>A Glimpse into Our Alien Interactions</strong></h4>
+            <p> <em> by editor and shape-enthusiest, Hrishika Jotwani </em></p>
+            <p> blah blah blah talk about shapes yada yada ya </p>
+        </div>
+
+        <div class="cloud-container"> 
+            <p> word cloud goes here <p>
+            <svg id="word-cloud" height="300" width="900"></svg>
+        </div>
+    </div>
+
+    <div id = "movie-section"> 
+
+        <div id = "movie-description">
+            <h4><strong>How has Alien Contact Influenced Our Media? </strong></h4>
+            <p> <em> by director and film-expert, Hung Ming Tseng </em></p>
+            <p> blah blah blah talk about movies and top hits blah </p>
+        </div>
+
+        <div id ="movie-container"> 
+            <p> movie graph goes here <p>
+            <svg id="movie" height="300" width="400"></svg>
+        </div>
+
+    </div>
+
+    <div id = "expense-section"> 
+        <div id = "expense-description">
+            <h4><strong>How Much is Alien Communication Costing? </strong></h4>
+            <p> <em> by CFO and UFO-Wizard, Hermione Bossolina </em></p>
+            <p> initial description of section goes here</p>
+        </div>
+        
+        <div id = "hist-container">
+            <div id = "hist-one-container">
+                <svg id="hist-one" height="200" width="200"> </svg>
+                <p> insert hist one description here</p>
+            </div>
+
+            <div id="hist-two-container">
+                <svg id="hist-two" height="200" width="200"> </svg>
+                <p> insert hist two description here</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="conclusion-container">
+        <div id = "conclusion"> 
+            <h4><strong>When Will We Talk With Them Next? </strong></h4>
+            <p> <em> "So-Long! And thanks for all the fish..." </em></p>
+            <p> initial conclusion here </p>
+        </div>
+ 
+    </div>
 
     <script>
         const svg = d3.select("#us-map");
