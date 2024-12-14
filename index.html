@@ -349,7 +349,10 @@
             <p>
                 <svg id="space_movie_chart" height="450" width="800"></svg>
 
+
         </div>
+
+
 
     </div>
 
@@ -566,9 +569,10 @@
         const svg2 = d3.select("svg#space_movie_chart");
         const poster = d3.select("svg#poster");
 
+
         const width2 = svg2.attr("width");
         const height2 = svg2.attr("height");
-        const margin2 = { top: 30, right: 90, bottom: 40, left: 40 };
+        const margin2 = { top: 30, right: 90, bottom: 70, left: 80 };
         const chartWidth2 = width2 - margin2.left - margin2.right;
         const chartHeight2 = height2 - margin2.top - margin2.bottom;
 
@@ -627,6 +631,17 @@
                 .attr("transform", `translate(${margin2.left - 10},${margin2.top})`)
                 .call(leftGridlines);
 
+            // Add the y-axis label
+            annotations.append("text")
+                .attr("class", "y-axis-label")
+                .attr("transform", "rotate(-90)")  // Rotate the label to make it vertical
+                .attr("y", margin2.left - 50)      // Position it along the left side
+                .attr("x", (-chartHeight2 / 2))      // Center it vertically
+                .style("text-anchor", "middle")    // Align it in the middle
+                .style("font-size", "12px")        // Set the font size to 12px
+                .text("Space Missions Count");             // Set the label text
+
+
             // X axis
             // Second, we need to spread dates across the X axis
             // Since we made JS date objects, we can use the usual D3 functions and a .scaleTime()
@@ -644,6 +659,15 @@
                 .attr("class", "x gridlines")
                 .attr("transform", `translate(${margin2.left},${chartHeight2 + margin2.top + 10})`)
                 .call(bottomGridlines);
+
+            // Add the x-axis label
+            annotations.append("text")
+                .attr("class", "x-axis-label")
+                .attr("transform", `translate(${chartWidth2 / 2 + margin2.left}, ${chartHeight2 + margin2.top + 50})`)  // Position the label below the axis
+                .style("text-anchor", "middle")  // Align the text in the center
+                .style("font-size", "12px")      // Set the font size to 12px
+                .text("Year");                   // Set the label text
+
 
             var lineGen = d3.line()
                 .x(d => dateScale(d['date']))
