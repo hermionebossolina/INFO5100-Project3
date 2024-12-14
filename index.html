@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>US Outline Map</title>
-    
+
     <!-- importing the all and powerful d3 -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    
+
     <style>
         /* styling for newspaper look */
         body {
@@ -19,7 +20,8 @@
             line-height: 1.6;
         }
 
-        h3, h5 {
+        h3,
+        h5 {
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
             text-transform: uppercase;
@@ -62,13 +64,14 @@
             border-bottom: solid;
             border-color: #000;
         }
+
         .description-row {
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            margin: 10px auto; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px auto;
             text-align: center;
-            max-width: 900px; 
+            max-width: 900px;
         }
 
         .description-row p {
@@ -86,15 +89,18 @@
             align-items: flex-start;
             margin: 0 auto;
             max-width: 1400px;
-            padding: 20px; /* placing svg in a flex row with text panel */
+            padding: 20px;
+            /* placing svg in a flex row with text panel */
         }
 
         #subtitle {
             display: flex;
-            flex-direction: column; /* making the figure 1 subtitle appear under graph svg */
+            flex-direction: column;
+            /* making the figure 1 subtitle appear under graph svg */
         }
+
         .map {
-            flex: 3; 
+            flex: 3;
             text-align: left;
             background-color: #e5e5e5;
             margin-right: 50px;
@@ -104,19 +110,19 @@
         }
 
         .map svg {
-            width: 100%; 
-            max-width: 990px; 
+            width: 100%;
+            max-width: 990px;
             padding-right: 20px;
         }
 
         .text-panel {
-            flex: 1; 
+            flex: 1;
             margin-right: -100px;
             border: 1px solid #ccc;
             text-align: left;
             padding-left: 20px;
             padding-right: 20px;
-            max-width: 600px; 
+            max-width: 600px;
             min-width: 500px;
 
         }
@@ -134,7 +140,7 @@
             border-radius: 4px;
         }
 
-        
+
         /* WORD CLOUD SECTION STYLING */
 
         #interaction-section {
@@ -179,6 +185,14 @@
             margin-top: 30px;
             margin-left: 100px;
             margin-right: 100px;
+        }
+
+        .gridlines .domain {
+            display: none;
+        }
+
+        .gridlines line {
+            stroke: #aaa;
         }
 
         /* EXPENSE SECTION STYLING */
@@ -251,7 +265,7 @@
         <h3>THE ROSWELL TIMES</h3>
         <div class="horizontal-line"></div>
     </div>
-    
+
     <div class="description">
         <div class="description-row">
             <p id="date">December 14, 2024</p>
@@ -264,7 +278,7 @@
 
     <div class="content-row">
         <!-- making map and text panel be in a horizontal flex -->
-        <div id = "subtitle">
+        <div id="subtitle">
             <div class="map">
                 <div class="slider-container">
                     <input type="range" id="year-slider" min="1969" max="2019" value="1975" step="1">
@@ -273,60 +287,76 @@
                 <svg id="us-map" height="770" width="990"></svg>
             </div>
 
-            <p> <em> Figure 1: USA Map of UFO Sightings (Green dots) and Space Launches (Rockets) from 1969-2019 </em> </p>
+            <p> <em> Figure 1: USA Map of UFO Sightings (Green dots) and Space Launches (Rockets) from 1969-2019 </em>
+            </p>
 
         </div>
-        
+
         <!-- making text section for alien communication -->
         <div class="text-panel">
             <h4><strong>Are Aliens Communicating with Us?</strong></h4>
             <p> <em> by writer and certified UFO chaser, Jillian Beck </em></p>
-            <p> Since the beginning of civilization, humans have looked to the stars for meaning. From seeing stories painted in the sky, to methods of navigation, or to new horizons to be explored - the night sky has always held a promise of something more. But could it be that we are not the only ones who have looked up and dreamed of exploration? On July 20 of 1969, Neil Armstrong famously declared, <em> "One large step for man; One giant leap for mankind" </em> as he walked the first path ever made on the lunar surface. Though the Apollo 11 mission was not the first of humanity to ever reach space, that title is owned by Russia's Sputnik 1 in 1957, the moon landing did mark a revolutionary time in space exploration and human history. In fact, it may have even been the event that finally put Earth on the map for our extraterrestrial neighbors!  </p>
+            <p> Since the beginning of civilization, humans have looked to the stars for meaning. From seeing stories
+                painted in the sky, to methods of navigation, or to new horizons to be explored - the night sky has
+                always held a promise of something more. But could it be that we are not the only ones who have looked
+                up and dreamed of exploration? On July 20 of 1969, Neil Armstrong famously declared, <em> "One large
+                    step for man; One giant leap for mankind" </em> as he walked the first path ever made on the lunar
+                surface. Though the Apollo 11 mission was not the first of humanity to ever reach space, that title is
+                owned by Russia's Sputnik 1 in 1957, the moon landing did mark a revolutionary time in space exploration
+                and human history. In fact, it may have even been the event that finally put Earth on the map for our
+                extraterrestrial neighbors! </p>
 
-            <p> When examining UFO sightings across time, we can see these alien encounters move from practically no sightings to some, to dozens, and then hundreds from 1969 and beyond. Is it possible that our first big space adventure finally boosted humanity as a force to associate with in the extraterrestrial league? On the left, we have a map of all UFO sightings and space mission launches in the United States from 1969 to 2019. Use the slider to explore how as our space missions advance, so do the sightings of our ET friendly neighbors. </p>
+            <p> When examining UFO sightings across time, we can see these alien encounters move from practically no
+                sightings to some, to dozens, and then hundreds from 1969 and beyond. Is it possible that our first big
+                space adventure finally boosted humanity as a force to associate with in the extraterrestrial league? On
+                the left, we have a map of all UFO sightings and space mission launches in the United States from 1969
+                to 2019. Use the slider to explore how as our space missions advance, so do the sightings of our ET
+                friendly neighbors. </p>
         </div>
     </div>
     <!-- tooltip so that we can have the hover over labels appear correctly -->
     <div id="tooltip" style="display: none;"></div>
 
-    <div id = "interaction-section">
+    <div id="interaction-section">
 
-        <div id = "interaction-description">
+        <div id="interaction-description">
             <h4><strong>A Glimpse into Our Alien Interactions</strong></h4>
             <p> <em> by editor and shape-enthusiest, Hrishika Jotwani </em></p>
             <p> blah blah blah talk about shapes yada yada ya </p>
         </div>
 
-        <div class="cloud-container"> 
-            <p> word cloud goes here <p>
-            <svg id="word-cloud" height="300" width="900"></svg>
+        <div class="cloud-container">
+            <p> word cloud goes here
+            <p>
+                <svg id="word-cloud" height="300" width="900"></svg>
         </div>
     </div>
 
-    <div id = "movie-section"> 
+    <div id="movie-section">
 
-        <div id = "movie-description">
+        <div id="movie-description">
             <h4><strong>How has Alien Contact Influenced Our Media? </strong></h4>
             <p> <em> by director and film-expert, Hung Ming Tseng </em></p>
             <p> blah blah blah talk about movies and top hits blah </p>
         </div>
 
-        <div id ="movie-container"> 
-            <p> movie graph goes here <p>
-            <svg id="movie" height="300" width="400"></svg>
+        <div id="movie-container">
+            <p> Space Missions Count vs. Top Sci-fi Movies
+            <p>
+                <svg id="space_movie_chart" height="400" width="700"></svg>
         </div>
 
     </div>
 
-    <div id = "expense-section"> 
-        <div id = "expense-description">
+    <div id="expense-section">
+        <div id="expense-description">
             <h4><strong>How Much is Alien Communication Costing? </strong></h4>
             <p> <em> by CFO and UFO-Wizard, Hermione Bossolina </em></p>
             <p> initial description of section goes here</p>
         </div>
-        
-        <div id = "hist-container">
-            <div id = "hist-one-container">
+
+        <div id="hist-container">
+            <div id="hist-one-container">
                 <svg id="hist-one" height="200" width="200"> </svg>
                 <p> insert hist one description here</p>
             </div>
@@ -340,12 +370,12 @@
     </div>
 
     <div id="conclusion-container">
-        <div id = "conclusion"> 
+        <div id="conclusion">
             <h4><strong>When Will We Talk With Them Next? </strong></h4>
             <p> <em> "So-Long! And thanks for all the fish..." </em></p>
             <p> initial conclusion here </p>
         </div>
- 
+
     </div>
 
     <script>
@@ -372,7 +402,7 @@
 
             const path = d3.geoPath().projection(projection);
 
-                    
+
 
             //adding boundaries for the state paths
             map.selectAll("path.state")
@@ -382,30 +412,30 @@
                 .attr("d", path) //creating zoom in feature for each state
                 .on("click", function (event, d) {
                     const [[x0, y0], [x1, y1]] = path.bounds(d);
-                    const dx = x1 - x0; 
-                    const dy = y1 - y0; 
-                    const x = (x0 + x1) / 2; 
-                    const y = (y0 + y1) / 2; 
-                    const scale = Math.max(1, Math.min(8, 0.9 / Math.max(dx / mapWidth, dy / mapHeight))); 
+                    const dx = x1 - x0;
+                    const dy = y1 - y0;
+                    const x = (x0 + x1) / 2;
+                    const y = (y0 + y1) / 2;
+                    const scale = Math.max(1, Math.min(8, 0.9 / Math.max(dx / mapWidth, dy / mapHeight)));
                     const translate = [mapWidth / 2 - scale * x, mapHeight / 2 - scale * y];
 
-                svg.transition()
-                    .duration(750)
-                    .call(
-                        zoom.transform,
-                        d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale)
-                    );
-        });
+                    svg.transition()
+                        .duration(750)
+                        .call(
+                            zoom.transform,
+                            d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale)
+                        );
+                });
 
             //adding drag capability
             const zoom = d3.zoom()
                 .scaleExtent([1, 8]) //scale limits here
                 .translateExtent([[0, 0], [width, height]]) //drag area
                 .on("zoom", (event) => {
-                    map.attr("transform", event.transform); 
+                    map.attr("transform", event.transform);
                 });
 
-            svg.call(zoom); 
+            svg.call(zoom);
 
 
             //loading in actual UFO data and Space Mission data 
@@ -433,7 +463,7 @@
                         const coords = projection([+d.city_longitude, +d.city_latitude]);
                         console.log("UFO Point Projection:", coords); // need to jitter due to overlap
                         const jitterX = Math.random() * 60 - 5; //jitterbuggggg
-                        return coords ?  coords[0] - 12 + jitterX : null;
+                        return coords ? coords[0] - 12 + jitterX : null;
                     })
 
                     .attr("cy", d => {
@@ -496,8 +526,8 @@
                                 <strong>Location:</strong> ${d["Location"] || "No Data"}
                             `);
                         d3.select(this)
-                            .attr("width", 20) 
-                            .attr("height", 20) 
+                            .attr("width", 20)
+                            .attr("height", 20)
                     })
                     .on("mousemove", function (event) {
                         d3.select("#tooltip")
@@ -507,8 +537,8 @@
                     .on("mouseout", function () {
                         d3.select("#tooltip").style("display", "none");
                         d3.select(this)
-                            .attr("width", 12) 
-                            .attr("height", 12) 
+                            .attr("width", 12)
+                            .attr("height", 12)
                     });
             };
 
@@ -523,12 +553,245 @@
         }
 
         loadData();
+
+
+        //Hung Ming: Space missions vs. Movies
+
+        const svg2 = d3.select("svg#space_movie_chart");
+        const width2 = svg2.attr("width");
+        const height2 = svg2.attr("height");
+        const margin2 = { top: 10, right: 10, bottom: 50, left: 50 };
+        const chartWidth2 = width2 - margin2.left - margin2.right;
+        const chartHeight2 = height2 - margin2.top - margin2.bottom;
+
+        let annotations = svg2.append("g").attr("id", "annotations");
+        let chartArea = svg2.append("g").attr("id", "points")
+            .attr("transform", `translate(${margin2.left},${margin2.top})`);
+
+        d3.csv("../data/missions_by_year.csv", d3.autoType)
+            .then((data) => {
+
+                console.log("mission_by_year")
+                //console.log(data);
+
+                const timeParser = d3.timeParse('%Y');
+                data.forEach(d => {
+                    d['date'] = timeParser(d["Year"]);
+                });
+
+                console.log(data);
+
+
+
+                // 2. Scales, axes, and gridlines
+
+                // Y axis
+                //  First one is easy
+                const carbonExtent = d3.extent(data, d => d['MissionCount']);
+                const carbonScale = d3.scaleLinear().domain(carbonExtent).range([chartHeight2, 0]);
+                let leftAxis = d3.axisLeft(carbonScale)
+                let leftGridlines = d3.axisLeft(carbonScale)
+                    .tickSize(-chartWidth2 - 10)
+                    .tickFormat("")
+                annotations.append("g")
+                    .attr("class", "y axis")
+                    .attr("transform", `translate(${margin2.left - 10},${margin2.top})`)
+                    .call(leftAxis)
+                annotations.append("g")
+                    .attr("class", "y gridlines")
+                    .attr("transform", `translate(${margin2.left - 10},${margin2.top})`)
+                    .call(leftGridlines);
+
+                // X axis
+                // Second, we need to spread dates across the X axis
+                // Since we made JS date objects, we can use the usual D3 functions and a .scaleTime()
+                const dateExtent = d3.extent(data, d => d['date']);
+                const dateScale = d3.scaleTime().domain(dateExtent).range([0, chartWidth2]);
+                let bottomAxis = d3.axisBottom(dateScale)
+                let bottomGridlines = d3.axisBottom(dateScale)
+                    .tickSize(-chartHeight2 - 10)
+                    .tickFormat("")
+                annotations.append("g")
+                    .attr("class", "x axis")
+                    .attr("transform", `translate(${margin2.left},${chartHeight2 + margin2.top + 10})`)
+                    .call(bottomAxis);
+                annotations.append("g")
+                    .attr("class", "x gridlines")
+                    .attr("transform", `translate(${margin2.left},${chartHeight2 + margin2.top + 10})`)
+                    .call(bottomGridlines);
+
+                var lineGen = d3.line()
+                    .x(d => dateScale(d['date']))
+                    .y(d => carbonScale(d['MissionCount']))
+                    .curve(d3.curveMonotoneX);  // this configures whether straight lines connect your data points
+                //  or if it blends between points using a curve; see d3.line docs
+
+                // 4. Append a <path>, bind the data, and run the generator 
+                //  The generator is "run" in the last command.
+                chartArea.append("path")
+                    .datum(data)
+                    .attr("class", "line")
+                    .attr("fill", "none")   // using attr here, style would work too
+                    .attr("stroke", "steelblue")
+                    .attr("stroke-width", 3)
+                    .attr("d", lineGen);
+                // .datum has given our entire dataset to the <path> element
+                // so, because lineGen is a _function_, the .attr("d", lineGen) command is really working like
+                //    a data-based .attr call, such as .attr("d", d => lineGen(d)). Because we've put the whole dataset
+                //    into the <path> element, this works out so that we're really saying lineGen(data)
+                // if you're unsure what's really happening, try running console.log(lineGen(data))
+
+                // 5. Let's add some circles too!
+                chartArea.selectAll("circle").data(data)
+                    .join("circle")
+                    .attr("r", 3)
+                    .attr("fill", "navy")   // using attr here, style would work too
+                    .attr("cx", d => dateScale(d['date']))
+                    .attr("cy", d => carbonScale(d['MissionCount']));
+
+
+
+                // 6. Stretch goal - add a detailed mouseover
+                // THIS WAS NOT DEMO-ED IN CLASS -- feel free to check out the code to see a neat interaction
+                // Begin by switching out the commented sections and mousing over circles and other parts
+                // You'll notice how the interaction doesn't work everywhere. Then comment it back out
+                //  and uncomment the activeRegion part and beyond -- it will enable whitespace hovers
+                // Check documentation for bisect if curious
+
+                // Add marker lines, circles, and label to use in our mouseovers
+                let mouseGroup = chartArea.append("g");
+                let xMarker = mouseGroup.append("line")
+                    .attr("id", "xMarker")
+                    .attr("fill", "none")
+                    .attr("stroke", "black")
+                    .attr("stroke-width", 1)
+                    .attr("y1", 0)
+                    .attr("y2", chartHeight2)
+                    .attr("visibility", "hidden");
+
+                let valueMarker = mouseGroup.append("circle")
+                    .attr("id", "valueMarker")
+                    .attr("fill", "none")
+                    .attr("stroke", "black")
+                    .attr("stroke-width", 2)
+                    .attr("r", 10)
+                    .attr("visibility", "hidden");
+
+                let label = mouseGroup.append("text")
+                    .attr("id", "label")
+                    .attr("visibility", "hidden");
+
+                // // Instead, we have to resort to a more complicated solution
+                // // We paint an active region on the chart that is invisible but "catches" the mouse events for us
+                let activeRegion = mouseGroup.append("rect")
+                    .attr("id", "activeRegion")
+                    .attr("width", chartWidth2)
+                    .attr("height", chartHeight2)
+                    .attr("fill", "none")
+                    .attr("pointer-events", "all");
+
+                // activeRegion is now the top-most item (even if invisible), so it should always catch the mouse events and never clash
+                // We will do some housekeeping to turn on and off the mouseover annotations when the mouse leaves or enters activeRegion
+
+                // When the mouse enters, show the annotations
+                activeRegion.on("mouseover", function () {
+                    xMarker.attr("visibility", "");
+                    valueMarker.attr("visibility", "");
+                    label.attr("visibility", "");
+                });
+
+                // When the mouse leaves, hide the annotations
+                activeRegion.on("mouseout", function () {
+                    xMarker.attr("visibility", "hidden");
+                    valueMarker.attr("visibility", "hidden");
+                    label.attr("visibility", "hidden");
+                });
+
+
+                // In order to make our mouseovers a bit more grounded, let's find the data point that is closest to the mouse location
+                // We'll need a way to find the closest point to a specific date (from where the mouse is on the X axis)
+                // Refer to the docs on bisector to see how this works -- for now just know this is a common pattern for finding the closest value in an array
+                let findDate = d3.bisector(d => d.date).right;
+
+                activeRegion.on("mousemove", function (evt) {
+                    // Update the position as you move
+
+                    // Get mouse location
+                    let location = d3.pointer(evt);
+                    let x = location[0];
+                    // Use "invert" on a scale to go from pixels back to data
+                    let xDate = dateScale.invert(x);
+                    // We use the bisector to find the index of the element that's closest to our xDate
+                    let index = findDate(data, xDate);
+                    // We can then get d, the data point that's closest
+                    let d = data[index];
+
+                    // From there, it's just a matter of updating positions using our scales like we've done for a while now
+                    let xPos = dateScale(d['date']);
+                    let yPos = carbonScale(d['MissionCount']);
+
+                    xMarker.attr("x1", xPos).attr("x2", xPos);
+                    valueMarker.attr("cx", xPos).attr("cy", yPos);
+
+                    let txt = d['MissionCount']
+
+                    // We started with the following line, which has lots of overlaps
+                    // label.attr("x",xPos).attr("y",yPos).text(txt); 
+
+                    // Here's a simple way to remove overlaps and deliver a consistent user experience
+                    label.text(txt);
+                    if (xPos < chartWidth2 / 2.0) {
+                        label.attr("x", xPos + 4).attr("y", 100).attr("text-anchor", "start");
+                    }
+                    else {
+                        label.attr("x", xPos - 4).attr("y", chartHeight2 - 100).attr("text-anchor", "end");
+                    }
+
+
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 </body>
+
 </html>
-
-
-
-
-
-
