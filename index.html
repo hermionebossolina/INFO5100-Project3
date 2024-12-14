@@ -342,17 +342,12 @@
 
         <div id="movie-container">
             <!-- <p> Space Missions Count vs. Top Sci-fi Movies -->
-            <p style="margin-left: -250px;">
+            <p>
                 <span style="color: steelblue;font-weight: bold">Space Missions Count</span> and
                 <span style="color: red;;font-weight: bold">Top Sci-fi Movies</span>
             </p>
             <p>
                 <svg id="space_movie_chart" height="450" width="800"></svg>
-                <svg id="poster" height="370" width="200" style="transform: translate(20px, 10px)"> </svg>
-
-                <!-- add text for movies -->
-                <!-- <p> Alien 1979 is a significance movie on the public perception of extraterrestrial activities.</p> -->
-
 
         </div>
 
@@ -844,31 +839,31 @@
 
 
                 // Check if the year has an associated poster
-                const posterUrl = postersByYear.get(year);
-                if (posterUrl) {
-                    // Update the poster SVG to show the correct poster image
-                    const posterSvg = d3.select("#poster");
+                // const posterUrl = postersByYear.get(year);
+                // if (posterUrl) {
+                //     // Update the poster SVG to show the correct poster image
+                //     const posterSvg = d3.select("#poster");
 
-                    // Remove any existing image before adding the new one
-                    posterSvg.select("image").remove();
+                //     // Remove any existing image before adding the new one
+                //     posterSvg.select("image").remove();
 
-                    // Append the new poster image
-                    posterSvg.append("image")
-                        .attr("x", 0)  // Adjust position as needed
-                        .attr("y", 0)  // Adjust position as needed
-                        .attr("width", 180)     // Adjust width
-                        .attr("height", 270)    // Adjust height
-                        .attr("xlink:href", posterUrl) // Set the URL from poster.csv
-                        .attr("opacity", 0.6);
-                }
+                //     // Append the new poster image
+                //     posterSvg.append("image")
+                //         .attr("x", 0)  // Adjust position as needed
+                //         .attr("y", 0)  // Adjust position as needed
+                //         .attr("width", 180)     // Adjust width
+                //         .attr("height", 270)    // Adjust height
+                //         .attr("xlink:href", posterUrl) // Set the URL from poster.csv
+                //         .attr("opacity", 0.6);
+                // }
 
 
 
-                // Add mouseout event to remove the poster when the mouse leaves the active region
-                activeRegion.on("mouseout", function () {
-                    const posterSvg = d3.select("#poster");
-                    posterSvg.select("image").remove(); // Remove the image when mouseout
-                });
+                // // Add mouseout event to remove the poster when the mouse leaves the active region
+                // activeRegion.on("mouseout", function () {
+                //     const posterSvg = d3.select("#poster");
+                //     posterSvg.select("image").remove(); // Remove the image when mouseout
+                // });
 
 
 
