@@ -1,0 +1,144 @@
+movieId,movieTitle,movieYear,movieURL,movieRank,critic_score,audience_score,average
+4ecba525-0751-3a00-8b8e-c7a10ff0e385,Star Wars: Episode V - The Empire Strikes Back,1980,https://www.rottentomatoes.com/m/star_wars_episode_v_the_empire_strikes_back,138,95%,97%,0.96
+90e35ce9-3f7e-3eb4-b2e5-7df6c74430a4,Aliens,1986,https://www.rottentomatoes.com/m/1000617-aliens,137,98%,94%,0.96
+fcfec707-2884-3f1c-9030-0cc110f96628,Stalker,1979,https://www.rottentomatoes.com/m/1043378-stalker,124,100%,92%,0.96
+e2bff218-467b-3595-ae11-c62d690641ad,Star Wars: Episode IV - A New Hope,1977,https://www.rottentomatoes.com/m/star_wars_episode_iv_a_new_hope,145,93%,96%,0.945
+8e497f00-f9c0-3e6c-8526-969077b790df,Metropolis,1927,https://www.rottentomatoes.com/m/1013775-metropolis,146,97%,92%,0.945
+f98207b6-9ad5-3b3f-9e41-68e8999fcf5e,The Terminator,1984,https://www.rottentomatoes.com/m/terminator,135,100%,89%,0.945
+db357343-dac7-3aa1-9e13-c9b78c02b1f5,Back to the Future,1985,https://www.rottentomatoes.com/m/back_to_the_future,148,93%,95%,0.94
+6efec895-e7b3-385d-86db-231bd7082519,Brazil,1985,https://www.rottentomatoes.com/m/1003033-brazil,127,98%,90%,0.94
+6f73d4fd-3cd3-3bea-a403-81c5a6cb043f,Alien,1979,https://www.rottentomatoes.com/m/alien,141,93%,94%,0.935
+88c36a61-3147-3a67-9b2e-a2901e59ed6c,Terminator 2: Judgment Day,1991,https://www.rottentomatoes.com/m/terminator_2_judgment_day,142,91%,95%,0.93
+7bceb610-fd4e-3940-ab5b-589b5938c0fe,The Iron Giant,1999,https://www.rottentomatoes.com/m/iron_giant,105,96%,90%,0.93
+94813ccb-6c7d-3e0a-a635-81d828ab78ab,Star Trek,2009,https://www.rottentomatoes.com/m/star_trek_11,97,94%,91%,0.925
+4c42565e-9037-38bb-974f-d24395df2f1e,WALL-E,2008,https://www.rottentomatoes.com/m/wall_e,117,95%,90%,0.925
+584f02d1-f999-3880-9016-84ff2ed21795,Ghost in the Shell,1995,https://www.rottentomatoes.com/m/ghost_in_the_shell,126,95%,89%,0.92
+8404f4f7-585f-35bb-b061-9d3599f87a3c,Godzilla,1954,https://www.rottentomatoes.com/m/godzilla_1956,119,94%,89%,0.915
+36fc4b4a-6f33-321f-8648-56df1e7b32c3,Invasion of the Body Snatchers,1956,https://www.rottentomatoes.com/m/1010678-invasion_of_the_body_snatchers,93,98%,85%,0.915
+a969b4b7-3054-3020-a50b-7a710dc9a73a,The Martian,2015,https://www.rottentomatoes.com/m/the_martian,109,91%,91%,0.91
+6516e137-028f-37b0-a04f-c406d2f72589,Star Trek: First Contact,1996,https://www.rottentomatoes.com/m/star_trek_first_contact,48,93%,89%,0.91
+c204614e-45df-30ac-a630-f225da101731,Solaris,1972,https://www.rottentomatoes.com/m/solaris_1976,103,93%,89%,0.91
+a834a5ba-00b1-3aec-a20c-30b8b38e32a4,The Day the Earth Stood Still,1951,https://www.rottentomatoes.com/m/1005371-day_the_earth_stood_still,132,95%,87%,0.91
+7cef2f0a-3df6-3150-a4ec-7eb4a758e83b,Akira,1988,https://www.rottentomatoes.com/m/akira,133,91%,90%,0.905
+15e91368-66dd-3cca-a6ea-7375d452c3c9,Edge of Tomorrow,2014,https://www.rottentomatoes.com/m/live_die_repeat_edge_of_tomorrow,136,91%,90%,0.905
+a7c93404-c661-3e6e-a310-0bcfc4d8c31b,2001: A Space Odyssey,1968,https://www.rottentomatoes.com/m/2001_a_space_odyssey,149,92%,89%,0.905
+a23a19ea-eb7d-32d8-ba1b-29181039d324,Blade Runner,1982,https://www.rottentomatoes.com/m/blade_runner,147,89%,91%,0.9
+a537c034-8af0-3cb2-867d-9abeef44eb90,Moon,2009,https://www.rottentomatoes.com/m/moon,108,90%,89%,0.895
+221fa839-d26f-3339-a64a-9eaf6b39674c,A Quiet Place,2018,https://www.rottentomatoes.com/m/a_quiet_place_2018,52,96%,83%,0.895
+afbf1c81-1bfe-3996-9cbc-2e1be23d1f61,Inception,2010,https://www.rottentomatoes.com/m/inception,143,87%,91%,0.89
+a4a5e91b-59dd-3772-a85d-b49157a9f4a5,Fantastic Planet,1973,https://www.rottentomatoes.com/m/fantastic_planet,106,91%,87%,0.89
+9364dd45-ad71-3f2b-b8b5-8b98dc3e4c36,Ex Machina,2014,https://www.rottentomatoes.com/m/ex_machina,116,92%,86%,0.89
+4936454b-9254-38de-950a-4b4ac6fbda4b,Star Trek II: The Wrath of Khan,1982,https://www.rottentomatoes.com/m/star_trek_ii_the_wrath_of_khan,128,87%,90%,0.885
+f58aa6ec-b6e5-3ce3-88b9-8ccc870ccf32,Forbidden Planet,1956,https://www.rottentomatoes.com/m/forbidden_planet,120,92%,85%,0.885
+77cad0f2-ea81-3251-8299-ca6ea71fbcdc,Children of Men,2006,https://www.rottentomatoes.com/m/children_of_men,134,92%,85%,0.885
+83b1f72e-6dd5-3538-89dd-b10e57016fbf,Star Wars: The Force Awakens,2015,https://www.rottentomatoes.com/m/star_wars_episode_vii_the_force_awakens,53,93%,84%,0.885
+658731ff-1c7d-3c09-9339-887185615355,Her,2013,https://www.rottentomatoes.com/m/her,104,95%,82%,0.885
+70531264-23dc-3aa7-90c4-149726ab26de,The Thing,1982,https://www.rottentomatoes.com/m/1021244-thing,139,84%,92%,0.88
+a83a34c9-96e1-3121-bb2d-338e520bd0d9,Upgrade,2018,https://www.rottentomatoes.com/m/upgrade_2018,47,88%,88%,0.88
+d15549af-31f4-3544-8bab-ebebc3ab8529,Blade Runner 2049,2017,https://www.rottentomatoes.com/m/blade_runner_2049,100,88%,88%,0.88
+19528283-accc-3b70-9080-8c291e2c5c9a,12 Monkeys,1995,https://www.rottentomatoes.com/m/12_monkeys,121,88%,88%,0.88
+a5479658-16f1-3325-a16a-4181d84a215a,RoboCop,1987,https://www.rottentomatoes.com/m/1017712-robocop,131,92%,84%,0.88
+8d5600d0-06fb-3966-a3ab-201b2f19270f,The Fly,1986,https://www.rottentomatoes.com/m/1007602-fly,64,93%,83%,0.88
+90a34656-ea9d-357b-bb53-f81a84c4a312,Repo Man,1984,https://www.rottentomatoes.com/m/repo_man,54,98%,78%,0.88
+7475c7be-5ac6-3f6d-992e-9be0d1d7ecdb,Arrival,2016,https://www.rottentomatoes.com/m/arrival_2016,115,94%,82%,0.88
+ce19aaa7-faec-32a1-b4d0-619797225546,Open Your Eyes,1997,https://www.rottentomatoes.com/m/open_your_eyes_1999,41,87%,88%,0.875
+c6c8a022-8f2f-371b-a244-912e4f023ce9,Close Encounters of the Third Kind,1977,https://www.rottentomatoes.com/m/close_encounters_of_the_third_kind,114,90%,85%,0.875
+3acb019b-93e3-3d18-9e9e-962252697219,Invasion of the Body Snatchers,1978,https://www.rottentomatoes.com/m/1010679-invasion_of_the_body_snatchers,50,93%,82%,0.875
+2d1c0f73-9ff0-3c5a-98ce-88da8f8ff201,Looper,2012,https://www.rottentomatoes.com/m/looper,113,93%,82%,0.875
+0ac76d77-1f07-3a1d-b784-14d416ba3d34,Gravity,2013,https://www.rottentomatoes.com/m/gravity_2013,110,96%,79%,0.875
+3531a288-9eeb-3cbc-94e7-fa847d9acbac,Planet of the Apes,1968,https://www.rottentomatoes.com/m/1016397-planet_of_the_apes,95,86%,88%,0.87
+344b1318-d47f-3b42-af6f-e4aaa181cce5,Source Code,2011,https://www.rottentomatoes.com/m/source_code,77,92%,82%,0.87
+c53d6207-c3a5-3b3f-9c0f-4c7ebd0166b3,Serenity,2005,https://www.rottentomatoes.com/m/serenity,43,82%,91%,0.865
+b2af9422-2f72-32ae-98be-4fb7b6087741,Paprika,2006,https://www.rottentomatoes.com/m/paprika,42,86%,87%,0.865
+2990c5c5-5611-3706-a54c-0e6d10db4c71,Alphaville,1965,https://www.rottentomatoes.com/m/alphaville,89,92%,81%,0.865
+962c3984-6926-3f2f-b42e-f80adb889195,The Abyss,1989,https://www.rottentomatoes.com/m/abyss,78,89%,83%,0.86
+ec8862aa-cef2-3e4f-b6f7-1864fc3c69ff,District 9,2009,https://www.rottentomatoes.com/m/district_9,129,90%,82%,0.86
+6eeeadff-c77d-3b35-aaa0-f0d59022b041,Rogue One: A Star Wars Story,2016,https://www.rottentomatoes.com/m/rogue_one_a_star_wars_story,25,84%,87%,0.855
+7302db53-ce2c-393f-a2d9-6709740fcd08,Men in Black,1997,https://www.rottentomatoes.com/m/men_in_black,66,91%,80%,0.855
+9ac889c9-a513-3596-a647-ab4f4554112f,E.T. the Extra-Terrestrial,1982,https://www.rottentomatoes.com/m/et_the_extraterrestrial,118,99%,72%,0.855
+67b14b91-c121-347f-8bcf-d081041bb3ff,Little Shop of Horrors,1986,https://www.rottentomatoes.com/m/1012515-little_shop_of_horrors,15,91%,79%,0.85
+4a92cd40-ab69-3bd1-934c-fcf7238f5529,Them!,1954,https://www.rottentomatoes.com/m/1021186-them,90,93%,77%,0.85
+f884538a-c112-318b-a5dc-e012bb453619,Gattaca,1997,https://www.rottentomatoes.com/m/gattaca,125,82%,87%,0.845
+9dede4bd-3103-3b0d-87ae-057c43be75ce,Coherence,2013,https://www.rottentomatoes.com/m/coherence_2013,7,88%,81%,0.845
+d7cd093a-8594-3433-9324-6438813dd46d,Minority Report,2002,https://www.rottentomatoes.com/m/minority_report,88,89%,80%,0.845
+6f6203d7-9e36-3034-ad41-3dd3e82fbfec,Timecrimes,2007,https://www.rottentomatoes.com/m/time_crimes,3,90%,79%,0.845
+dc73bac4-9e07-330a-93fc-0f3179143279,Galaxy Quest,1999,https://www.rottentomatoes.com/m/galaxy_quest,101,90%,79%,0.845
+302b553c-c722-3aae-be8e-de1ea5efb0e1,Metropolis,2001,https://www.rottentomatoes.com/m/metropolis_2002,22,87%,81%,0.84
+2f580601-45cd-341d-bae9-60c5f5b85c39,Turbo Kid,2015,https://www.rottentomatoes.com/m/turbo_kid,44,91%,77%,0.84
+c8afce97-a899-3ba6-a919-a3a1e2608fba,The Matrix,1999,https://www.rottentomatoes.com/m/matrix,144,83%,85%,0.84
+376dbb65-2405-330c-b9bc-3b1229d6821e,Predator,1987,https://www.rottentomatoes.com/m/predator,94,80%,87%,0.835
+edf2b4af-2633-3fa9-a7ee-aaabbe612465,Donnie Darko,2001,https://www.rottentomatoes.com/m/donnie_darko,71,87%,80%,0.835
+e42e6c21-0288-38a2-b6f1-efb0f7d71fe0,Seconds,1966,https://www.rottentomatoes.com/m/seconds,83,79%,87%,0.83
+4e7ec88e-c9ee-3321-ace3-6695e19a552e,They Live,1988,https://www.rottentomatoes.com/m/they_live,82,86%,80%,0.83
+ceec7b71-3064-3ccb-a7f5-4dd5e2d8ff2d,Attack the Block,2011,https://www.rottentomatoes.com/m/attack_the_block,46,91%,75%,0.83
+d7beb34f-b80a-344e-8c87-56507572b572,Snowpiercer,2013,https://www.rottentomatoes.com/m/snowpiercer,92,94%,72%,0.83
+0199c2ac-1023-367e-8f58-ff256dc090fc,The Rocky Horror Picture Show,1975,https://www.rottentomatoes.com/m/rocky_horror_picture_show,8,80%,85%,0.825
+0bd9abe5-cfc5-3097-b95c-f53e046310c2,The Hunger Games,2012,https://www.rottentomatoes.com/m/the_hunger_games,86,84%,81%,0.825
+1e0727c2-f728-3226-9eb0-a3b3d5993d9a,Escape From New York,1981,https://www.rottentomatoes.com/m/1006717-escape_from_new_york,98,88%,77%,0.825
+94035c4d-a59d-4e0d-99c0-029a2a9a6048,Bumblebee,2018,https://www.rottentomatoes.com/m/bumblebee,68,90%,75%,0.825
+abbc4ee1-b67f-35f7-9a45-1250bf179849,"20,000 Leagues Under the Sea",1954,https://www.rottentomatoes.com/m/1000079-20000_leagues_under_the_sea,85,91%,74%,0.825
+46975e88-8051-3a36-b3f9-90894f5ce31a,The Host,2006,https://www.rottentomatoes.com/m/the_host_2007,51,93%,72%,0.825
+b4b1577f-aeee-3082-aa2e-030f75e95cf9,The Brother From Another Planet,1984,https://www.rottentomatoes.com/m/the_brother_from_another_planet,59,89%,75%,0.82
+f7970b0e-0f4c-391b-a841-1bf29e368b3e,Avatar,2009,https://www.rottentomatoes.com/m/avatar,87,81%,82%,0.815
+08df7064-dc6e-3cd2-aa05-951188664d27,Videodrome,1983,https://www.rottentomatoes.com/m/videodrome,91,83%,80%,0.815
+5c6d8611-f267-3afa-8b7b-07dabee95a7c,Liquid Sky,1982,https://www.rottentomatoes.com/m/liquid_sky,39,93%,70%,0.815
+d014530b-da26-35d2-b548-7fe1292ed137,Shin Godzilla,2016,https://www.rottentomatoes.com/m/godzilla_resurgence,23,86%,76%,0.81
+8f7aeaf8-7ae8-3e20-b7c7-6853ba48c20a,Dark City,1998,https://www.rottentomatoes.com/m/dark_city,61,76%,85%,0.805
+9f56655f-d39f-3dfd-b36b-326706fcb3f6,Total Recall,1990,https://www.rottentomatoes.com/m/total_recall,107,82%,79%,0.805
+a5c0a657-f6f7-3023-a2be-32706736d238,The World's End,2013,https://www.rottentomatoes.com/m/the_worlds_end,49,89%,72%,0.805
+5fe99875-bc69-3377-916e-68c8ccc10535,Predestination,2014,https://www.rottentomatoes.com/m/predestination,81,85%,75%,0.8
+10ea402a-60ba-3192-a5b3-3ca28fcf673f,The War of the Worlds,1953,https://www.rottentomatoes.com/m/the_war_of_the_worlds,99,89%,71%,0.8
+ae172e49-aa7b-3c17-81ae-4ccbe3876ef9,The Endless,2017,https://www.rottentomatoes.com/m/the_endless,2,92%,68%,0.8
+6239a3da-e4c9-34c4-aee3-8ee23d7f4c77,Fantastic Voyage,1966,https://www.rottentomatoes.com/m/fantastic_voyage,102,92%,68%,0.8
+ba9320dd-78db-3d61-b5f1-e7da1f1758cf,Interstellar,2014,https://www.rottentomatoes.com/m/interstellar_2014,111,73%,86%,0.795
+d295559c-7713-3592-a64a-7c430106c8ea,Rise of the Planet of the Apes,2011,https://www.rottentomatoes.com/m/rise_of_the_planet_of_the_apes,79,82%,77%,0.795
+2391e6ce-eba4-31c3-907f-ab9a235038fd,Flight of the Navigator,1986,https://www.rottentomatoes.com/m/flight_of_the_navigator,14,84%,75%,0.795
+07960248-ca20-3774-a741-06938f94de10,THX-1138,1971,https://www.rottentomatoes.com/m/thx_1138,45,86%,73%,0.795
+eadd89a2-4a55-36e2-a395-292d0e3472b7,The Fifth Element,1997,https://www.rottentomatoes.com/m/fifth_element,56,71%,86%,0.785
+cd1b128b-4567-3926-99b1-10ee90c1419d,Altered States,1980,https://www.rottentomatoes.com/m/altered_states,80,86%,71%,0.785
+20d223b9-99ae-3d57-9f8a-b363555baef4,Annihilation,2018,https://www.rottentomatoes.com/m/annihilation,11,88%,67%,0.775
+7d6c0601-f2e5-3eee-9e42-de20413478bc,Westworld,1973,https://www.rottentomatoes.com/m/westworld,5,84%,70%,0.77
+5e482be5-f7e7-3615-991c-2d6141437cf9,Alita: Battle Angel,2019,https://www.rottentomatoes.com/m/alita_battle_angel,16,62%,91%,0.765
+fc111df0-7250-3998-aa75-c9f16e9f5031,Fahrenheit 451,1966,https://www.rottentomatoes.com/m/1007003-fahrenheit_451,74,81%,72%,0.765
+e950482a-9580-3bfc-a578-fbc70e8c50a3,Primer,2004,https://www.rottentomatoes.com/m/primer,123,73%,79%,0.76
+afc309b1-7264-31b5-ab5d-cd09cfbe5b3c,Dredd,2012,https://www.rottentomatoes.com/m/dredd,58,80%,72%,0.76
+675e8174-79ef-398c-a5a4-cf1e2c7e57a4,Sunshine,2007,https://www.rottentomatoes.com/m/sunshine,38,77%,73%,0.75
+cf4a5712-95b5-312e-8d28-75086904717f,Midnight Special,2016,https://www.rottentomatoes.com/m/midnight_special_2015,9,83%,67%,0.75
+b0b0ce92-7fd8-3d7d-b370-7e4e0c277c80,Ready Player One,2018,https://www.rottentomatoes.com/m/ready_player_one,17,72%,77%,0.745
+41528d53-43db-346c-ba0c-3a8727fc5d67,Pacific Rim,2013,https://www.rottentomatoes.com/m/pacific_rim_2013,72,72%,77%,0.745
+3c4ada35-0d2c-3e46-944f-fd210cd632d7,The Man Who Fell to Earth,1976,https://www.rottentomatoes.com/m/man_who_fell_to_earth,63,79%,69%,0.74
+458b3c59-947e-31a0-b48f-b2312a3c29dc,Contact,1997,https://www.rottentomatoes.com/m/1078021-contact,12,68%,78%,0.73
+3be049d6-379b-32f6-8e62-f1336b266b54,Cloverfield,2008,https://www.rottentomatoes.com/m/cloverfield,65,78%,68%,0.73
+cde14019-99ea-3ecd-ac04-1e2c5e2d439c,Star Trek III: The Search for Spock,1984,https://www.rottentomatoes.com/m/star_trek_iii_the_search_for_spock,24,79%,67%,0.73
+5d988d64-acc8-30f2-9f8b-4829f3711f99,Things to Come,1936,https://www.rottentomatoes.com/m/things_to_come,30,91%,55%,0.73
+bd69d15a-84fb-3995-855e-badd97bc4140,When Worlds Collide,1951,https://www.rottentomatoes.com/m/when_worlds_collide,37,81%,63%,0.72
+c587a608-87b5-31c6-b971-52811b00f818,Independence Day,1996,https://www.rottentomatoes.com/m/1071806-independence_day,69,68%,75%,0.715
+fcddc695-5603-3913-8be5-716a5a50a6be,A Scanner Darkly,2006,https://www.rottentomatoes.com/m/scanner_darkly,76,68%,74%,0.71
+3527092b-cde9-3021-af74-05defb7a13ce,Starship Troopers,1997,https://www.rottentomatoes.com/m/starship_troopers,55,72%,70%,0.71
+3b65974d-101e-33ac-b36f-85b35b6d67a4,Tron,1982,https://www.rottentomatoes.com/m/tron,67,73%,69%,0.71
+a052eb54-52ba-3cf3-a189-22c3d661b664,Strange Days,1995,https://www.rottentomatoes.com/m/strange_days,32,68%,73%,0.705
+0e5b8ffc-754d-3e22-a57e-9f58e030c4d2,A Boy and His Dog,1975,https://www.rottentomatoes.com/m/boy_and_his_dog,34,78%,63%,0.705
+5afa1bae-10fc-3917-9aa6-89e67d09b54b,Soylent Green,1973,https://www.rottentomatoes.com/m/soylent_green,84,71%,70%,0.705
+3b9d8d02-d9cf-3647-ade4-9fcb1ff47bc6,A.I.: Artificial Intelligence,2001,https://www.rottentomatoes.com/m/ai_artificial_intelligence,35,76%,64%,0.7
+7088cc9e-848f-3a77-9cb3-c33abf244a19,Cube,1997,https://www.rottentomatoes.com/m/cube,31,63%,76%,0.695
+61ae22fe-7ddc-3c05-982e-0816a9828227,Dark Star,1974,https://www.rottentomatoes.com/m/dark_star,40,74%,65%,0.695
+d8376552-6e8d-31f0-b945-153de9e8c80c,Under the Skin,2013,https://www.rottentomatoes.com/m/under_the_skin_2013,62,84%,55%,0.695
+9f2e3965-170c-32ae-a9a0-fa940515ec13,Silent Running,1972,https://www.rottentomatoes.com/m/silent_running,20,71%,66%,0.685
+d95e6b1a-4e03-3330-a4c5-3eace9ba192f,The Adventures of Buckaroo Banzai Across the Eighth Dimension,1984,https://www.rottentomatoes.com/m/the_adventures_of_buckaroo_banzai,60,66%,69%,0.675
+b662263e-27a9-39e6-b29a-6c63e43ad128,Heavy Metal,1981,https://www.rottentomatoes.com/m/1068461-heavy_metal,33,66%,67%,0.665
+77dd9cbe-d992-35ec-9c6d-7bc24309e8ed,Scanners,1981,https://www.rottentomatoes.com/m/1018315-scanners,29,68%,64%,0.66
+3c8692f3-d247-3ed2-aab5-f86dddd16cc0,Wizards,1977,https://www.rottentomatoes.com/m/wizards,10,62%,69%,0.655
+db61b900-197f-32d8-904b-3b923bb7164c,Idiocracy,2006,https://www.rottentomatoes.com/m/idiocracy,73,71%,60%,0.655
+417edd26-85f4-3e60-83b7-afff172b8367,Barbarella,1968,https://www.rottentomatoes.com/m/barbarella,70,75%,56%,0.655
+21f46274-4ba5-3304-a41b-67aaed8270a7,Demolition Man,1993,https://www.rottentomatoes.com/m/demolition_man,75,63%,67%,0.65
+e9425ffb-3c3e-365e-a700-edcc5db6446c,Rollerball,1975,https://www.rottentomatoes.com/m/rollerball,19,67%,62%,0.645
+3855d3b7-7b90-3a81-aba5-e9014dc21cd5,The Day of the Triffids,1963,https://www.rottentomatoes.com/m/the_day_of_the_triffids_1963,36,78%,51%,0.645
+7f317828-36bc-3eb0-99ee-7ef65d07bad0,The Fountain,2006,https://www.rottentomatoes.com/m/the_fountain,26,53%,74%,0.635
+db8cbc0e-7a29-3e4b-983f-8acacb08f4e4,Logan's Run,1976,https://www.rottentomatoes.com/m/logans_run,27,58%,67%,0.625
+85f2ae11-607a-3bcd-a8c0-9638eb43b224,The Hitchhiker's Guide to the Galaxy,2005,https://www.rottentomatoes.com/m/hitchhikers_guide_to_the_galaxy,1,60%,65%,0.625
+edd50112-6bf5-31a3-bb19-fe883edc01c4,The Congress,2013,https://www.rottentomatoes.com/m/the_congress,13,72%,53%,0.625
+c56fc92f-0d1c-4ffb-9a49-5d9e8e216870,High Life,2018,https://www.rottentomatoes.com/m/high_life_2019,6,82%,42%,0.62
+d3d17414-4472-3e59-a5a6-8c2163740106,Ad Astra,2019,https://www.rottentomatoes.com/m/ad_astra,4,83%,40%,0.615
+c1385ecf-5093-3a41-b504-573cede62813,The Blob,1958,https://www.rottentomatoes.com/m/the_blob,28,68%,52%,0.6
+15b384f3-7702-385e-8712-91245fd95dcd,War of the Worlds,2005,https://www.rottentomatoes.com/m/war_of_the_worlds,21,76%,42%,0.59
+725fe70b-95da-3e4a-bb76-b094b4b71ce1,Plan 9 From Outer Space,1959,https://www.rottentomatoes.com/m/plan-9-from-outer-space,18,66%,45%,0.555

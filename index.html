@@ -335,20 +335,26 @@
     <div id="movie-section">
 
         <div id="movie-description">
-            <h4><strong>How has Alien Contact Influenced Our Media? </strong></h4>
+            <h4><strong>How has Space Missions Influenced Our Media? </strong></h4>
             <p> <em> by director and film-expert, Hung Ming Tseng </em></p>
             <p> blah blah blah talk about movies and top hits blah </p>
         </div>
 
         <div id="movie-container">
-            <p> Space Missions Count vs. Top Sci-fi Movies
+            <!-- <p> Space Missions Count vs. Top Sci-fi Movies -->
             <p>
-                <svg id="space_movie_chart" height="400" width="700"></svg>
+                <span style="color: steelblue;font-weight: bold">Space Missions Count</span> and
+                <span style="color: red;;font-weight: bold">Top Sci-fi Movies</span>
+            </p>
+            <p>
+                <svg id="space_movie_chart" height="450" width="800"></svg>
+                <svg id="poster" height="370" width="200" style="transform: translate(20px, 10px)"> </svg>
+
         </div>
 
     </div>
 
-    <div id="expense-section">
+    <div id=" expense-section">
         <div id="expense-description">
             <h4><strong>How Much is Alien Communication Costing? </strong></h4>
             <p> <em> by CFO and UFO-Wizard, Hermione Bossolina </em></p>
@@ -555,12 +561,15 @@
         loadData();
 
 
+
         //Hung Ming: Space missions vs. Movies
 
         const svg2 = d3.select("svg#space_movie_chart");
+        const poster = d3.select("svg#poster");
+
         const width2 = svg2.attr("width");
         const height2 = svg2.attr("height");
-        const margin2 = { top: 10, right: 10, bottom: 50, left: 50 };
+        const margin2 = { top: 30, right: 90, bottom: 40, left: 40 };
         const chartWidth2 = width2 - margin2.left - margin2.right;
         const chartHeight2 = height2 - margin2.top - margin2.bottom;
 
@@ -568,186 +577,291 @@
         let chartArea = svg2.append("g").attr("id", "points")
             .attr("transform", `translate(${margin2.left},${margin2.top})`);
 
-        d3.csv("../data/missions_by_year.csv", d3.autoType)
-            .then((data) => {
+        Promise.all([
+            d3.csv("../data/missions_by_year.csv", d3.autoType),
+            d3.csv("../data/scifi_movies_filter.csv", d3.autoType),
+            d3.csv("../data/poster.csv", d3.autoType)
 
-                console.log("mission_by_year")
-                //console.log(data);
+        ]).then(([data, moviesData, posterData]) => {
 
-                const timeParser = d3.timeParse('%Y');
-                data.forEach(d => {
-                    d['date'] = timeParser(d["Year"]);
-                });
+            console.log("mission:")
+            console.log(data);
 
-                console.log(data);
+            console.log("movies:")
+            console.log(moviesData);
 
-
-
-                // 2. Scales, axes, and gridlines
-
-                // Y axis
-                //  First one is easy
-                const carbonExtent = d3.extent(data, d => d['MissionCount']);
-                const carbonScale = d3.scaleLinear().domain(carbonExtent).range([chartHeight2, 0]);
-                let leftAxis = d3.axisLeft(carbonScale)
-                let leftGridlines = d3.axisLeft(carbonScale)
-                    .tickSize(-chartWidth2 - 10)
-                    .tickFormat("")
-                annotations.append("g")
-                    .attr("class", "y axis")
-                    .attr("transform", `translate(${margin2.left - 10},${margin2.top})`)
-                    .call(leftAxis)
-                annotations.append("g")
-                    .attr("class", "y gridlines")
-                    .attr("transform", `translate(${margin2.left - 10},${margin2.top})`)
-                    .call(leftGridlines);
-
-                // X axis
-                // Second, we need to spread dates across the X axis
-                // Since we made JS date objects, we can use the usual D3 functions and a .scaleTime()
-                const dateExtent = d3.extent(data, d => d['date']);
-                const dateScale = d3.scaleTime().domain(dateExtent).range([0, chartWidth2]);
-                let bottomAxis = d3.axisBottom(dateScale)
-                let bottomGridlines = d3.axisBottom(dateScale)
-                    .tickSize(-chartHeight2 - 10)
-                    .tickFormat("")
-                annotations.append("g")
-                    .attr("class", "x axis")
-                    .attr("transform", `translate(${margin2.left},${chartHeight2 + margin2.top + 10})`)
-                    .call(bottomAxis);
-                annotations.append("g")
-                    .attr("class", "x gridlines")
-                    .attr("transform", `translate(${margin2.left},${chartHeight2 + margin2.top + 10})`)
-                    .call(bottomGridlines);
-
-                var lineGen = d3.line()
-                    .x(d => dateScale(d['date']))
-                    .y(d => carbonScale(d['MissionCount']))
-                    .curve(d3.curveMonotoneX);  // this configures whether straight lines connect your data points
-                //  or if it blends between points using a curve; see d3.line docs
-
-                // 4. Append a <path>, bind the data, and run the generator 
-                //  The generator is "run" in the last command.
-                chartArea.append("path")
-                    .datum(data)
-                    .attr("class", "line")
-                    .attr("fill", "none")   // using attr here, style would work too
-                    .attr("stroke", "steelblue")
-                    .attr("stroke-width", 3)
-                    .attr("d", lineGen);
-                // .datum has given our entire dataset to the <path> element
-                // so, because lineGen is a _function_, the .attr("d", lineGen) command is really working like
-                //    a data-based .attr call, such as .attr("d", d => lineGen(d)). Because we've put the whole dataset
-                //    into the <path> element, this works out so that we're really saying lineGen(data)
-                // if you're unsure what's really happening, try running console.log(lineGen(data))
-
-                // 5. Let's add some circles too!
-                chartArea.selectAll("circle").data(data)
-                    .join("circle")
-                    .attr("r", 3)
-                    .attr("fill", "navy")   // using attr here, style would work too
-                    .attr("cx", d => dateScale(d['date']))
-                    .attr("cy", d => carbonScale(d['MissionCount']));
+            const timeParser = d3.timeParse('%Y');
+            data.forEach(d => {
+                d['date'] = timeParser(d["Year"]);
+            });
 
 
+            // Step 1: Sort movies by their average rating and take the top 50
+            const topMovies = moviesData.sort((a, b) => b.average - a.average).slice(0, 140);
 
-                // 6. Stretch goal - add a detailed mouseover
-                // THIS WAS NOT DEMO-ED IN CLASS -- feel free to check out the code to see a neat interaction
-                // Begin by switching out the commented sections and mousing over circles and other parts
-                // You'll notice how the interaction doesn't work everywhere. Then comment it back out
-                //  and uncomment the activeRegion part and beyond -- it will enable whitespace hovers
-                // Check documentation for bisect if curious
+            // Step 2: Group the top 50 movies by their release year
+            const moviesByYear = d3.group(topMovies, d => d.movieYear);
 
-                // Add marker lines, circles, and label to use in our mouseovers
-                let mouseGroup = chartArea.append("g");
-                let xMarker = mouseGroup.append("line")
-                    .attr("id", "xMarker")
-                    .attr("fill", "none")
-                    .attr("stroke", "black")
-                    .attr("stroke-width", 1)
-                    .attr("y1", 0)
-                    .attr("y2", chartHeight2)
-                    .attr("visibility", "hidden");
+            // Group the poster data by the year
+            const postersByYear = new Map();
+            posterData.forEach(d => {
+                postersByYear.set(d.yearMovie, d.url);  // Store the URL for each year
+            });
 
-                let valueMarker = mouseGroup.append("circle")
-                    .attr("id", "valueMarker")
-                    .attr("fill", "none")
-                    .attr("stroke", "black")
-                    .attr("stroke-width", 2)
-                    .attr("r", 10)
-                    .attr("visibility", "hidden");
 
-                let label = mouseGroup.append("text")
-                    .attr("id", "label")
-                    .attr("visibility", "hidden");
+            // 2. Scales, axes, and gridlines
 
-                // // Instead, we have to resort to a more complicated solution
-                // // We paint an active region on the chart that is invisible but "catches" the mouse events for us
-                let activeRegion = mouseGroup.append("rect")
-                    .attr("id", "activeRegion")
-                    .attr("width", chartWidth2)
-                    .attr("height", chartHeight2)
-                    .attr("fill", "none")
-                    .attr("pointer-events", "all");
+            // Y axis
+            //  First one is easy
+            const carbonExtent = d3.extent(data, d => d['MissionCount']);
+            const carbonScale = d3.scaleLinear().domain(carbonExtent).range([chartHeight2, 0]);
+            let leftAxis = d3.axisLeft(carbonScale)
+            let leftGridlines = d3.axisLeft(carbonScale)
+                .tickSize(-chartWidth2 - 10)
+                .tickFormat("")
+            annotations.append("g")
+                .attr("class", "y axis")
+                .attr("transform", `translate(${margin2.left - 10},${margin2.top})`)
+                .call(leftAxis)
+            annotations.append("g")
+                .attr("class", "y gridlines")
+                .attr("transform", `translate(${margin2.left - 10},${margin2.top})`)
+                .call(leftGridlines);
 
-                // activeRegion is now the top-most item (even if invisible), so it should always catch the mouse events and never clash
-                // We will do some housekeeping to turn on and off the mouseover annotations when the mouse leaves or enters activeRegion
+            // X axis
+            // Second, we need to spread dates across the X axis
+            // Since we made JS date objects, we can use the usual D3 functions and a .scaleTime()
+            const dateExtent = d3.extent(data, d => d['date']);
+            const dateScale = d3.scaleTime().domain(dateExtent).range([0, chartWidth2]);
+            let bottomAxis = d3.axisBottom(dateScale)
+            let bottomGridlines = d3.axisBottom(dateScale)
+                .tickSize(-chartHeight2 - 10)
+                .tickFormat("")
+            annotations.append("g")
+                .attr("class", "x axis")
+                .attr("transform", `translate(${margin2.left},${chartHeight2 + margin2.top + 10})`)
+                .call(bottomAxis);
+            annotations.append("g")
+                .attr("class", "x gridlines")
+                .attr("transform", `translate(${margin2.left},${chartHeight2 + margin2.top + 10})`)
+                .call(bottomGridlines);
 
-                // When the mouse enters, show the annotations
-                activeRegion.on("mouseover", function () {
-                    xMarker.attr("visibility", "");
-                    valueMarker.attr("visibility", "");
-                    label.attr("visibility", "");
-                });
+            var lineGen = d3.line()
+                .x(d => dateScale(d['date']))
+                .y(d => carbonScale(d['MissionCount']))
+                .curve(d3.curveMonotoneX);  // this configures whether straight lines connect your data points
+            //  or if it blends between points using a curve; see d3.line docs
 
-                // When the mouse leaves, hide the annotations
+            // 4. Append a <path>, bind the data, and run the generator 
+            //  The generator is "run" in the last command.
+            chartArea.append("path")
+                .datum(data)
+                .attr("class", "line")
+                .attr("fill", "none")   // using attr here, style would work too
+                .attr("stroke", "steelblue")
+                .attr("stroke-width", 3)
+                .attr("d", lineGen);
+            // .datum has given our entire dataset to the <path> element
+            // so, because lineGen is a _function_, the .attr("d", lineGen) command is really working like
+            //    a data-based .attr call, such as .attr("d", d => lineGen(d)). Because we've put the whole dataset
+            //    into the <path> element, this works out so that we're really saying lineGen(data)
+            // if you're unsure what's really happening, try running console.log(lineGen(data))
+
+            // 5. Let's add some circles too!
+            chartArea.selectAll("circle").data(data)
+                .join("circle")
+                .attr("r", 3)
+                .attr("fill", "navy")   // using attr here, style would work too
+                .attr("cx", d => dateScale(d['date']))
+                .attr("cy", d => carbonScale(d['MissionCount']));
+
+
+
+            // 6. Stretch goal - add a detailed mouseover
+            // THIS WAS NOT DEMO-ED IN CLASS -- feel free to check out the code to see a neat interaction
+            // Begin by switching out the commented sections and mousing over circles and other parts
+            // You'll notice how the interaction doesn't work everywhere. Then comment it back out
+            //  and uncomment the activeRegion part and beyond -- it will enable whitespace hovers
+            // Check documentation for bisect if curious
+
+            // Add marker lines, circles, and label to use in our mouseovers
+            let mouseGroup = chartArea.append("g");
+            let xMarker = mouseGroup.append("line")
+                .attr("id", "xMarker")
+                .attr("fill", "none")
+                .attr("stroke", "red")
+                .attr("stroke-width", 1)
+                .attr("y1", 0)
+                .attr("y2", chartHeight2)
+                .attr("visibility", "hidden");
+
+            let valueMarker = mouseGroup.append("circle")
+                .attr("id", "valueMarker")
+                .attr("fill", "none")
+                .attr("stroke", "red")
+                .attr("stroke-width", 2)
+                .attr("r", 9)
+                .attr("visibility", "hidden");
+
+            let label = mouseGroup.append("text")
+                .attr("id", "label")
+                .attr("visibility", "hidden");
+
+            // // Instead, we have to resort to a more complicated solution
+            // // We paint an active region on the chart that is invisible but "catches" the mouse events for us
+            let activeRegion = mouseGroup.append("rect")
+                .attr("id", "activeRegion")
+                .attr("width", chartWidth2)
+                .attr("height", chartHeight2)
+                .attr("fill", "none")
+                .attr("pointer-events", "all");
+
+            // activeRegion is now the top-most item (even if invisible), so it should always catch the mouse events and never clash
+            // We will do some housekeeping to turn on and off the mouseover annotations when the mouse leaves or enters activeRegion
+
+            // When the mouse enters, show the annotations
+            activeRegion.on("mouseover", function () {
+                xMarker.attr("visibility", "");
+                valueMarker.attr("visibility", "");
+                label.attr("visibility", "");
+            });
+
+            // When the mouse leaves, hide the annotations
+            activeRegion.on("mouseout", function () {
+                xMarker.attr("visibility", "hidden");
+                valueMarker.attr("visibility", "hidden");
+                label.attr("visibility", "hidden");
+
+            });
+
+
+            // In order to make our mouseovers a bit more grounded, let's find the data point that is closest to the mouse location
+            // We'll need a way to find the closest point to a specific date (from where the mouse is on the X axis)
+            // Refer to the docs on bisector to see how this works -- for now just know this is a common pattern for finding the closest value in an array
+            let findDate = d3.bisector(d => d.date).right;
+
+            // //old poster
+            // const url = "images/alien1979.jpg"; // Replace with the actual path
+            // const img = poster.append("image")
+            //     .attr("x", 0)
+            //     .attr("y", -50)
+            //     .attr("width", 200)
+            //     .attr("height", 380)
+            //     .attr("opacity", 0)
+            //     .attr("href", url);
+
+
+            activeRegion.on("mousemove", function (evt) {
+                // Update the position as you move
+
+                // Get mouse location
+                let location = d3.pointer(evt);
+                let x = location[0];
+                // Use "invert" on a scale to go from pixels back to data
+                let xDate = dateScale.invert(x);
+                // We use the bisector to find the index of the element that's closest to our xDate
+                let index = findDate(data, xDate);
+                // We can then get d, the data point that's closest
+                let d = data[index];
+
+                // From there, it's just a matter of updating positions using our scales like we've done for a while now
+                let xPos = dateScale(d['date']);
+                let yPos = carbonScale(d['MissionCount']);
+
+                xMarker.attr("x1", xPos).attr("x2", xPos);
+                valueMarker.attr("cx", xPos).attr("cy", yPos);
+
+                // let txt = d['MissionCount']
+
+                // // We started with the following line, which has lots of overlaps
+                // // label.attr("x",xPos).attr("y",yPos).text(txt); 
+
+                // // Here's a simple way to remove overlaps and deliver a consistent user experience
+                // label.text(txt);
+                // if (xPos < chartWidth2 / 2.0) {
+                //     label.attr("x", xPos + 4).attr("y", 100).attr("text-anchor", "start");
+                // }
+                // else {
+                //     label.attr("x", xPos - 4).attr("y", chartHeight2 - 100).attr("text-anchor", "end");
+                // }
+
+                // // Find movies for the hovered year
+                // const year = d['Year'];
+                // const movies = moviesByYear.get(year) || [];
+                // const movieTitles = movies.map(m => m.movieTitle).join(", ");
+
+                // label.text(movieTitles || "No movies")
+                //     .attr("x", xPos + 10)
+                //     .attr("y", yPos - 10)
+                //     .attr("text-anchor", "start")
+                //     .attr("fill", "red")
+                //     .attr("font-size", "10px")
+
+                // Find movies for the hovered year
+                var year = d['Year'];
+                const movies = moviesByYear.get(year) || [];
+                const movieTitles = movies.map(m => m.movieTitle);
+
+                label.selectAll("tspan").remove(); // Clear any existing tspans
+
+                if (movieTitles.length > 0) {
+                    // Set the base label position for the first line
+                    label.attr("x", xPos + 60)
+                        .attr("y", yPos + 4) // Base Y position for the first line
+                        .attr("text-anchor", "start")
+                        .attr("fill", "red")
+                        .attr("font-size", "10px");
+
+                    // Add a tspan for each movie title, with correct vertical spacing
+                    label.selectAll("tspan")
+                        .data(movieTitles)
+                        .enter()
+                        .append("tspan")
+                        .attr("x", xPos + 10) // Same x position for all lines
+                        .attr("dy", (d, i) => i === 0 ? "0" : "14") // Set the vertical offset for each subsequent line
+                        .text(d => d);
+                } else {
+                    label.text("")
+                        .attr("x", xPos + 10)
+                        .attr("y", yPos - 10)
+                        .attr("text-anchor", "start")
+                        .attr("fill", "red")
+                        .attr("font-size", "10px");
+                }
+
+                // // Check if the hovered year is 1979
+                // if (year === 1979) {
+                //     // Make the alien film poster visible and position it
+                //     img.attr("opacity", 0.6);           // Show the image
+                // } else {
+                //     // Hide the image when hovering over other years
+                //     img.attr("opacity", 0);
+                // }
+
+
+                // Check if the year has an associated poster
+                const posterUrl = postersByYear.get(year);
+                if (posterUrl) {
+                    // Update the poster SVG to show the correct poster image
+                    const posterSvg = d3.select("#poster");
+
+                    // Remove any existing image before adding the new one
+                    posterSvg.select("image").remove();
+
+                    // Append the new poster image
+                    posterSvg.append("image")
+                        .attr("x", 0)  // Adjust position as needed
+                        .attr("y", 0)  // Adjust position as needed
+                        .attr("width", 160)     // Adjust width
+                        .attr("height", 250)    // Adjust height
+                        .attr("xlink:href", posterUrl) // Set the URL from poster.csv
+                        .attr("opacity", 0.6);
+                }
+
+                // Add mouseout event to remove the poster when the mouse leaves the active region
                 activeRegion.on("mouseout", function () {
-                    xMarker.attr("visibility", "hidden");
-                    valueMarker.attr("visibility", "hidden");
-                    label.attr("visibility", "hidden");
-                });
-
-
-                // In order to make our mouseovers a bit more grounded, let's find the data point that is closest to the mouse location
-                // We'll need a way to find the closest point to a specific date (from where the mouse is on the X axis)
-                // Refer to the docs on bisector to see how this works -- for now just know this is a common pattern for finding the closest value in an array
-                let findDate = d3.bisector(d => d.date).right;
-
-                activeRegion.on("mousemove", function (evt) {
-                    // Update the position as you move
-
-                    // Get mouse location
-                    let location = d3.pointer(evt);
-                    let x = location[0];
-                    // Use "invert" on a scale to go from pixels back to data
-                    let xDate = dateScale.invert(x);
-                    // We use the bisector to find the index of the element that's closest to our xDate
-                    let index = findDate(data, xDate);
-                    // We can then get d, the data point that's closest
-                    let d = data[index];
-
-                    // From there, it's just a matter of updating positions using our scales like we've done for a while now
-                    let xPos = dateScale(d['date']);
-                    let yPos = carbonScale(d['MissionCount']);
-
-                    xMarker.attr("x1", xPos).attr("x2", xPos);
-                    valueMarker.attr("cx", xPos).attr("cy", yPos);
-
-                    let txt = d['MissionCount']
-
-                    // We started with the following line, which has lots of overlaps
-                    // label.attr("x",xPos).attr("y",yPos).text(txt); 
-
-                    // Here's a simple way to remove overlaps and deliver a consistent user experience
-                    label.text(txt);
-                    if (xPos < chartWidth2 / 2.0) {
-                        label.attr("x", xPos + 4).attr("y", 100).attr("text-anchor", "start");
-                    }
-                    else {
-                        label.attr("x", xPos - 4).attr("y", chartHeight2 - 100).attr("text-anchor", "end");
-                    }
-
-
+                    const posterSvg = d3.select("#poster");
+                    posterSvg.select("image").remove(); // Remove the image when mouseout
                 });
 
 
@@ -763,6 +877,20 @@
 
 
             });
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
 
 
 
