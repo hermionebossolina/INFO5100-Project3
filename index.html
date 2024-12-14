@@ -127,6 +127,20 @@
 
         }
 
+        .text-panel_2 {
+            flex: 1;
+            margin-right: -100px;
+            border: 1px solid #ccc;
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 600px;
+            min-width: 500px;
+            height: 1000px;
+
+
+        }
+
 
         #tooltip {
             font-size: 0.9em;
@@ -179,12 +193,12 @@
         }
 
         #movie-container {
-            background-color: #ccc;
+            background-color: white;
             justify-content: center;
             text-align: center;
             margin-top: 30px;
-            margin-left: 100px;
-            margin-right: 100px;
+            margin-left: 50px;
+            margin-right: 200px;
         }
 
         .gridlines .domain {
@@ -335,22 +349,49 @@
     <div id="movie-section">
 
         <div id="movie-description">
-            <h4><strong>How has Space Missions Influenced Our Media? </strong></h4>
+            <h4><strong>Aliens, Space Missions, and the Movie Culture </strong></h4>
             <p> <em> by director and film-expert, Hung Ming Tseng </em></p>
             <p> blah blah blah talk about movies and top hits blah </p>
         </div>
 
-        <div id="movie-container">
-            <!-- <p> Space Missions Count vs. Top Sci-fi Movies -->
-            <p>
-                <span style="color: steelblue;font-weight: bold">Space Missions Count</span> and
-                <span style="color: red;;font-weight: bold">Top Sci-fi Movies</span>
-            </p>
-            <p>
-                <svg id="space_movie_chart" height="450" width="800"></svg>
+        <div id="movie-container" style="display: flex; align-items: flex-start; justify-content: space-between;">
+            <!-- Chart Section with Grey Background -->
+            <div style="flex: 1; margin-right: 40px; background-color: #ccc; padding: 0px;">
+                <p>
+                    <span style="color: steelblue; font-weight: bold;">Space Missions Count</span> and
+                    <span style="color: green; font-weight: bold;">Top Sci-fi Movies</span>
+                </p>
+                <p>
+                    <svg id="space_movie_chart" height="460" width="800"></svg>
+                </p>
+            </div>
+
+            <!-- Text Box Section with Flexbox Layout -->
+            <div class="text-panel_2"
+                style="display: flex; align-items: center; justify-content: flex-start; height: 545px; padding-right: 40px;">
+                <!-- Text Content (Left) -->
+                <div style="flex: 1; padding-right: 20px;">
+                    <h4><strong>Alien (1979)</strong></h4>
+                    <p><em> Ridley Scott </em></p>
+                    <p style="font-family: Arial, sans-serif;">
+                        "Alien" (1979) is a groundbreaking film that reshaped the sci-fi and
+                        horror genres. Its innovative mix of tension, extraterrestrial beings, and space technology
+                        influenced space-based storytelling, impacting countless films and media in the
+                        decades that followed.
+                    </p>
+                </div>
+
+                <!-- Image (Right) -->
+                <div style="margin-right: 0px;">
+                    <img src="images/alien1979.jpg" alt="Alien Movie Poster"
+                        style="width: 260px; height: auto; border: 1px solid #ccc; opacity: 0.55; ">
+                </div>
+            </div>
+
 
 
         </div>
+
 
 
 
@@ -581,9 +622,9 @@
             .attr("transform", `translate(${margin2.left},${margin2.top})`);
 
         Promise.all([
-            d3.csv("../data/missions_by_year.csv", d3.autoType),
-            d3.csv("../data/scifi_movies_filter.csv", d3.autoType),
-            d3.csv("../data/poster.csv", d3.autoType)
+            d3.csv("data/missions_by_year.csv", d3.autoType),
+            d3.csv("data/scifi_movies_filter.csv", d3.autoType),
+            d3.csv("data/poster.csv", d3.autoType)
 
         ]).then(([data, moviesData, posterData]) => {
 
@@ -712,7 +753,7 @@
             let xMarker = mouseGroup.append("line")
                 .attr("id", "xMarker")
                 .attr("fill", "none")
-                .attr("stroke", "red")
+                .attr("stroke", "green")
                 .attr("stroke-width", 1)
                 .attr("y1", 0)
                 .attr("y2", chartHeight2)
@@ -721,7 +762,7 @@
             let valueMarker = mouseGroup.append("circle")
                 .attr("id", "valueMarker")
                 .attr("fill", "none")
-                .attr("stroke", "red")
+                .attr("stroke", "green")
                 .attr("stroke-width", 2)
                 .attr("r", 9)
                 .attr("visibility", "hidden");
@@ -756,6 +797,58 @@
                 label.attr("visibility", "hidden");
 
             });
+
+
+            // Find the data for the year 1979
+            let defaultYear = 1979;
+            let defaultIndex = data.findIndex(d => d['Year'] === defaultYear); // Find index of the year 1979
+            let defaultData = data[defaultIndex];
+
+            // Default positions based on scales
+            let defaultXPos = dateScale(defaultData['date']);
+            let defaultYPos = carbonScale(defaultData['MissionCount']);
+
+            // Show the default markers
+            xMarker.attr("x1", defaultXPos)
+                .attr("x2", defaultXPos)
+                .attr("visibility", "");
+
+            valueMarker.attr("cx", defaultXPos)
+                .attr("cy", defaultYPos)
+                .attr("visibility", "");
+
+            // Find movies for the default year
+            const defaultMovies = moviesByYear.get(defaultYear) || [];
+            const defaultMovieTitles = defaultMovies.map(m => m.movieTitle);
+
+            // Show the default label
+            label.selectAll("tspan").remove();
+
+            if (defaultMovieTitles.length > 0) {
+                label.attr("x", defaultXPos + 60)
+                    .attr("y", defaultYPos + 4)
+                    .attr("text-anchor", "start")
+                    .attr("fill", "green")
+                    .attr("font-size", "10px")
+                    .attr("visibility", "");
+
+                label.selectAll("tspan")
+                    .data(defaultMovieTitles)
+                    .enter()
+                    .append("tspan")
+                    .attr("x", defaultXPos + 10)
+                    .attr("dy", (d, i) => i === 0 ? "0" : "14")
+                    .text(d => d);
+            } else {
+                label.text("")
+                    .attr("x", defaultXPos + 10)
+                    .attr("y", defaultYPos - 10)
+                    .attr("text-anchor", "start")
+                    .attr("fill", "green")
+                    .attr("font-size", "10px")
+                    .attr("visibility", "");
+            }
+
 
 
             // In order to make our mouseovers a bit more grounded, let's find the data point that is closest to the mouse location
@@ -832,7 +925,7 @@
                     label.attr("x", xPos + 60)
                         .attr("y", yPos + 4) // Base Y position for the first line
                         .attr("text-anchor", "start")
-                        .attr("fill", "red")
+                        .attr("fill", "green")
                         .attr("font-size", "10px");
 
                     // Add a tspan for each movie title, with correct vertical spacing
@@ -848,7 +941,7 @@
                         .attr("x", xPos + 10)
                         .attr("y", yPos - 10)
                         .attr("text-anchor", "start")
-                        .attr("fill", "red")
+                        .attr("fill", "green")
                         .attr("font-size", "10px");
                 }
 
@@ -888,6 +981,9 @@
                 //     const posterSvg = d3.select("#poster");
                 //     posterSvg.select("image").remove(); // Remove the image when mouseout
                 // });
+
+
+
 
 
 
