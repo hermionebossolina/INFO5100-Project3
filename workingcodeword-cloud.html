@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-cloud/build/d3.layout.cloud.min.js"></script>
+    </head>
+    <body>
+        <script>
+        const shapeToImage = {
+            "circle": "https://stock.adobe.com/images/editable-vector-record-button-icon-black-transparent-white-background-part-of-a-big-icon-set-family-perfect-for-web-and-app-interfaces-presentations-infographics-etc/621550391",
+        };
+        const width = 1200;
+        const height = 1200;
+
+        const svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+    // Loading the csv data
+    d3.csv("filtered_ufo_data_without_na_shape.csv").then(data => {
+      // Extracting the shape and count
+      const shapeCounts = d3.rollups(
+        data,
+        v => v.length, // Count the number of occurrences for each shape
+        d => d.shape // Group by shape
+    );
+
+    // Convert the grouped data to an array of objects
+    const shapes = shapeCounts.map(([shape, count]) => ({ shape, count }));
+
+    console.log(shapes);
+    console.log(d3.layout.cloud);
+
+    const layout = d3.layout.cloud()
+                .size([width, height])
+                .words(shapes.map(d => ({ text: d.shape, size: d.count })))
+                .padding(5)
+                .rotate(() => (Math.random() > 0.5 ? 0 : 45)) // Rotate words randomly
+                .fontSize(d => Math.sqrt(d.size) * 2) // Scale font size based on count
+                .on("end", draw); // Call draw function after layout
+
+            layout.start();
+
+            // Draw function to render the word cloud
+            function draw(words) {
+                svg.append("g")
+                    .attr("transform", `translate(${width / 2},${height / 2})`)
+                    .selectAll("text")
+                    .data(words)
+                    .enter()
+                    .append("text")
+                    .style("font-size", d => `${d.size}px`)
+                    .style("fill", d => d3.schemeCategory10[Math.floor(Math.random() * 10)])
+                    .attr("text-anchor", "middle")
+                    .attr("transform", d => `translate(${d.x},${d.y}) rotate(${d.rotate})`)
+                    .text(d => d.text);
+            }
+      
+      
+    });
+  </script>
+    </body>
+</html>
