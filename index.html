@@ -843,6 +843,7 @@
                 .attr("fill", "none")   // using attr here, style would work too
                 .attr("stroke", "steelblue")
                 .attr("stroke-width", 3)
+                .attr("opacity", 0.65)  // Added opacity
                 .attr("d", lineGen);
             // .datum has given our entire dataset to the <path> element
             // so, because lineGen is a _function_, the .attr("d", lineGen) command is really working like
@@ -1034,7 +1035,8 @@
                         .attr("y", yPos + 4) // Base Y position for the first line
                         .attr("text-anchor", "start")
                         .attr("fill", "green")
-                        .attr("font-size", "10px");
+                        .attr("font-size", "10px")
+                        .attr("font-weight", "bold");
 
                     // Add a tspan for each movie title, with correct vertical spacing
                     label.selectAll("tspan")
