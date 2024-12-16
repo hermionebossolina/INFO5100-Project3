@@ -393,7 +393,7 @@
                 <!-- Image (Right) -->
                 <div style="margin-right: 0px;">
                     <img src="images/alien1979.jpg" alt="Alien Movie Poster"
-                        style="width: 260px; height: auto; border: 1px solid #ccc; opacity: 0.65; ">
+                        style="width: 260px; height: auto; border: 1px solid #ccc; opacity: 0.8; ">
                 </div>
             </div>
 
@@ -975,17 +975,6 @@
             // Refer to the docs on bisector to see how this works -- for now just know this is a common pattern for finding the closest value in an array
             let findDate = d3.bisector(d => d.date).right;
 
-            // //old poster
-            // const url = "images/alien1979.jpg"; // Replace with the actual path
-            // const img = poster.append("image")
-            //     .attr("x", 0)
-            //     .attr("y", -50)
-            //     .attr("width", 200)
-            //     .attr("height", 380)
-            //     .attr("opacity", 0)
-            //     .attr("href", url);
-
-
             activeRegion.on("mousemove", function (evt) {
                 // Update the position as you move
 
@@ -1064,31 +1053,7 @@
                         .attr("font-size", "10px");
                 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
             });
-
-
-
-
-
-
-
-
-
-
-
 
 
         });
