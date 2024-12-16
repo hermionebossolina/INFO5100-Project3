@@ -340,9 +340,71 @@
         </div>
 
         <div class="cloud-container">
-            <p> word cloud goes here
-            <p>
-                <svg id="word-cloud" height="300" width="900"></svg>
+            <svg id="word-cloud" height="800" width="800"></svg>
+                
+                <script>
+                    const width_wc = 800;
+                    const height_wc = 800;
+
+                    const svg_wc = d3.select("#word-cloud");
+
+                    const tooltip = d3.select("#tooltip");
+
+    // Loading the csv data
+    d3.csv("data/filtered_ufo_data.csv").then(data => {
+      // Extracting the shape and count
+      const shapeCounts = d3.rollups(
+        data,
+        v => v.length, 
+        d => d.shape 
+    );
+
+    const shapes = shapeCounts.map(([shape, count]) => ({
+          text: shape,
+          size: count,
+          x: Math.random() * width_wc, 
+          y: Math.random() * height_wc
+        }));
+
+    console.log(shapes);
+
+    const fontSizeScale = d3.scaleSqrt()
+          .domain([0, d3.max(shapes, d => d.size)])
+          .range([10, 60]);
+
+          const simulation = d3.forceSimulation(shapes)
+          .force("x", d3.forceX(width_wc / 2).strength(0.1))
+          .force("y", d3.forceY(height_wc / 2).strength(0.1))
+          .force("collide", d3.forceCollide(d => fontSizeScale(d.size) / 2 + 40))
+          .stop();
+
+          for (let i = 0; i < 1000; i++) {
+                simulation.tick(); // Advances the simulation
+            }
+
+            svg_wc.selectAll("text")
+                .data(shapes)
+                .enter()
+                .append("text")
+                .attr("x", d => Math.max(fontSizeScale(d.size) / 2, Math.min(width_wc - fontSizeScale(d.size) / 2, d.x)))  // Use fontSizeScale directly for positioning
+                .attr("y", d => Math.max(fontSizeScale(d.size) / 2, Math.min(height_wc - fontSizeScale(d.size) / 2, d.y)))
+                .attr("font-size", d => fontSizeScale(d.size) + "px")
+                .attr("fill", () => d3.schemeCategory10[Math.floor(Math.random() * 10)])
+                .attr("text-anchor", "middle")
+                .text(d => d.text)
+                .on("mouseover", function(event, d) {
+                    tooltip.style("display", "inline-block")  // Show the tooltip
+                        .html(`Frequency: ${d.size}`)  // Display the count
+                        .style("left", (event.pageX + 50) + "px")
+                        .style("top", (event.pageY - 50) + "px");
+                })
+                // Hide the tooltip on mouseout
+                .on("mouseout", function() {
+                    tooltip.style("display", "none");
+                });
+      
+    });
+                </script>
         </div>
     </div>
 
