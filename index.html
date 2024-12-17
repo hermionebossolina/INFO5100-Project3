@@ -340,11 +340,11 @@
         </div>
 
         <div class="cloud-container">
-            <svg id="word-cloud" height="800" width="800"></svg>
+            <svg id="word-cloud" height="400" width="400"></svg>
                 
                 <script>
-                    const width_wc = 800;
-                    const height_wc = 800;
+                    const width_wc = 400;
+                    const height_wc = 400;
 
                     const svg_wc = d3.select("#word-cloud");
 
@@ -370,12 +370,12 @@
 
     const fontSizeScale = d3.scaleSqrt()
           .domain([0, d3.max(shapes, d => d.size)])
-          .range([10, 60]);
+          .range([10, 30]);
 
           const simulation = d3.forceSimulation(shapes)
           .force("x", d3.forceX(width_wc / 2).strength(0.1))
           .force("y", d3.forceY(height_wc / 2).strength(0.1))
-          .force("collide", d3.forceCollide(d => fontSizeScale(d.size) / 2 + 40))
+          .force("collide", d3.forceCollide(d => fontSizeScale(d.size) / 2 + 25))
           .stop();
 
           for (let i = 0; i < 1000; i++) {
@@ -488,10 +488,124 @@
             </p>
         </div>
 
-        <div id="hist-container">
-            <div id="hist-one-container">
-                <svg id="hist-one" height="400" width="400"> </svg>
-                <p> insert hist one description here</p>
+        <div id="lineplot-container">
+            <div id="lineplot-one-container">
+                <svg id="line-plot-one" height="400" width="400"> </svg>
+                <script>
+                    // Set up dimensions and margins for the chart
+                    const margin_lp = { top: 50, right: 50, bottom: 100, left: 70 },
+                width = 1000 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+
+            // Create an SVG container for the line plot
+            const linePlotSvg = d3.select("#line-plot-one")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+        
+                    // Load and process the data
+                    d3.csv("data/nasa_1969_to_2019.csv", d3.autoType).then(data => {
+                        console.log("Loaded data:", data);
+        
+                        const averageData = Array.from(
+                d3.rollup(
+                    data, 
+                    v => d3.mean(v, d => d.Budget), // Calculate mean budget
+                    d => d.Year // Group by year
+                ),
+                ([year, budget]) => ({ Year: year, Budget: budget }) // Convert to an array of objects
+            );
+        
+            // Ensure the data is sorted by Year
+            const sortedData = averageData.sort((a, b) => a.Year - b.Year);
+        
+                        // Define scales
+                        const xScale = d3.scaleLinear()
+                            .domain([1969, 2019]) // Min and max years
+                            .range([0, width]);
+        
+                        const yScale = d3.scaleLinear()
+                            .domain([0, d3.max(sortedData, d => d.Budget)]) // Max budget
+                            .range([height, 0]);
+        
+                        // Define line generator
+                        const line = d3.line()
+                            .x(d => xScale(d.Year))
+                            .y(d => yScale(d.Budget))
+                            .curve(d3.curveMonotoneX); // Smooth the line
+        
+                        // Add X axis
+                        const xAxis = svg.append("g")
+                            .attr("transform", `translate(0, ${height})`)
+                            .call(d3.axisBottom(xScale)
+                                .tickFormat(d3.format("d")) // Ensure years are formatted without commas
+                                .ticks(sortedData.length)) // One tick per year
+        
+                        // Rotate X-axis labels to vertical
+                        xAxis.selectAll("text")
+                            .style("font-size", "10px")
+                            .attr("transform", "rotate(-90)") // Rotate labels to vertical
+                            .attr("dx", "-0.8em") // Adjust horizontal position
+                            .attr("dy", "0.5em") // Adjust vertical position
+                            .style("text-anchor", "end"); // Align text at the end
+        
+                        svg.append("text")
+                            .attr("fill", "black")
+                            .attr("x", width / 2)
+                            .attr("y", height + margin.bottom - 30)
+                            .attr("text-anchor", "middle")
+                            .text("Year");
+        
+                        // Add Y axis
+                        const yAxisFormatter = d => {
+            const formatted = d3.format("~s")(d); 
+            return formatted.replace("G", "B"); 
+        };
+                        svg.append("g")
+                            .call(d3.axisLeft(yScale).tickFormat(yAxisFormatter))
+                            .append("text")
+                            .attr("fill", "black")
+                            .attr("transform", "rotate(-90)")
+                            .attr("x", -height / 2)
+                            .attr("y", -50)
+                            .attr("text-anchor", "middle")
+                            .text("Budget (USD)");
+        
+                        // Draw the line
+                        svg.append("path")
+                            .datum(sortedData)
+                            .attr("fill", "none")
+                            .attr("stroke", "black")
+                            .attr("stroke-width", 2)
+                            .attr("d", line);
+        
+                        // Add circles for each data point
+                        const circles = svg.selectAll("circle")
+            .data(sortedData)
+            .enter()
+            .append("circle")
+            .attr("cx", d => xScale(d.Year))
+            .attr("cy", d => yScale(d.Budget))
+            .attr("r", 4)
+            .attr("fill", "green")
+            .attr("opacity", 0.8);
+        
+        // Tooltip logic
+        circles
+            .on("mouseover", (event, d) => {
+                tooltip
+                    .style("opacity", 1) // Make the tooltip visible
+                    .html(`Year: ${d.Year}<br>Avg Budget: $${(d.Budget / 1e9).toFixed(2)}B`)
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY - 10) + "px");
+            })
+            .on("mouseout", () => {
+                tooltip
+                    .style("opacity", 0); // Hide the tooltip on mouse out
+            });
+                    });
+                </script>
             </div>
 
             <div id="hist-two-container">
