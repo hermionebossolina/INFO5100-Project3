@@ -527,21 +527,11 @@
                     d3.csv("data/nasa_1969_to_2019.csv", d3.autoType).then(data => {
                         console.log("Loaded data:", data);
         
-                        const averageData = Array.from(
-                d3.rollup(
-                    data, 
-                    v => d3.mean(v, d => d.Budget), // Calculate mean budget
-                    d => d.Year // Group by year
-                ),
-                ([year, budget]) => ({ Year: year, Budget: budget }) // Convert to an array of objects
-            );
-        
-            // Ensure the data is sorted by Year
-            const sortedData = averageData.sort((a, b) => a.Year - b.Year);
+                        const sortedData = data.sort((a, b) => a.Year - b.Year);
         
                         // Define scales
                         const xScale = d3.scaleLinear()
-                            .domain([1969, 2019]) 
+                            .domain([1969, 2018]) 
                             .range([0, width_lp_one]);
         
                         const yScale = d3.scaleLinear()
