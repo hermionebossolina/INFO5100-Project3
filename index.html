@@ -616,6 +616,9 @@
                         .style("left", (event.pageX - 60) + "px")
                         .style("top", (event.pageY + 50) + "px");
                 })
+                .on("mouseout", function() {
+                    tooltip_lp.style("display", "none");
+                });
 
                  });
                 </script>
