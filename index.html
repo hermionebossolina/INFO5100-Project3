@@ -234,7 +234,7 @@
             justify-content: center;
         }
 
-        #hist-one-container {
+        #lineplot-one-container {
             display: flex;
             flex-direction: column;
             margin-right: 20px;
@@ -336,19 +336,31 @@
         <div id="interaction-description">
             <h4><strong>A Glimpse into Our Alien Interactions</strong></h4>
             <p> <em> by editor and shape-enthusiest, Hrishika Jotwani </em></p>
-            <p> coming soon </p>
+            <p> 
+                Throughout history, people have looked to the skies and spotted a dazzling array of shapes that defy explanation. 
+                These sightings aren't just lights in the sky but distinct forms—each telling its own story. Circles and spheres, often described as glowing orbs, hover silently or zip away at impossible speeds, their symmetry captivating observers. 
+                Fireballs streak dramatically across the night, their fiery brilliance leaving onlookers stunned, while chevron-shaped crafts glide silently, their sharp angles and precise movement sparking awe.</p>
+            <p>
+                Even more perplexing are sightings of cigar-shaped objects, long and sleek, moving deliberately through the heavens. 
+                Fish-like forms are said to dart with fluidity, as though mimicking creatures of the deep ocean—but in the sky. 
+                Then there are the classic disks, hovering steadily with lights that pulse in mesmerizing rhythms, sometimes splitting into smaller objects or vanishing altogether.
+            </p>
+            <p>
+                Each shape ignites curiosity, theories, and debates. Are these shapes reflections of our imagination, experimental crafts, or something else entirely? For many, they remain a profound mystery—silent messengers from the unknown, leaving behind more questions than answers. 
+                As people scan the skies and share their sightings, the shapes become part of a collective narrative, challenging humanity to decipher their meaning.
+            </p>
         </div>
 
         <div class="cloud-container">
-            <svg id="word-cloud" height="400" width="400"></svg>
+            <svg id="word-cloud" height="600" width="400"></svg>
                 
                 <script>
                     const width_wc = 400;
-                    const height_wc = 400;
+                    const height_wc = 600;
 
                     const svg_wc = d3.select("#word-cloud");
 
-                    const tooltip = d3.select("#tooltip");
+                    const tooltip_wc = d3.select("#tooltip");
 
     // Loading the csv data
     d3.csv("data/filtered_ufo_data.csv").then(data => {
@@ -359,6 +371,10 @@
         d => d.shape 
     );
 
+    const svgWidth = width_wc; 
+    const svgHeight = height_wc; 
+    const centerX = 200; 
+    const centerY = 300;
     const shapes = shapeCounts.map(([shape, count]) => ({
           text: shape,
           size: count,
@@ -373,34 +389,35 @@
           .range([10, 30]);
 
           const simulation = d3.forceSimulation(shapes)
-          .force("x", d3.forceX(width_wc / 2).strength(0.1))
-          .force("y", d3.forceY(height_wc / 2).strength(0.1))
-          .force("collide", d3.forceCollide(d => fontSizeScale(d.size) / 2 + 25))
-          .stop();
+          .force("x", d3.forceX(centerX).strength(0.1)) // **CHANGE: Use centerX to center horizontally**
+    .force("y", d3.forceY(centerY).strength(0.1)) // **CHANGE: Use centerY to center vertically**
+    .force("collide", d3.forceCollide(d => fontSizeScale(d.size) / 2 + 25))
+    .stop();
 
+         // Run the simulation for 1000 iterations to stabilize the graph layout
           for (let i = 0; i < 1000; i++) {
-                simulation.tick(); // Advances the simulation
+                simulation.tick(); 
             }
 
             svg_wc.selectAll("text")
                 .data(shapes)
                 .enter()
                 .append("text")
-                .attr("x", d => Math.max(fontSizeScale(d.size) / 2, Math.min(width_wc - fontSizeScale(d.size) / 2, d.x)))  // Use fontSizeScale directly for positioning
-                .attr("y", d => Math.max(fontSizeScale(d.size) / 2, Math.min(height_wc - fontSizeScale(d.size) / 2, d.y)))
+                .attr("x", d => Math.max(fontSizeScale(d.size) / 2, Math.min(svgWidth - fontSizeScale(d.size) / 2, d.x)))  // Use fontSizeScale directly for positioning
+                .attr("y", d => Math.max(fontSizeScale(d.size) / 2, Math.min(svgHeight - fontSizeScale(d.size) / 2, d.y)))
                 .attr("font-size", d => fontSizeScale(d.size) + "px")
                 .attr("fill", () => d3.schemeCategory10[Math.floor(Math.random() * 10)])
                 .attr("text-anchor", "middle")
                 .text(d => d.text)
                 .on("mouseover", function(event, d) {
-                    tooltip.style("display", "inline-block")  // Show the tooltip
-                        .html(`Frequency: ${d.size}`)  // Display the count
+                    tooltip_wc.style("display", "inline-block")  
+                        .html(`Frequency: ${d.size}`)  // Display the count on mouseover
                         .style("left", (event.pageX + 50) + "px")
                         .style("top", (event.pageY - 50) + "px");
                 })
-                // Hide the tooltip on mouseout
+
                 .on("mouseout", function() {
-                    tooltip.style("display", "none");
+                    tooltip_wc.style("display", "none");
                 });
       
     });
@@ -488,21 +505,23 @@
             </p>
         </div>
 
-        <div id="lineplot-container">
+       <div id="hist-container">
             <div id="lineplot-one-container">
-                <svg id="line-plot-one" height="400" width="400"> </svg>
+                <svg id="hist-one" height="400" width="800"> </svg>
                 <script>
                     // Set up dimensions and margins for the chart
-                    const margin_lp = { top: 50, right: 50, bottom: 100, left: 70 },
-                width = 1000 - margin.left - margin.right,
-                height = 500 - margin.top - margin.bottom;
+                    const margin_lp_one = { top: 50, right: 50, bottom: 100, left: 70 },
+                        width_lp_one = 800- margin_lp_one.left - margin_lp_one.right,
+                        height_lp_one = 400 - margin_lp_one.top - margin_lp_one.bottom;
 
-            // Create an SVG container for the line plot
-            const linePlotSvg = d3.select("#line-plot-one")
-                .attr("width", width + margin.left + margin.right)
-                .attr("height", height + margin.top + margin.bottom)
-                .append("g")
-                .attr("transform", `translate(${margin.left},${margin.top})`);
+                    // Create an SVG container for the line plot
+                    const svg_lp_one = d3.select("#hist-one")
+                        .attr("width", 800 )
+                        .attr("height", 400)
+                        .append("g")
+                        .attr("transform", `translate(${margin_lp_one.left},${margin_lp_one.top})`);
+
+                    const tooltip_lp = d3.select("#tooltip");
         
                     // Load and process the data
                     d3.csv("data/nasa_1969_to_2019.csv", d3.autoType).then(data => {
@@ -522,58 +541,58 @@
         
                         // Define scales
                         const xScale = d3.scaleLinear()
-                            .domain([1969, 2019]) // Min and max years
-                            .range([0, width]);
+                            .domain([1969, 2019]) 
+                            .range([0, width_lp_one]);
         
                         const yScale = d3.scaleLinear()
-                            .domain([0, d3.max(sortedData, d => d.Budget)]) // Max budget
-                            .range([height, 0]);
+                            .domain([0, d3.max(sortedData, d => d.Budget)]) 
+                            .range([height_lp_one, 0]);
         
                         // Define line generator
                         const line = d3.line()
                             .x(d => xScale(d.Year))
                             .y(d => yScale(d.Budget))
-                            .curve(d3.curveMonotoneX); // Smooth the line
+                            .curve(d3.curveMonotoneX); 
         
                         // Add X axis
-                        const xAxis = svg.append("g")
-                            .attr("transform", `translate(0, ${height})`)
+                        const xAxis = svg_lp_one.append("g")
+                            .attr("transform", `translate(0, ${height_lp_one})`)
                             .call(d3.axisBottom(xScale)
-                                .tickFormat(d3.format("d")) // Ensure years are formatted without commas
-                                .ticks(sortedData.length)) // One tick per year
+                                .tickFormat(d3.format("d")) 
+                                .ticks(sortedData.length)) 
         
                         // Rotate X-axis labels to vertical
                         xAxis.selectAll("text")
                             .style("font-size", "10px")
-                            .attr("transform", "rotate(-90)") // Rotate labels to vertical
-                            .attr("dx", "-0.8em") // Adjust horizontal position
-                            .attr("dy", "0.5em") // Adjust vertical position
-                            .style("text-anchor", "end"); // Align text at the end
+                            .attr("transform", "rotate(-90)") 
+                            .attr("dx", "-0.8em") 
+                            .attr("dy", "0.5em") 
+                            .style("text-anchor", "end"); 
         
-                        svg.append("text")
+                        svg_lp_one.append("text")
                             .attr("fill", "black")
-                            .attr("x", width / 2)
-                            .attr("y", height + margin.bottom - 30)
+                            .attr("x", width_lp_one / 2)
+                            .attr("y", height_lp_one + margin_lp_one.bottom - 30)
                             .attr("text-anchor", "middle")
                             .text("Year");
         
-                        // Add Y axis
+                        // Add Y axis and change the trailing zeroes from the data to Billions 
                         const yAxisFormatter = d => {
-            const formatted = d3.format("~s")(d); 
-            return formatted.replace("G", "B"); 
+                        const formatted = d3.format("~s")(d / 1e9); 
+                        return formatted.replace("G", "B"); 
         };
-                        svg.append("g")
+                        svg_lp_one.append("g")
                             .call(d3.axisLeft(yScale).tickFormat(yAxisFormatter))
                             .append("text")
                             .attr("fill", "black")
                             .attr("transform", "rotate(-90)")
-                            .attr("x", -height / 2)
+                            .attr("x", -height_lp_one / 2)
                             .attr("y", -50)
                             .attr("text-anchor", "middle")
-                            .text("Budget (USD)");
+                            .text("Budget (USD) in Billions");
         
-                        // Draw the line
-                        svg.append("path")
+                        // Draw the line path
+                        svg_lp_one.append("path")
                             .datum(sortedData)
                             .attr("fill", "none")
                             .attr("stroke", "black")
@@ -581,31 +600,26 @@
                             .attr("d", line);
         
                         // Add circles for each data point
-                        const circles = svg.selectAll("circle")
-            .data(sortedData)
-            .enter()
-            .append("circle")
-            .attr("cx", d => xScale(d.Year))
-            .attr("cy", d => yScale(d.Budget))
-            .attr("r", 4)
-            .attr("fill", "green")
-            .attr("opacity", 0.8);
-        
-        // Tooltip logic
-        circles
-            .on("mouseover", (event, d) => {
-                tooltip
-                    .style("opacity", 1) // Make the tooltip visible
-                    .html(`Year: ${d.Year}<br>Avg Budget: $${(d.Budget / 1e9).toFixed(2)}B`)
-                    .style("left", (event.pageX + 10) + "px")
-                    .style("top", (event.pageY - 10) + "px");
-            })
-            .on("mouseout", () => {
-                tooltip
-                    .style("opacity", 0); // Hide the tooltip on mouse out
-            });
-                    });
+                        const circles = svg_lp_one.selectAll("circle")
+                        .data(sortedData)
+                        .enter()
+                        .append("circle")
+                        .attr("cx", d => xScale(d.Year))
+                        .attr("cy", d => yScale(d.Budget))
+                        .attr("r", 4)
+                        .attr("fill", "green")
+                        .attr("opacity", 0.8)
+                        // add tooltip on mouseover
+                        .on("mouseover", function(event, d) {
+                    tooltip_lp.style("display", "inline-block")  
+                        .html(`Year: ${d.Year}<br>Avg Budget: $${(d.Budget / 1e9).toFixed(2)}B`)
+                        .style("left", (event.pageX - 60) + "px")
+                        .style("top", (event.pageY + 50) + "px");
+                })
+
+                 });
                 </script>
+             
             </div>
 
             <div id="hist-two-container">
@@ -711,13 +725,15 @@
             </div>
 
         </div>
-    </div>
 
     <div id="conclusion-container">
         <div id="conclusion">
             <h4><strong>When Will We Talk With Them Next? </strong></h4>
             <p> <em> "So-Long! And thanks for all the fish..." </em></p>
-            <p> initial conclusion here </p>
+            <p> As humanity continues to push the boundaries of space exploration, one thing is clear—our fascination with the unknown is as limitless as the cosmos itself. From fiery disks streaking through the night sky to cryptic cigar-shaped crafts gliding above the Earth, these encounters compel us to ask not just what we are seeing, but who or what might be watching back.  </p>
+            <p> Our imaginations don’t stop at sightings and missions. Movies like Alien and E.T. bring these mysteries to life, blending science with storytelling to create visions of the extraordinary. As NASA plots its next great adventure and Hollywood crafts its next intergalactic blockbuster, one fuels the other in an endless loop of curiosity and creativity.</p>
+            <p> Whether it’s deciphering the meaning behind strange shapes, celebrating successful space missions, or dreaming of extraterrestrial neighbors, one thing is certain: we are explorers and storytellers at heart. The next chapter of this cosmic saga is unwritten, but the pen is firmly in our hands—or perhaps, the hands of something far greater.</p>
+            <p> Here’s to the next leap forward—on screen, in space, and beyond.</p>
         </div>
 
     </div>
