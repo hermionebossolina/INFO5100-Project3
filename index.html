@@ -525,7 +525,7 @@
         
                     // Load and process the data
                     d3.csv("data/nasa_1969_to_2019.csv", d3.autoType).then(data => {
-                        console.log("Loaded data:", data);
+                        console.log("Data:", data);
         
                         const sortedData = data.sort((a, b) => a.Year - b.Year);
         
